@@ -1,0 +1,2678 @@
+T3E68 000:010.166   SEGGER J-Link V7.98 Log File
+T3E68 000:010.317   DLL Compiled: Jul 17 2024 15:27:15
+T3E68 000:010.323   Logging started @ 2026-10-15 08:10
+T3E68 000:010.329   Process: E:\Keil_v5\UV4\UV4.exe
+T3E68 000:010.336 - 10.334ms
+T3E68 000:010.355 JLINK_SetWarnOutHandler(...)
+T3E68 000:010.476 - 0.121ms
+T3E68 000:010.501 JLINK_OpenEx(...)
+T3E68 000:013.010   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T3E68 000:014.416   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T3E68 000:014.578   Decompressing FW timestamp took 130 us
+T3E68 000:024.050   Hardware: V9.40
+T3E68 000:024.124   S/N: 69408947
+T3E68 000:024.158   OEM: SEGGER
+T3E68 000:024.192   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T3E68 000:025.806   Bootloader: (Could not read)
+T3E68 000:027.689   TELNET listener socket opened on port 19021
+T3E68 000:027.771   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T3E68 000:027.888   WEBSRV Webserver running on local port 19080
+T3E68 000:027.977   Looking for J-Link GUI Server exe at: E:\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T3E68 000:028.150   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink_V798\JLinkGUIServer.exe
+T3E68 000:028.185   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink_V798\JLinkGUIServer.exe
+T3E68 000:062.450   J-Link GUI Server info: "J-Link GUI server V7.98 "
+T3E68 000:065.526 - 55.012ms returns "O.K."
+T3E68 000:065.554 JLINK_GetEmuCaps()
+T3E68 000:065.563 - 0.005ms returns 0xB9FF7BBF
+T3E68 000:065.569 JLINK_TIF_GetAvailable(...)
+T3E68 000:065.867 - 0.297ms
+T3E68 000:065.886 JLINK_SetErrorOutHandler(...)
+T3E68 000:065.892 - 0.005ms
+T3E68 000:065.908 JLINK_ExecCommand("ProjectFile = "E:\FORK\CW32_FOC\JLinkSettings.ini"", ...). 
+T3E68 000:078.292   Ref file found at: E:\Keil_v5\ARM\Segger\JLinkDevices.ref
+T3E68 000:078.471   XML referenced by ref file: C:\Program Files\SEGGER\JLink_V798\JLinkDevices.xml
+T3E68 000:079.579   C:\Program Files\SEGGER\JLink_V798\JLinkDevices.xml evaluated successfully.
+T3E68 000:079.595     Device entry created:  TLE9942-A40
+T3E68 000:079.600       ChipInfo:
+T3E68 000:079.607         Vendor:          Infineon
+T3E68 000:079.615         Name:            TLE9942-A40
+T3E68 000:079.622         WorkRAMAddr:     0x18000000
+T3E68 000:079.629         WorkRAMSize:     0x00000800
+T3E68 000:079.640         Core:            JLINK_CORE_CORTEX_M23
+T3E68 000:079.647       FlashBankInfo:
+T3E68 000:079.654         Name:            Flash
+T3E68 000:079.661         BaseAddr:        0x12000000
+T3E68 000:079.725         AlwaysPresent:   1
+T3E68 000:079.732         LoaderInfo:
+T3E68 000:079.739           Name:            Flash
+T3E68 000:079.745           MaxSize:         0x0000C000
+T3E68 000:079.753           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\Infineon\TLE994x_5x\FLASH_TLE9942.FLM
+T3E68 000:079.759           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 000:079.783     Device entry created:  TLE9944-A40
+T3E68 000:079.788       ChipInfo:
+T3E68 000:079.795         Vendor:          Infineon
+T3E68 000:079.801         Name:            TLE9944-A40
+T3E68 000:079.808         WorkRAMAddr:     0x18000000
+T3E68 000:079.815         WorkRAMSize:     0x00000800
+T3E68 000:079.822         Core:            JLINK_CORE_CORTEX_M23
+T3E68 000:079.828       FlashBankInfo:
+T3E68 000:079.835         Name:            Flash
+T3E68 000:079.842         BaseAddr:        0x12000000
+T3E68 000:079.884         AlwaysPresent:   1
+T3E68 000:079.893         LoaderInfo:
+T3E68 000:079.900           Name:            Flash
+T3E68 000:079.907           MaxSize:         0x0000C000
+T3E68 000:079.914           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\Infineon\TLE994x_5x\FLASH_TLE9944.FLM
+T3E68 000:079.920           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 000:079.931     Device entry created:  TLE9944-W40
+T3E68 000:079.935       ChipInfo:
+T3E68 000:079.942         Vendor:          Infineon
+T3E68 000:079.948         Name:            TLE9944-W40
+T3E68 000:079.955         WorkRAMAddr:     0x18000000
+T3E68 000:080.019         WorkRAMSize:     0x00000800
+T3E68 000:080.028         Core:            JLINK_CORE_CORTEX_M23
+T3E68 000:080.035       FlashBankInfo:
+T3E68 000:080.042         Name:            Flash
+T3E68 000:080.051         BaseAddr:        0x12000000
+T3E68 000:080.094         AlwaysPresent:   1
+T3E68 000:080.100         LoaderInfo:
+T3E68 000:080.107           Name:            Flash
+T3E68 000:080.113           MaxSize:         0x0000C000
+T3E68 000:080.121           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\Infineon\TLE994x_5x\FLASH_TLE9944.FLM
+T3E68 000:080.127           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 000:080.137     Device entry created:  TLE9952-A40
+T3E68 000:080.141       ChipInfo:
+T3E68 000:080.148         Vendor:          Infineon
+T3E68 000:080.154         Name:            TLE9952-A40
+T3E68 000:080.161         WorkRAMAddr:     0x18000000
+T3E68 000:080.167         WorkRAMSize:     0x00000800
+T3E68 000:080.174         Core:            JLINK_CORE_CORTEX_M23
+T3E68 000:080.181       FlashBankInfo:
+T3E68 000:080.187         Name:            Flash
+T3E68 000:080.194         BaseAddr:        0x12000000
+T3E68 000:080.236         AlwaysPresent:   1
+T3E68 000:080.243         LoaderInfo:
+T3E68 000:080.249           Name:            Flash
+T3E68 000:080.256           MaxSize:         0x0000C000
+T3E68 000:080.263           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\Infineon\TLE994x_5x\FLASH_TLE9952.FLM
+T3E68 000:080.269           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 000:080.279     Device entry created:  TLE9954-A40
+T3E68 000:080.283       ChipInfo:
+T3E68 000:080.290         Vendor:          Infineon
+T3E68 000:080.296         Name:            TLE9954-A40
+T3E68 000:080.303         WorkRAMAddr:     0x18000000
+T3E68 000:080.309         WorkRAMSize:     0x00000800
+T3E68 000:080.316         Core:            JLINK_CORE_CORTEX_M23
+T3E68 000:080.322       FlashBankInfo:
+T3E68 000:080.329         Name:            Flash
+T3E68 000:080.336         BaseAddr:        0x12000000
+T3E68 000:080.378         AlwaysPresent:   1
+T3E68 000:080.385         LoaderInfo:
+T3E68 000:080.391           Name:            Flash
+T3E68 000:080.398           MaxSize:         0x0000C000
+T3E68 000:080.405           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\Infineon\TLE994x_5x\FLASH_TLE9954.FLM
+T3E68 000:080.411           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 000:080.420     Device entry created:  TLE9954-W40
+T3E68 000:080.425       ChipInfo:
+T3E68 000:080.431         Vendor:          Infineon
+T3E68 000:080.438         Name:            TLE9954-W40
+T3E68 000:080.444         WorkRAMAddr:     0x18000000
+T3E68 000:080.451         WorkRAMSize:     0x00000800
+T3E68 000:080.458         Core:            JLINK_CORE_CORTEX_M23
+T3E68 000:080.465       FlashBankInfo:
+T3E68 000:080.471         Name:            Flash
+T3E68 000:080.478         BaseAddr:        0x12000000
+T3E68 000:080.518         AlwaysPresent:   1
+T3E68 000:080.524         LoaderInfo:
+T3E68 000:080.531           Name:            Flash
+T3E68 000:080.537           MaxSize:         0x0000C000
+T3E68 000:080.544           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\Infineon\TLE994x_5x\FLASH_TLE9954.FLM
+T3E68 000:080.551           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 000:080.561     Device entry created:  CW32L010x8
+T3E68 000:080.565       ChipInfo:
+T3E68 000:080.572         Vendor:          WHXY
+T3E68 000:080.578         Name:            CW32L010x8
+T3E68 000:080.585         WorkRAMAddr:     0x20000000
+T3E68 000:080.592         WorkRAMSize:     0x00001000
+T3E68 000:080.599         Core:            JLINK_CORE_CORTEX_M0
+T3E68 000:080.605       FlashBankInfo:
+T3E68 000:080.612         Name:            Flash Block 
+T3E68 000:080.659         AlwaysPresent:   1
+T3E68 000:080.666         LoaderInfo:
+T3E68 000:080.673           Name:            Flash_Block_
+T3E68 000:080.679           MaxSize:         0x00010000
+T3E68 000:080.686           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\WHXY\CW32L010\FlashCW32L010.FLM
+T3E68 000:080.694           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 000:080.740     Device entry created:  CW32L011x8
+T3E68 000:080.745       ChipInfo:
+T3E68 000:080.752         Vendor:          WHXY
+T3E68 000:080.759         Name:            CW32L011x8
+T3E68 000:080.765         WorkRAMAddr:     0x20000000
+T3E68 000:080.772         WorkRAMSize:     0x00001800
+T3E68 000:080.779         Core:            JLINK_CORE_CORTEX_M0
+T3E68 000:080.785       FlashBankInfo:
+T3E68 000:080.792         Name:            Flash Block 
+T3E68 000:080.848         AlwaysPresent:   1
+T3E68 000:080.856   
+  ***** Internal Error: 
+T3E68 000:080.862   Device: CW32L011x8: Flash bank 0x00000000: No loader specified
+T3E68 000:080.945   Looking for J-Link GUI Server exe at: E:\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T3E68 000:080.982   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink_V798\JLinkGUIServer.exe
+T3E68 000:081.011   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink_V798\JLinkGUIServer.exe
+T3E68 000:089.304   J-Link GUI Server info: "J-Link GUI server V7.98 "
+T3E68 001:150.179     Device entry created:  CW32L012x8
+T3E68 001:150.286       ChipInfo:
+T3E68 001:150.324         Vendor:          WHXY
+T3E68 001:150.361         Name:            CW32L012x8
+T3E68 001:150.397         WorkRAMAddr:     0x20000000
+T3E68 001:150.433         WorkRAMSize:     0x00002000
+T3E68 001:150.471         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:150.507       FlashBankInfo:
+T3E68 001:150.542         Name:            Flash Block 
+T3E68 001:151.040         AlwaysPresent:   1
+T3E68 001:151.104     Device entry created:  SLM32L003F8P6
+T3E68 001:151.130       ChipInfo:
+T3E68 001:151.164         Vendor:          SoulSemi
+T3E68 001:151.199         Name:            SLM32L003F8P6
+T3E68 001:151.235         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:151.271         WorkRAMAddr:     0x20000000
+T3E68 001:151.306         WorkRAMSize:     0x00001000
+T3E68 001:151.342       FlashBankInfo:
+T3E68 001:151.376         Name:            Internal Flash
+T3E68 001:151.638         LoaderInfo:
+T3E68 001:151.679           Name:            Internal_Flash
+T3E68 001:151.712           MaxSize:         0x00010000
+T3E68 001:151.747           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32L003\SLM32L003F8P6.FLM
+T3E68 001:151.778           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:151.895     Device entry created:  SLM32L003F8Q6
+T3E68 001:151.918       ChipInfo:
+T3E68 001:151.950         Vendor:          SoulSemi
+T3E68 001:151.982         Name:            SLM32L003F8Q6
+T3E68 001:152.015         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:152.047         WorkRAMAddr:     0x20000000
+T3E68 001:152.080         WorkRAMSize:     0x00001000
+T3E68 001:152.113       FlashBankInfo:
+T3E68 001:152.144         Name:            Internal Flash
+T3E68 001:152.355         LoaderInfo:
+T3E68 001:152.392           Name:            Internal_Flash
+T3E68 001:152.424           MaxSize:         0x00010000
+T3E68 001:152.457           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32L003\SLM32L003F8Q6.FLM
+T3E68 001:152.488           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:152.529     Device entry created:  SLM32L003SF8P6
+T3E68 001:152.551       ChipInfo:
+T3E68 001:152.582         Vendor:          SoulSemi
+T3E68 001:152.613         Name:            SLM32L003SF8P6
+T3E68 001:152.646         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:152.681         WorkRAMAddr:     0x20000000
+T3E68 001:152.712         WorkRAMSize:     0x00001000
+T3E68 001:152.742       FlashBankInfo:
+T3E68 001:152.771         Name:            Internal Flash
+T3E68 001:152.971         LoaderInfo:
+T3E68 001:153.007           Name:            Internal_Flash
+T3E68 001:153.037           MaxSize:         0x00010000
+T3E68 001:153.068           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32L003\SLM32L003SF8P6.FLM
+T3E68 001:153.121           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:153.160     Device entry created:  SLM32L003SF8Q6
+T3E68 001:153.181       ChipInfo:
+T3E68 001:153.211         Vendor:          SoulSemi
+T3E68 001:153.240         Name:            SLM32L003SF8Q6
+T3E68 001:153.271         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:153.301         WorkRAMAddr:     0x20000000
+T3E68 001:153.331         WorkRAMSize:     0x00001000
+T3E68 001:153.361       FlashBankInfo:
+T3E68 001:153.390         Name:            Internal Flash
+T3E68 001:153.558         LoaderInfo:
+T3E68 001:153.571           Name:            Internal_Flash
+T3E68 001:153.583           MaxSize:         0x00010000
+T3E68 001:153.596           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32L003\SLM32L003SF8Q6.FLM
+T3E68 001:153.608           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:153.628     Device entry created:  SLM32L003K8T6
+T3E68 001:153.638       ChipInfo:
+T3E68 001:153.650         Vendor:          SoulSemi
+T3E68 001:153.662         Name:            SLM32L003K8T6
+T3E68 001:153.676         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:153.691         WorkRAMAddr:     0x20000000
+T3E68 001:153.706         WorkRAMSize:     0x00001000
+T3E68 001:153.721       FlashBankInfo:
+T3E68 001:153.736         Name:            Internal Flash
+T3E68 001:153.820         LoaderInfo:
+T3E68 001:153.841           Name:            Internal_Flash
+T3E68 001:153.863           MaxSize:         0x00010000
+T3E68 001:153.893           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32L003\SLM32L003K8T6.FLM
+T3E68 001:153.933           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:153.990     Device entry created:  SLM32F030CCT7
+T3E68 001:154.001       ChipInfo:
+T3E68 001:154.014         Vendor:          SoulSemi
+T3E68 001:154.027         Name:            SLM32F030CCT7
+T3E68 001:154.040         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:154.052         WorkRAMAddr:     0x20000000
+T3E68 001:154.064         WorkRAMSize:     0x00008000
+T3E68 001:154.075       FlashBankInfo:
+T3E68 001:154.087         Name:            Internal Flash
+T3E68 001:154.100         BaseAddr:        0x08000000
+T3E68 001:154.179         AlwaysPresent:   1
+T3E68 001:154.193         LoaderInfo:
+T3E68 001:154.205           Name:            Internal_Flash
+T3E68 001:154.216           MaxSize:         0x00040000
+T3E68 001:154.230           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32X030\SLM32F030CCT7.FLM
+T3E68 001:154.243           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:154.307     Device entry created:  SLM32F030CCT6
+T3E68 001:154.319       ChipInfo:
+T3E68 001:154.334         Vendor:          SoulSemi
+T3E68 001:154.350         Name:            SLM32F030CCT6
+T3E68 001:154.366         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:154.381         WorkRAMAddr:     0x20000000
+T3E68 001:154.395         WorkRAMSize:     0x00008000
+T3E68 001:154.410       FlashBankInfo:
+T3E68 001:154.427         Name:            Internal Flash
+T3E68 001:154.441         BaseAddr:        0x08000000
+T3E68 001:154.578         AlwaysPresent:   1
+T3E68 001:154.597         LoaderInfo:
+T3E68 001:154.612           Name:            Internal_Flash
+T3E68 001:154.626           MaxSize:         0x00040000
+T3E68 001:154.640           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32X030\SLM32F030CCT6.FLM
+T3E68 001:154.654           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:154.693     Device entry created:  SLM32F030KCT7
+T3E68 001:154.703       ChipInfo:
+T3E68 001:154.716         Vendor:          SoulSemi
+T3E68 001:154.732         Name:            SLM32F030KCT7
+T3E68 001:154.746         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:154.761         WorkRAMAddr:     0x20000000
+T3E68 001:154.775         WorkRAMSize:     0x00008000
+T3E68 001:154.790       FlashBankInfo:
+T3E68 001:154.803         Name:            Internal Flash
+T3E68 001:154.816         BaseAddr:        0x08000000
+T3E68 001:154.994         AlwaysPresent:   1
+T3E68 001:155.009         LoaderInfo:
+T3E68 001:155.021           Name:            Internal_Flash
+T3E68 001:155.036           MaxSize:         0x00040000
+T3E68 001:155.051           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32X030\SLM32F030KCT7.FLM
+T3E68 001:155.065           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:155.082     Device entry created:  SLM32F030KCT6
+T3E68 001:155.092       ChipInfo:
+T3E68 001:155.105         Vendor:          SoulSemi
+T3E68 001:155.117         Name:            SLM32F030KCT6
+T3E68 001:155.129         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:155.141         WorkRAMAddr:     0x20000000
+T3E68 001:155.153         WorkRAMSize:     0x00008000
+T3E68 001:155.164       FlashBankInfo:
+T3E68 001:155.176         Name:            Internal Flash
+T3E68 001:155.187         BaseAddr:        0x08000000
+T3E68 001:155.263         AlwaysPresent:   1
+T3E68 001:155.280         LoaderInfo:
+T3E68 001:155.294           Name:            Internal_Flash
+T3E68 001:155.307           MaxSize:         0x00040000
+T3E68 001:155.321           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32X030\SLM32F030KCT6.FLM
+T3E68 001:155.334           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:155.371     Device entry created:  SLM32M030RCT7
+T3E68 001:155.379       ChipInfo:
+T3E68 001:155.391         Vendor:          SoulSemi
+T3E68 001:155.403         Name:            SLM32M030RCT7
+T3E68 001:155.415         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:155.427         WorkRAMAddr:     0x20000000
+T3E68 001:155.439         WorkRAMSize:     0x00008000
+T3E68 001:155.452       FlashBankInfo:
+T3E68 001:155.465         Name:            Internal Flash
+T3E68 001:155.478         BaseAddr:        0x08000000
+T3E68 001:155.554         AlwaysPresent:   1
+T3E68 001:155.568         LoaderInfo:
+T3E68 001:155.579           Name:            Internal_Flash
+T3E68 001:155.590           MaxSize:         0x00040000
+T3E68 001:155.602           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32X030\SLM32M030RCT7.FLM
+T3E68 001:155.614           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:155.628     Device entry created:  SLM32M030RCT6
+T3E68 001:155.637       ChipInfo:
+T3E68 001:155.648         Vendor:          SoulSemi
+T3E68 001:155.660         Name:            SLM32M030RCT6
+T3E68 001:155.672         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:155.685         WorkRAMAddr:     0x20000000
+T3E68 001:155.697         WorkRAMSize:     0x00008000
+T3E68 001:155.710       FlashBankInfo:
+T3E68 001:155.725         Name:            Internal Flash
+T3E68 001:155.737         BaseAddr:        0x08000000
+T3E68 001:155.816         AlwaysPresent:   1
+T3E68 001:155.830         LoaderInfo:
+T3E68 001:155.842           Name:            Internal_Flash
+T3E68 001:155.853           MaxSize:         0x00040000
+T3E68 001:155.865           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32X030\SLM32M030RCT6.FLM
+T3E68 001:155.877           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:155.912     Device entry created:  SLM32M030CCT7
+T3E68 001:155.920       ChipInfo:
+T3E68 001:155.931         Vendor:          SoulSemi
+T3E68 001:155.943         Name:            SLM32M030CCT7
+T3E68 001:155.955         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:155.966         WorkRAMAddr:     0x20000000
+T3E68 001:155.978         WorkRAMSize:     0x00008000
+T3E68 001:155.989       FlashBankInfo:
+T3E68 001:156.001         Name:            Internal Flash
+T3E68 001:156.012         BaseAddr:        0x08000000
+T3E68 001:156.083         AlwaysPresent:   1
+T3E68 001:156.097         LoaderInfo:
+T3E68 001:156.109           Name:            Internal_Flash
+T3E68 001:156.120           MaxSize:         0x00040000
+T3E68 001:156.133           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32X030\SLM32M030CCT7.FLM
+T3E68 001:156.145           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:156.186     Device entry created:  SLM32M030CCT6
+T3E68 001:156.196       ChipInfo:
+T3E68 001:156.207         Vendor:          SoulSemi
+T3E68 001:156.219         Name:            SLM32M030CCT6
+T3E68 001:156.230         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:156.242         WorkRAMAddr:     0x20000000
+T3E68 001:156.254         WorkRAMSize:     0x00008000
+T3E68 001:156.266       FlashBankInfo:
+T3E68 001:156.277         Name:            Internal Flash
+T3E68 001:156.289         BaseAddr:        0x08000000
+T3E68 001:156.360         AlwaysPresent:   1
+T3E68 001:156.373         LoaderInfo:
+T3E68 001:156.385           Name:            Internal_Flash
+T3E68 001:156.396           MaxSize:         0x00040000
+T3E68 001:156.408           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32X030\SLM32M030CCT6.FLM
+T3E68 001:156.420           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:156.454     Device entry created:  SLM32M031RCT7
+T3E68 001:156.463       ChipInfo:
+T3E68 001:156.474         Vendor:          SoulSemi
+T3E68 001:156.486         Name:            SLM32M031RCT7
+T3E68 001:156.498         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:156.511         WorkRAMAddr:     0x20000000
+T3E68 001:156.524         WorkRAMSize:     0x00008000
+T3E68 001:156.537       FlashBankInfo:
+T3E68 001:156.549         Name:            Internal Flash
+T3E68 001:156.561         BaseAddr:        0x08000000
+T3E68 001:156.641         AlwaysPresent:   1
+T3E68 001:156.655         LoaderInfo:
+T3E68 001:156.668           Name:            Internal_Flash
+T3E68 001:156.681           MaxSize:         0x00040000
+T3E68 001:156.697           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32X030\SLM32M031RCT7.FLM
+T3E68 001:156.710           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:156.724     Device entry created:  SLM32M031RCT6
+T3E68 001:156.732       ChipInfo:
+T3E68 001:156.744         Vendor:          SoulSemi
+T3E68 001:156.755         Name:            SLM32M031RCT6
+T3E68 001:156.767         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:156.779         WorkRAMAddr:     0x20000000
+T3E68 001:156.790         WorkRAMSize:     0x00008000
+T3E68 001:156.802       FlashBankInfo:
+T3E68 001:156.813         Name:            Internal Flash
+T3E68 001:156.825         BaseAddr:        0x08000000
+T3E68 001:156.898         AlwaysPresent:   1
+T3E68 001:156.913         LoaderInfo:
+T3E68 001:156.927           Name:            Internal_Flash
+T3E68 001:156.942           MaxSize:         0x00040000
+T3E68 001:156.956           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32X030\SLM32M031RCT6.FLM
+T3E68 001:156.969           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:157.006     Device entry created:  SLM32F103VCT7
+T3E68 001:157.015       ChipInfo:
+T3E68 001:157.026         Vendor:          SoulSemi
+T3E68 001:157.037         Name:            SLM32F103VCT7
+T3E68 001:157.050         Core:            JLINK_CORE_CORTEX_M3
+T3E68 001:157.062         WorkRAMAddr:     0x20000000
+T3E68 001:157.074         WorkRAMSize:     0x00010000
+T3E68 001:157.085       FlashBankInfo:
+T3E68 001:157.097         Name:            Internal Flash
+T3E68 001:157.109         BaseAddr:        0x08000000
+T3E68 001:157.184         AlwaysPresent:   1
+T3E68 001:157.197         LoaderInfo:
+T3E68 001:157.209           Name:            Internal_Flash
+T3E68 001:157.220           MaxSize:         0x00040000
+T3E68 001:157.232           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F103\SLM32F103VCT7.FLM
+T3E68 001:157.243           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:157.276     Device entry created:  SLM32F103VCT6
+T3E68 001:157.285       ChipInfo:
+T3E68 001:157.296         Vendor:          SoulSemi
+T3E68 001:157.308         Name:            SLM32F103VCT6
+T3E68 001:157.319         Core:            JLINK_CORE_CORTEX_M3
+T3E68 001:157.331         WorkRAMAddr:     0x20000000
+T3E68 001:157.349         WorkRAMSize:     0x00010000
+T3E68 001:157.362       FlashBankInfo:
+T3E68 001:157.373         Name:            Internal Flash
+T3E68 001:157.385         BaseAddr:        0x08000000
+T3E68 001:157.457         AlwaysPresent:   1
+T3E68 001:157.470         LoaderInfo:
+T3E68 001:157.482           Name:            Internal_Flash
+T3E68 001:157.493           MaxSize:         0x00040000
+T3E68 001:157.505           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F103\SLM32F103VCT6.FLM
+T3E68 001:157.517           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:157.550     Device entry created:  SLM32F103RCT7
+T3E68 001:157.558       ChipInfo:
+T3E68 001:157.570         Vendor:          SoulSemi
+T3E68 001:157.581         Name:            SLM32F103RCT7
+T3E68 001:157.593         Core:            JLINK_CORE_CORTEX_M3
+T3E68 001:157.605         WorkRAMAddr:     0x20000000
+T3E68 001:157.616         WorkRAMSize:     0x00010000
+T3E68 001:157.628       FlashBankInfo:
+T3E68 001:157.639         Name:            Internal Flash
+T3E68 001:157.651         BaseAddr:        0x08000000
+T3E68 001:157.724         AlwaysPresent:   1
+T3E68 001:157.737         LoaderInfo:
+T3E68 001:157.749           Name:            Internal_Flash
+T3E68 001:157.760           MaxSize:         0x00040000
+T3E68 001:157.773           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F103\SLM32F103RCT7.FLM
+T3E68 001:157.785           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:157.819     Device entry created:  SLM32F103RCT6
+T3E68 001:157.828       ChipInfo:
+T3E68 001:157.839         Vendor:          SoulSemi
+T3E68 001:157.851         Name:            SLM32F103RCT6
+T3E68 001:157.863         Core:            JLINK_CORE_CORTEX_M3
+T3E68 001:157.874         WorkRAMAddr:     0x20000000
+T3E68 001:157.886         WorkRAMSize:     0x00010000
+T3E68 001:157.897       FlashBankInfo:
+T3E68 001:157.909         Name:            Internal Flash
+T3E68 001:157.920         BaseAddr:        0x08000000
+T3E68 001:157.993         AlwaysPresent:   1
+T3E68 001:158.006         LoaderInfo:
+T3E68 001:158.018           Name:            Internal_Flash
+T3E68 001:158.029           MaxSize:         0x00040000
+T3E68 001:158.042           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F103\SLM32F103RCT6.FLM
+T3E68 001:158.053           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:158.088     Device entry created:  SLM32F103CCT7
+T3E68 001:158.097       ChipInfo:
+T3E68 001:158.110         Vendor:          SoulSemi
+T3E68 001:158.122         Name:            SLM32F103CCT7
+T3E68 001:158.135         Core:            JLINK_CORE_CORTEX_M3
+T3E68 001:158.147         WorkRAMAddr:     0x20000000
+T3E68 001:158.158         WorkRAMSize:     0x00010000
+T3E68 001:158.170       FlashBankInfo:
+T3E68 001:158.183         Name:            Internal Flash
+T3E68 001:158.197         BaseAddr:        0x08000000
+T3E68 001:158.274         AlwaysPresent:   1
+T3E68 001:158.288         LoaderInfo:
+T3E68 001:158.299           Name:            Internal_Flash
+T3E68 001:158.310           MaxSize:         0x00040000
+T3E68 001:158.323           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F103\SLM32F103CCT7.FLM
+T3E68 001:158.334           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:158.368     Device entry created:  SLM32F103CCT6
+T3E68 001:158.377       ChipInfo:
+T3E68 001:158.388         Vendor:          SoulSemi
+T3E68 001:158.399         Name:            SLM32F103CCT6
+T3E68 001:158.411         Core:            JLINK_CORE_CORTEX_M3
+T3E68 001:158.423         WorkRAMAddr:     0x20000000
+T3E68 001:158.434         WorkRAMSize:     0x00010000
+T3E68 001:158.446       FlashBankInfo:
+T3E68 001:158.457         Name:            Internal Flash
+T3E68 001:158.469         BaseAddr:        0x08000000
+T3E68 001:158.540         AlwaysPresent:   1
+T3E68 001:158.553         LoaderInfo:
+T3E68 001:158.564           Name:            Internal_Flash
+T3E68 001:158.575           MaxSize:         0x00040000
+T3E68 001:158.593           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F103\SLM32F103CCT6.FLM
+T3E68 001:158.604           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:158.638     Device entry created:  SLM32M103CCT7
+T3E68 001:158.647       ChipInfo:
+T3E68 001:158.659         Vendor:          SoulSemi
+T3E68 001:158.670         Name:            SLM32M103CCT7
+T3E68 001:158.682         Core:            JLINK_CORE_CORTEX_M3
+T3E68 001:158.695         WorkRAMAddr:     0x20000000
+T3E68 001:158.707         WorkRAMSize:     0x00010000
+T3E68 001:158.719       FlashBankInfo:
+T3E68 001:158.730         Name:            Internal Flash
+T3E68 001:158.743         BaseAddr:        0x08000000
+T3E68 001:158.818         AlwaysPresent:   1
+T3E68 001:158.831         LoaderInfo:
+T3E68 001:158.843           Name:            Internal_Flash
+T3E68 001:158.854           MaxSize:         0x00040000
+T3E68 001:158.866           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F103\SLM32M103CCT7.FLM
+T3E68 001:158.878           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:158.893     Device entry created:  SLM32M103CCT6
+T3E68 001:158.901       ChipInfo:
+T3E68 001:158.912         Vendor:          SoulSemi
+T3E68 001:158.924         Name:            SLM32M103CCT6
+T3E68 001:158.935         Core:            JLINK_CORE_CORTEX_M3
+T3E68 001:158.947         WorkRAMAddr:     0x20000000
+T3E68 001:158.959         WorkRAMSize:     0x00010000
+T3E68 001:158.970       FlashBankInfo:
+T3E68 001:158.981         Name:            Internal Flash
+T3E68 001:158.993         BaseAddr:        0x08000000
+T3E68 001:159.064         AlwaysPresent:   1
+T3E68 001:159.077         LoaderInfo:
+T3E68 001:159.089           Name:            Internal_Flash
+T3E68 001:159.100           MaxSize:         0x00040000
+T3E68 001:159.112           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F103\SLM32M103CCT6.FLM
+T3E68 001:159.124           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:159.161     Device entry created:  SLM32F1XA001CZT8
+T3E68 001:159.169       ChipInfo:
+T3E68 001:159.180         Vendor:          SoulSemi
+T3E68 001:159.192         Name:            SLM32F1XA001CZT8
+T3E68 001:159.204         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:159.216         WorkRAMAddr:     0x20000000
+T3E68 001:159.227         WorkRAMSize:     0x00004000
+T3E68 001:159.239       FlashBankInfo:
+T3E68 001:159.251         Name:            Internal Flash
+T3E68 001:159.263         BaseAddr:        0x01000000
+T3E68 001:159.345         AlwaysPresent:   1
+T3E68 001:159.359         LoaderInfo:
+T3E68 001:159.371           Name:            Internal_Flash
+T3E68 001:159.382           MaxSize:         0x00020000
+T3E68 001:159.394           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001CZT8.FLM
+T3E68 001:159.405           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:159.417       FlashBankInfo:
+T3E68 001:159.429         Name:            Internal DFlash
+T3E68 001:159.442         BaseAddr:        0x05000000
+T3E68 001:159.520         AlwaysPresent:   1
+T3E68 001:159.534         LoaderInfo:
+T3E68 001:159.548           Name:            Internal_DFlash
+T3E68 001:159.561           MaxSize:         0x00010000
+T3E68 001:159.576           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001CZT8_DFLASH.FLM
+T3E68 001:159.588           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:159.625     Device entry created:  SLM32F1XA001CZT7
+T3E68 001:159.633       ChipInfo:
+T3E68 001:159.644         Vendor:          SoulSemi
+T3E68 001:159.657         Name:            SLM32F1XA001CZT7
+T3E68 001:159.671         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:159.685         WorkRAMAddr:     0x20000000
+T3E68 001:159.698         WorkRAMSize:     0x00004000
+T3E68 001:159.712       FlashBankInfo:
+T3E68 001:159.725         Name:            Internal Flash
+T3E68 001:159.738         BaseAddr:        0x01000000
+T3E68 001:159.878         AlwaysPresent:   1
+T3E68 001:159.892         LoaderInfo:
+T3E68 001:159.903           Name:            Internal_Flash
+T3E68 001:159.915           MaxSize:         0x00020000
+T3E68 001:159.927           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001CZT7.FLM
+T3E68 001:159.938           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:159.950       FlashBankInfo:
+T3E68 001:159.961         Name:            Internal DFlash
+T3E68 001:159.973         BaseAddr:        0x05000000
+T3E68 001:160.044         AlwaysPresent:   1
+T3E68 001:160.057         LoaderInfo:
+T3E68 001:160.069           Name:            Internal_DFlash
+T3E68 001:160.082           MaxSize:         0x00010000
+T3E68 001:160.094           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001CZT7_DFLASH.FLM
+T3E68 001:160.106           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:160.141     Device entry created:  SLM32F1XA001CZT6
+T3E68 001:160.150       ChipInfo:
+T3E68 001:160.161         Vendor:          SoulSemi
+T3E68 001:160.173         Name:            SLM32F1XA001CZT6
+T3E68 001:160.185         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:160.197         WorkRAMAddr:     0x20000000
+T3E68 001:160.208         WorkRAMSize:     0x00004000
+T3E68 001:160.220       FlashBankInfo:
+T3E68 001:160.231         Name:            Internal Flash
+T3E68 001:160.243         BaseAddr:        0x01000000
+T3E68 001:160.319         AlwaysPresent:   1
+T3E68 001:160.332         LoaderInfo:
+T3E68 001:160.344           Name:            Internal_Flash
+T3E68 001:160.355           MaxSize:         0x00020000
+T3E68 001:160.367           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001CZT6.FLM
+T3E68 001:160.379           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:160.390       FlashBankInfo:
+T3E68 001:160.401         Name:            Internal DFlash
+T3E68 001:160.413         BaseAddr:        0x05000000
+T3E68 001:160.483         AlwaysPresent:   1
+T3E68 001:160.496         LoaderInfo:
+T3E68 001:160.508           Name:            Internal_DFlash
+T3E68 001:160.519           MaxSize:         0x00010000
+T3E68 001:160.531           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001CZT6_DFLASH.FLM
+T3E68 001:160.543           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:160.578     Device entry created:  SLM32F1XA001KZT8
+T3E68 001:160.586       ChipInfo:
+T3E68 001:160.598         Vendor:          SoulSemi
+T3E68 001:160.609         Name:            SLM32F1XA001KZT8
+T3E68 001:160.621         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:160.633         WorkRAMAddr:     0x20000000
+T3E68 001:160.645         WorkRAMSize:     0x00004000
+T3E68 001:160.656       FlashBankInfo:
+T3E68 001:160.667         Name:            Internal Flash
+T3E68 001:160.679         BaseAddr:        0x01000000
+T3E68 001:160.758         AlwaysPresent:   1
+T3E68 001:160.771         LoaderInfo:
+T3E68 001:160.783           Name:            Internal_Flash
+T3E68 001:160.794           MaxSize:         0x00020000
+T3E68 001:160.806           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001KZT8.FLM
+T3E68 001:160.818           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:160.829       FlashBankInfo:
+T3E68 001:160.840         Name:            Internal DFlash
+T3E68 001:160.852         BaseAddr:        0x05000000
+T3E68 001:160.922         AlwaysPresent:   1
+T3E68 001:160.935         LoaderInfo:
+T3E68 001:160.947           Name:            Internal_DFlash
+T3E68 001:160.959           MaxSize:         0x00010000
+T3E68 001:160.970           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001KZT8_DFLASH.FLM
+T3E68 001:160.982           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:160.996     Device entry created:  SLM32F1XA001KZT7
+T3E68 001:161.004       ChipInfo:
+T3E68 001:161.022         Vendor:          SoulSemi
+T3E68 001:161.034         Name:            SLM32F1XA001KZT7
+T3E68 001:161.046         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:161.057         WorkRAMAddr:     0x20000000
+T3E68 001:161.069         WorkRAMSize:     0x00004000
+T3E68 001:161.081       FlashBankInfo:
+T3E68 001:161.092         Name:            Internal Flash
+T3E68 001:161.104         BaseAddr:        0x01000000
+T3E68 001:161.179         AlwaysPresent:   1
+T3E68 001:161.192         LoaderInfo:
+T3E68 001:161.205           Name:            Internal_Flash
+T3E68 001:161.217           MaxSize:         0x00020000
+T3E68 001:161.229           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001KZT7.FLM
+T3E68 001:161.241           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:161.252       FlashBankInfo:
+T3E68 001:161.264         Name:            Internal DFlash
+T3E68 001:161.275         BaseAddr:        0x05000000
+T3E68 001:161.356         AlwaysPresent:   1
+T3E68 001:161.370         LoaderInfo:
+T3E68 001:161.382           Name:            Internal_DFlash
+T3E68 001:161.394           MaxSize:         0x00010000
+T3E68 001:161.406           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001KZT7_DFLASH.FLM
+T3E68 001:161.417           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:161.455     Device entry created:  SLM32F1XA001KZT6
+T3E68 001:161.463       ChipInfo:
+T3E68 001:161.474         Vendor:          SoulSemi
+T3E68 001:161.486         Name:            SLM32F1XA001KZT6
+T3E68 001:161.498         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:161.510         WorkRAMAddr:     0x20000000
+T3E68 001:161.522         WorkRAMSize:     0x00004000
+T3E68 001:161.535       FlashBankInfo:
+T3E68 001:161.548         Name:            Internal Flash
+T3E68 001:161.562         BaseAddr:        0x01000000
+T3E68 001:161.636         AlwaysPresent:   1
+T3E68 001:161.650         LoaderInfo:
+T3E68 001:161.662           Name:            Internal_Flash
+T3E68 001:161.675           MaxSize:         0x00020000
+T3E68 001:161.690           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001KZT6.FLM
+T3E68 001:161.703           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:161.717       FlashBankInfo:
+T3E68 001:161.731         Name:            Internal DFlash
+T3E68 001:161.746         BaseAddr:        0x05000000
+T3E68 001:161.836         AlwaysPresent:   1
+T3E68 001:161.852         LoaderInfo:
+T3E68 001:161.865           Name:            Internal_DFlash
+T3E68 001:161.879           MaxSize:         0x00010000
+T3E68 001:161.894           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA001KZT6_DFLASH.FLM
+T3E68 001:161.908           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:161.947     Device entry created:  SLM32F1XA606RZT8
+T3E68 001:161.955       ChipInfo:
+T3E68 001:161.967         Vendor:          SoulSemi
+T3E68 001:161.978         Name:            SLM32F1XA606RZT8
+T3E68 001:161.990         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:162.003         WorkRAMAddr:     0x20000000
+T3E68 001:162.016         WorkRAMSize:     0x00004000
+T3E68 001:162.028       FlashBankInfo:
+T3E68 001:162.039         Name:            Internal Flash
+T3E68 001:162.051         BaseAddr:        0x01000000
+T3E68 001:162.130         AlwaysPresent:   1
+T3E68 001:162.144         LoaderInfo:
+T3E68 001:162.157           Name:            Internal_Flash
+T3E68 001:162.169           MaxSize:         0x00030000
+T3E68 001:162.183           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA606RZT8.FLM
+T3E68 001:162.196           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:162.212     Device entry created:  SLM32F1XA604RZT8
+T3E68 001:162.221       ChipInfo:
+T3E68 001:162.234         Vendor:          SoulSemi
+T3E68 001:162.246         Name:            SLM32F1XA604RZT8
+T3E68 001:162.258         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:162.274         WorkRAMAddr:     0x20000000
+T3E68 001:162.286         WorkRAMSize:     0x00004000
+T3E68 001:162.297       FlashBankInfo:
+T3E68 001:162.309         Name:            Internal Flash
+T3E68 001:162.321         BaseAddr:        0x01000000
+T3E68 001:162.401         AlwaysPresent:   1
+T3E68 001:162.415         LoaderInfo:
+T3E68 001:162.426           Name:            Internal_Flash
+T3E68 001:162.438           MaxSize:         0x00030000
+T3E68 001:162.450           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA604RZT8.FLM
+T3E68 001:162.462           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:162.498     Device entry created:  SLM32F1XA602RZT8
+T3E68 001:162.507       ChipInfo:
+T3E68 001:162.519         Vendor:          SoulSemi
+T3E68 001:162.530         Name:            SLM32F1XA602RZT8
+T3E68 001:162.542         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:162.554         WorkRAMAddr:     0x20000000
+T3E68 001:162.565         WorkRAMSize:     0x00004000
+T3E68 001:162.577       FlashBankInfo:
+T3E68 001:162.588         Name:            Internal Flash
+T3E68 001:162.600         BaseAddr:        0x01000000
+T3E68 001:162.673         AlwaysPresent:   1
+T3E68 001:162.690         LoaderInfo:
+T3E68 001:162.702           Name:            Internal_Flash
+T3E68 001:162.715           MaxSize:         0x00030000
+T3E68 001:162.729           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA602RZT8.FLM
+T3E68 001:162.743           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:162.783     Device entry created:  SLM32F1XA002CCT8
+T3E68 001:162.793       ChipInfo:
+T3E68 001:162.804         Vendor:          SoulSemi
+T3E68 001:162.816         Name:            SLM32F1XA002CCT8
+T3E68 001:162.829         Core:            JLINK_CORE_CORTEX_M3
+T3E68 001:162.843         WorkRAMAddr:     0x20000000
+T3E68 001:162.856         WorkRAMSize:     0x00010000
+T3E68 001:162.869       FlashBankInfo:
+T3E68 001:162.882         Name:            Internal Flash
+T3E68 001:162.895         BaseAddr:        0x08000000
+T3E68 001:162.980         AlwaysPresent:   1
+T3E68 001:162.994         LoaderInfo:
+T3E68 001:163.006           Name:            Internal_Flash
+T3E68 001:163.017           MaxSize:         0x00040000
+T3E68 001:163.029           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XA\SLM32F1XA002CCT8.FLM
+T3E68 001:163.041           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:163.079     Device entry created:  SLM32F1XL902FCU8
+T3E68 001:163.088       ChipInfo:
+T3E68 001:163.099         Vendor:          SoulSemi
+T3E68 001:163.112         Name:            SLM32F1XL902FCU8
+T3E68 001:163.126         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:163.140         WorkRAMAddr:     0x20000000
+T3E68 001:163.154         WorkRAMSize:     0x00008000
+T3E68 001:163.168       FlashBankInfo:
+T3E68 001:163.180         Name:            Internal Flash
+T3E68 001:163.193         BaseAddr:        0x08000000
+T3E68 001:163.270         AlwaysPresent:   1
+T3E68 001:163.286         LoaderInfo:
+T3E68 001:163.299           Name:            Internal_Flash
+T3E68 001:163.311           MaxSize:         0x0003F800
+T3E68 001:163.324           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XL\SLM32F1XL902FCU8.FLM
+T3E68 001:163.337           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:163.352     Device entry created:  SLM32F1XL903FCU8
+T3E68 001:163.360       ChipInfo:
+T3E68 001:163.372         Vendor:          SoulSemi
+T3E68 001:163.384         Name:            SLM32F1XL903FCU8
+T3E68 001:163.397         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:163.410         WorkRAMAddr:     0x20000000
+T3E68 001:163.423         WorkRAMSize:     0x00008000
+T3E68 001:163.436       FlashBankInfo:
+T3E68 001:163.449         Name:            Internal Flash
+T3E68 001:163.461         BaseAddr:        0x08000000
+T3E68 001:163.538         AlwaysPresent:   1
+T3E68 001:163.557         LoaderInfo:
+T3E68 001:163.573           Name:            Internal_Flash
+T3E68 001:163.586           MaxSize:         0x0003F800
+T3E68 001:163.599           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XL\SLM32F1XL903FCU8.FLM
+T3E68 001:163.611           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:163.627     Device entry created:  SLM32F1XL002F8U8
+T3E68 001:163.638       ChipInfo:
+T3E68 001:163.651         Vendor:          SoulSemi
+T3E68 001:163.665         Name:            SLM32F1XL002F8U8
+T3E68 001:163.678         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:163.692         WorkRAMAddr:     0x20000000
+T3E68 001:163.704         WorkRAMSize:     0x00001000
+T3E68 001:163.716       FlashBankInfo:
+T3E68 001:163.728         Name:            Internal Flash
+T3E68 001:163.742         BaseAddr:        0x01000000
+T3E68 001:163.833         AlwaysPresent:   1
+T3E68 001:163.848         LoaderInfo:
+T3E68 001:163.860           Name:            Internal_Flash
+T3E68 001:163.873           MaxSize:         0x00010000
+T3E68 001:163.887           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XL\SLM32F1XL002F8U8.FLM
+T3E68 001:163.900           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:163.943     Device entry created:  SLM32F1XM606CZU8
+T3E68 001:163.954       ChipInfo:
+T3E68 001:163.967         Vendor:          SoulSemi
+T3E68 001:163.980         Name:            SLM32F1XM606CZU8
+T3E68 001:163.993         Core:            JLINK_CORE_CORTEX_M4
+T3E68 001:164.007         WorkRAMAddr:     0x20000000
+T3E68 001:164.021         WorkRAMSize:     0x00001F00
+T3E68 001:164.035       FlashBankInfo:
+T3E68 001:164.048         Name:            Internal Flash
+T3E68 001:164.061         BaseAddr:        0x01000000
+T3E68 001:164.144         AlwaysPresent:   1
+T3E68 001:164.159         LoaderInfo:
+T3E68 001:164.170           Name:            Internal_Flash
+T3E68 001:164.182           MaxSize:         0x00020000
+T3E68 001:164.194           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XM\SLM32F1XM606CZU8.FLM
+T3E68 001:164.206           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:164.219       FlashBankInfo:
+T3E68 001:164.231         Name:            Internal DFlash
+T3E68 001:164.244         BaseAddr:        0x05000000
+T3E68 001:164.326         AlwaysPresent:   1
+T3E68 001:164.342         LoaderInfo:
+T3E68 001:164.356           Name:            Internal_DFlash
+T3E68 001:164.369           MaxSize:         0x00010000
+T3E68 001:164.383           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XM\SLM32F1XM_DFLASH_64.FLM
+T3E68 001:164.396           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:164.413     Device entry created:  SLM32F1XM706
+T3E68 001:164.422       ChipInfo:
+T3E68 001:164.435         Vendor:          SoulSemi
+T3E68 001:164.449         Name:            SLM32F1XM706
+T3E68 001:164.465         Core:            JLINK_CORE_CORTEX_M4
+T3E68 001:164.479         WorkRAMAddr:     0x20000000
+T3E68 001:164.493         WorkRAMSize:     0x00007F00
+T3E68 001:164.506       FlashBankInfo:
+T3E68 001:164.518         Name:            Internal Flash
+T3E68 001:164.531         BaseAddr:        0x01000000
+T3E68 001:164.620         AlwaysPresent:   1
+T3E68 001:164.635         LoaderInfo:
+T3E68 001:164.648           Name:            Internal_Flash
+T3E68 001:164.661           MaxSize:         0x00020000
+T3E68 001:164.674           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XM706\SLM32F1XM706.FLM
+T3E68 001:164.686           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:164.699       FlashBankInfo:
+T3E68 001:164.715         Name:            Internal DFlash
+T3E68 001:164.729         BaseAddr:        0x05000000
+T3E68 001:164.814         AlwaysPresent:   1
+T3E68 001:164.829         LoaderInfo:
+T3E68 001:164.844           Name:            Internal_DFlash
+T3E68 001:164.858           MaxSize:         0x00010000
+T3E68 001:164.872           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XM706\SLM32F1XM706_DFLASH_64.FLM
+T3E68 001:164.893           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:164.910     Device entry created:  SLM32F1XU
+T3E68 001:164.920       ChipInfo:
+T3E68 001:164.934         Vendor:          SoulSemi
+T3E68 001:164.948         Name:            SLM32F1XU
+T3E68 001:164.963         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:164.977         WorkRAMAddr:     0x20000000
+T3E68 001:164.992         WorkRAMSize:     0x00002000
+T3E68 001:165.006       FlashBankInfo:
+T3E68 001:165.020         Name:            Internal Flash
+T3E68 001:165.034         BaseAddr:        0x01000000
+T3E68 001:165.125         AlwaysPresent:   1
+T3E68 001:165.141         LoaderInfo:
+T3E68 001:165.155           Name:            Internal_Flash
+T3E68 001:165.169           MaxSize:         0x00010000
+T3E68 001:165.184           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XU\SLM32F1XU_64.FLM
+T3E68 001:165.198           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:165.215     Device entry created:  SLM32F1XU6
+T3E68 001:165.224       ChipInfo:
+T3E68 001:165.238         Vendor:          SoulSemi
+T3E68 001:165.252         Name:            SLM32F1XU6
+T3E68 001:165.268         Core:            JLINK_CORE_CORTEX_M4
+T3E68 001:165.282         WorkRAMAddr:     0x20000000
+T3E68 001:165.297         WorkRAMSize:     0x00002000
+T3E68 001:165.310       FlashBankInfo:
+T3E68 001:165.323         Name:            Internal Flash
+T3E68 001:165.338         BaseAddr:        0x01000000
+T3E68 001:165.436         AlwaysPresent:   1
+T3E68 001:165.454         LoaderInfo:
+T3E68 001:165.468           Name:            Internal_Flash
+T3E68 001:165.483           MaxSize:         0x00010000
+T3E68 001:165.498           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XU6\SLM32F1XU6.FLM
+T3E68 001:165.513           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:165.532     Device entry created:  SLM32F1XL012B8D8
+T3E68 001:165.542       ChipInfo:
+T3E68 001:165.556         Vendor:          SoulSemi
+T3E68 001:165.570         Name:            SLM32F1XL012B8D8
+T3E68 001:165.584         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:165.598         WorkRAMAddr:     0x20000000
+T3E68 001:165.612         WorkRAMSize:     0x00001F00
+T3E68 001:165.626       FlashBankInfo:
+T3E68 001:165.642         Name:            Internal Flash
+T3E68 001:165.656         BaseAddr:        0x01000000
+T3E68 001:165.755         AlwaysPresent:   1
+T3E68 001:165.771         LoaderInfo:
+T3E68 001:165.785           Name:            Internal_Flash
+T3E68 001:165.799           MaxSize:         0x0000FC00
+T3E68 001:165.814           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32F1XL012\SLM32F1XL012B8D8.FLM
+T3E68 001:165.828           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:165.879     Device entry created:  SLM32MC081C8T8
+T3E68 001:165.889       ChipInfo:
+T3E68 001:165.903         Vendor:          SoulSemi
+T3E68 001:165.916         Name:            SLM32MC081C8T8
+T3E68 001:165.931         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:165.945         WorkRAMAddr:     0x20000000
+T3E68 001:165.959         WorkRAMSize:     0x00001F00
+T3E68 001:165.972       FlashBankInfo:
+T3E68 001:165.986         Name:            Internal Flash
+T3E68 001:166.001         BaseAddr:        0x01000000
+T3E68 001:166.105         AlwaysPresent:   1
+T3E68 001:166.122         LoaderInfo:
+T3E68 001:166.136           Name:            Internal_Flash
+T3E68 001:166.150           MaxSize:         0x00010000
+T3E68 001:166.165           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32MC081\SLM32MC081C8T8.FLM
+T3E68 001:166.178           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:166.198     Device entry created:  SLM32MC054F8U8
+T3E68 001:166.207       ChipInfo:
+T3E68 001:166.221         Vendor:          SoulSemi
+T3E68 001:166.235         Name:            SLM32MC054F8U8
+T3E68 001:166.256         Core:            JLINK_CORE_CORTEX_M0
+T3E68 001:166.271         WorkRAMAddr:     0x20000000
+T3E68 001:166.286         WorkRAMSize:     0x00001000
+T3E68 001:166.300       FlashBankInfo:
+T3E68 001:166.315         Name:            Internal Flash
+T3E68 001:166.329         BaseAddr:        0x01000000
+T3E68 001:166.423         AlwaysPresent:   1
+T3E68 001:166.439         LoaderInfo:
+T3E68 001:166.453           Name:            Internal_Flash
+T3E68 001:166.468           MaxSize:         0x00008000
+T3E68 001:166.482           Loader:          C:\Program Files\SEGGER\JLink_V798\Devices\SoulSemi\SLM32MC054\SLM32MC054_32.FLM
+T3E68 001:166.496           LoaderType:      FLASH_ALGO_TYPE_OPEN
+T3E68 001:170.329   Flash bank @ 0x00000000: SFL: Parsing sectorization info from ELF file
+T3E68 001:170.360     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000200, .SectorStartAddr = 0x00000000
+T3E68 001:170.376   OFL: Init() present @ offset 0x00000009
+T3E68 001:170.390   OFL: UnInit() present @ offset 0x0000007F
+T3E68 001:170.404   OFL: EraseSector() present @ offset 0x000000E9
+T3E68 001:170.417   OFL: ProgramPage() present @ offset 0x00000195
+T3E68 001:170.431   OFL: EraseChip() present @ offset 0x00000147
+T3E68 001:170.445   OFL: BlankCheck() N/A
+T3E68 001:170.459   OFL: Verify() present @ offset 0x000001FB
+T3E68 001:170.472   OFL: SEGGER_FL_Erase() N/A
+T3E68 001:170.485   OFL: SEGGER_OPEN_Erase() N/A
+T3E68 001:170.497   OFL: SEGGER_FL_Program() N/A
+T3E68 001:170.511   OFL: SEGGER_OPEN_Program() N/A
+T3E68 001:170.524   OFL: SEGGER_FL_Read() N/A
+T3E68 001:170.537   OFL: SEGGER_OPEN_Read() N/A
+T3E68 001:170.551   OFL: SEGGER_FL_CalcCRC() N/A
+T3E68 001:170.564   OFL: SEGGER_OPEN_CalcCRC() N/A
+T3E68 001:170.578   OFL: SEGGER_FL_Start() N/A
+T3E68 001:170.591   OFL: SEGGER_OPEN_Start() N/A
+T3E68 001:170.604   OFL: SEGGER_FL_GetFlashInfo() N/A
+T3E68 001:170.617   OFL: SEGGER_OPEN_GetFlashInfo() N/A
+T3E68 001:170.630   OFL: SEGGER_FL_Verify() N/A
+T3E68 001:170.646   OFL: SEGGER_FL_CheckBlank() N/A
+T3E68 001:170.659   OFL: SEGGER_FL_Prepare() N/A
+T3E68 001:170.673   OFL: SEGGER_FL_Restore() N/A
+T3E68 001:170.686   OFL: SEGGER_FL_EraseChip() N/A
+T3E68 001:170.700   OFL var <SEGGER_FL_GoIntEn>: N/A
+T3E68 001:170.789   Device "CW32L010X8" selected.
+T3E68 001:171.647 - 1105.738ms returns 0x00
+T3E68 001:172.158 JLINK_ExecCommand("Device = CW32L010F8", ...). 
+T3E68 001:173.183   Flash bank @ 0x00000000: SFL: Parsing sectorization info from ELF file
+T3E68 001:173.211     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000200, .SectorStartAddr = 0x00000000
+T3E68 001:173.231   OFL: Init() present @ offset 0x00000009
+T3E68 001:173.249   OFL: UnInit() present @ offset 0x0000007F
+T3E68 001:173.267   OFL: EraseSector() present @ offset 0x000000E9
+T3E68 001:173.284   OFL: ProgramPage() present @ offset 0x00000195
+T3E68 001:173.301   OFL: EraseChip() present @ offset 0x00000147
+T3E68 001:173.318   OFL: BlankCheck() N/A
+T3E68 001:173.335   OFL: Verify() present @ offset 0x000001FB
+T3E68 001:173.352   OFL: SEGGER_FL_Erase() N/A
+T3E68 001:173.369   OFL: SEGGER_OPEN_Erase() N/A
+T3E68 001:173.386   OFL: SEGGER_FL_Program() N/A
+T3E68 001:173.403   OFL: SEGGER_OPEN_Program() N/A
+T3E68 001:173.420   OFL: SEGGER_FL_Read() N/A
+T3E68 001:173.437   OFL: SEGGER_OPEN_Read() N/A
+T3E68 001:173.453   OFL: SEGGER_FL_CalcCRC() N/A
+T3E68 001:173.470   OFL: SEGGER_OPEN_CalcCRC() N/A
+T3E68 001:173.485   OFL: SEGGER_FL_Start() N/A
+T3E68 001:173.496   OFL: SEGGER_OPEN_Start() N/A
+T3E68 001:173.508   OFL: SEGGER_FL_GetFlashInfo() N/A
+T3E68 001:173.520   OFL: SEGGER_OPEN_GetFlashInfo() N/A
+T3E68 001:173.532   OFL: SEGGER_FL_Verify() N/A
+T3E68 001:173.544   OFL: SEGGER_FL_CheckBlank() N/A
+T3E68 001:173.556   OFL: SEGGER_FL_Prepare() N/A
+T3E68 001:173.567   OFL: SEGGER_FL_Restore() N/A
+T3E68 001:173.579   OFL: SEGGER_FL_EraseChip() N/A
+T3E68 001:173.590   OFL var <SEGGER_FL_GoIntEn>: N/A
+T3E68 001:173.643   Device "CW32L010X8" selected.
+T3E68 001:175.369 - 3.169ms returns 0x00
+T3E68 001:175.418 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T3E68 001:175.457   ERROR: Unknown command
+T3E68 001:175.480 - 0.029ms returns 0x01
+T3E68 001:175.519 JLINK_GetHardwareVersion()
+T3E68 001:175.539 - 0.034ms returns 94000
+T3E68 001:175.557 JLINK_GetDLLVersion()
+T3E68 001:175.573 - 0.015ms returns 79800
+T3E68 001:175.593 JLINK_GetOEMString(...)
+T3E68 001:175.612 JLINK_GetFirmwareString(...)
+T3E68 001:175.628 - 0.016ms
+T3E68 001:175.713 JLINK_GetDLLVersion()
+T3E68 001:175.730 - 0.016ms returns 79800
+T3E68 001:175.748 JLINK_GetCompileDateTime()
+T3E68 001:175.762 - 0.015ms
+T3E68 001:175.794 JLINK_GetFirmwareString(...)
+T3E68 001:175.809 - 0.015ms
+T3E68 001:175.839 JLINK_GetHardwareVersion()
+T3E68 001:175.854 - 0.015ms returns 94000
+T3E68 001:175.880 JLINK_GetSN()
+T3E68 001:175.896 - 0.015ms returns 69408947
+T3E68 001:175.921 JLINK_GetOEMString(...)
+T3E68 001:175.957 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T3E68 001:177.292 - 1.334ms returns 0x00
+T3E68 001:177.336 JLINK_HasError()
+T3E68 001:177.377 JLINK_SetSpeed(1000)
+T3E68 001:177.612 - 0.237ms
+T3E68 001:177.670 JLINK_GetId()
+T3E68 001:179.786   Found SW-DP with ID 0x0BC11477
+T3E68 001:186.036   DPIDR: 0x0BC11477
+T3E68 001:186.132   CoreSight SoC-400 or earlier
+T3E68 001:186.178   Scanning AP map to find all available APs
+T3E68 001:188.051   AP[1]: Stopped AP scan as end of AP map has been reached
+T3E68 001:188.086   AP[0]: AHB-AP (IDR: 0x04770031)
+T3E68 001:188.245   Iterating through AP map to find AHB-AP to use
+T3E68 001:190.288   AP[0]: Core found
+T3E68 001:190.347   AP[0]: AHB-AP ROM base: 0xE00FF000
+T3E68 001:191.373   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T3E68 001:191.453   Found Cortex-M0 r0p1, Little endian.
+T3E68 001:192.555   -- Max. mem block: 0x00010C40
+T3E68 001:193.665   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 001:194.779   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3E68 001:195.863   CPU_ReadMem(4 bytes @ 0xE0002000)
+T3E68 001:196.923   FPUnit: 4 code (BP) slots and 0 literal slots
+T3E68 001:196.983   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T3E68 001:197.928   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 001:199.016   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3E68 001:200.060   CPU_WriteMem(4 bytes @ 0xE0001000)
+T3E68 001:201.108   CoreSight components:
+T3E68 001:201.174   ROMTbl[0] @ E00FF000
+T3E68 001:201.203   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T3E68 001:203.240   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T3E68 001:204.843   [0][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T3E68 001:204.923   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T3E68 001:206.457   [0][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T3E68 001:206.519   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T3E68 001:208.094   [0][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T3E68 001:208.862 - 31.188ms returns 0x0BC11477
+T3E68 001:208.955 JLINK_GetDLLVersion()
+T3E68 001:208.977 - 0.021ms returns 79800
+T3E68 001:209.001 JLINK_CORE_GetFound()
+T3E68 001:209.023 - 0.021ms returns 0x60000FF
+T3E68 001:209.321 JLINK_GetDebugInfo(0x100 = JLINKARM_ROM_TABLE_ADDR_INDEX)
+T3E68 001:209.397   Value=0xE00FF000
+T3E68 001:209.427 - 0.107ms returns 0
+T3E68 001:209.499 JLINK_GetDebugInfo(0x100 = JLINKARM_ROM_TABLE_ADDR_INDEX)
+T3E68 001:209.521   Value=0xE00FF000
+T3E68 001:209.548 - 0.050ms returns 0
+T3E68 001:209.572 JLINK_GetDebugInfo(0x101 = JLINKARM_DEBUG_INFO_ETM_ADDR_INDEX)
+T3E68 001:209.588   Value=0x00000000
+T3E68 001:209.612 - 0.042ms returns 0
+T3E68 001:209.652 JLINK_ReadMemEx(0xE0041FF0, 0x10 Bytes, Flags = 0x02000004)
+T3E68 001:209.704   CPU_ReadMem(16 bytes @ 0xE0041FF0)
+T3E68 001:210.930   Data:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+T3E68 001:211.033 - 1.381ms returns 16 (0x10)
+T3E68 001:211.062 JLINK_GetDebugInfo(0x102 = JLINKARM_DEBUG_INFO_MTB_ADDR_INDEX)
+T3E68 001:211.083   Value=0x00000000
+T3E68 001:211.105 - 0.044ms returns 0
+T3E68 001:211.124 JLINK_GetDebugInfo(0x103 = JLINKARM_DEBUG_INFO_TPIU_ADDR_INDEX)
+T3E68 001:211.139   Value=0x00000000
+T3E68 001:211.161 - 0.038ms returns 0
+T3E68 001:211.180 JLINK_ReadMemEx(0xE0040FF0, 0x10 Bytes, Flags = 0x02000004)
+T3E68 001:211.230   CPU_ReadMem(16 bytes @ 0xE0040FF0)
+T3E68 001:212.468   Data:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+T3E68 001:212.524 - 1.343ms returns 16 (0x10)
+T3E68 001:212.548 JLINK_GetDebugInfo(0x104 = JLINKARM_DEBUG_INFO_ITM_ADDR_INDEX)
+T3E68 001:212.564   Value=0xE0000000
+T3E68 001:212.585 - 0.037ms returns 0
+T3E68 001:212.602 JLINK_GetDebugInfo(0x105 = JLINKARM_DEBUG_INFO_DWT_ADDR_INDEX)
+T3E68 001:212.616   Value=0xE0001000
+T3E68 001:212.636 - 0.035ms returns 0
+T3E68 001:212.653 JLINK_GetDebugInfo(0x106 = JLINKARM_DEBUG_INFO_FPB_ADDR_INDEX)
+T3E68 001:212.667   Value=0xE0002000
+T3E68 001:212.687 - 0.034ms returns 0
+T3E68 001:212.704 JLINK_GetDebugInfo(0x107 = JLINKARM_DEBUG_INFO_NVIC_ADDR_INDEX)
+T3E68 001:212.717   Value=0xE000E000
+T3E68 001:212.737 - 0.033ms returns 0
+T3E68 001:212.754 JLINK_GetDebugInfo(0x10C = JLINKARM_DEBUG_INFO_DBG_ADDR_INDEX)
+T3E68 001:212.768   Value=0xE000EDF0
+T3E68 001:212.788 - 0.034ms returns 0
+T3E68 001:212.804 JLINK_GetDebugInfo(0x01 = Unknown)
+T3E68 001:212.818   Value=0x00000000
+T3E68 001:212.839 - 0.035ms returns 0
+T3E68 001:212.856 JLINK_ReadMemU32(0xE000ED00, 0x1 Items)
+T3E68 001:212.882   CPU_ReadMem(4 bytes @ 0xE000ED00)
+T3E68 001:213.807   Data:  01 C6 0C 41
+T3E68 001:213.903   Debug reg: CPUID
+T3E68 001:213.928 - 1.071ms returns 1 (0x1)
+T3E68 001:213.956 JLINK_GetDebugInfo(0x10F = JLINKARM_DEBUG_INFO_HAS_CORTEX_M_SECURITY_EXT_INDEX)
+T3E68 001:213.973   Value=0x00000000
+T3E68 001:213.995 - 0.041ms returns 0
+T3E68 001:214.014 JLINK_HasError()
+T3E68 001:214.036 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T3E68 001:214.052 - 0.017ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T3E68 001:214.070 JLINK_Reset()
+T3E68 001:214.123   CPU is running
+T3E68 001:214.150   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3E68 001:215.163   CPU is running
+T3E68 001:215.244   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 001:216.399   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T3E68 001:217.645   Reset: Reset device via AIRCR.SYSRESETREQ.
+T3E68 001:217.699   CPU is running
+T3E68 001:217.724   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T3E68 001:272.303   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 001:273.329   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 001:282.852   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 001:289.807   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 001:299.528   CPU_WriteMem(4 bytes @ 0xE0002000)
+T3E68 001:300.742   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T3E68 001:301.894   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3E68 001:303.146   CPU_WriteMem(4 bytes @ 0xE0001000)
+T3E68 001:304.355 - 90.282ms
+T3E68 001:304.543 JLINK_HasError()
+T3E68 001:304.824 JLINK_ReadReg(R15 (PC))
+T3E68 001:304.931 - 0.133ms returns 0x000000D8
+T3E68 001:304.982 JLINK_ReadReg(XPSR)
+T3E68 001:305.025 - 0.042ms returns 0x01000000
+T3E68 001:305.072 JLINK_Halt()
+T3E68 001:305.111 - 0.038ms returns 0x00
+T3E68 001:305.157 JLINK_ReadMemU32(0xE000EDF0, 0x1 Items)
+T3E68 001:305.220   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 001:306.091   Data:  03 00 03 00
+T3E68 001:306.184   Debug reg: DHCSR
+T3E68 001:306.233 - 1.077ms returns 1 (0x1)
+T3E68 001:306.309 JLINK_WriteU32_64(0xE000EDF0, 0xA05F0003)
+T3E68 001:306.347   Debug reg: DHCSR
+T3E68 001:307.258   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3E68 001:308.364 - 2.054ms returns 0 (0x00000000)
+T3E68 001:308.444 JLINK_WriteU32_64(0xE000EDFC, 0x01000000)
+T3E68 001:308.477   Debug reg: DEMCR
+T3E68 001:308.537   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 001:309.502 - 1.058ms returns 0 (0x00000000)
+T3E68 001:309.657 JLINK_GetHWStatus(...)
+T3E68 001:310.101 - 0.441ms returns 0
+T3E68 001:310.304 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T3E68 001:310.341 - 0.038ms returns 0x04
+T3E68 001:310.373 JLINK_GetNumBPUnits(Type = 0xF0)
+T3E68 001:310.401 - 0.028ms returns 0x2000
+T3E68 001:310.430 JLINK_GetNumWPUnits()
+T3E68 001:310.458 - 0.026ms returns 1
+T3E68 001:310.526 JLINK_GetSpeed()
+T3E68 001:310.558 - 0.031ms returns 1000
+T3E68 001:310.614 JLINK_ReadMemU32(0xE000E004, 0x1 Items)
+T3E68 001:310.671   CPU_ReadMem(4 bytes @ 0xE000E004)
+T3E68 001:311.844   Data:  00 00 00 00
+T3E68 001:311.923 - 1.309ms returns 1 (0x1)
+T3E68 001:311.995 JLINK_HasError()
+T3E68 001:312.033 JLINK_ReadReg(R15 (PC))
+T3E68 001:312.070 - 0.037ms returns 0x000000D8
+T3E68 001:312.102 JLINK_ReadReg(XPSR)
+T3E68 001:312.131 - 0.028ms returns 0x01000000
+T3E68 001:404.993 JLINK_HasError()
+T3E68 001:405.055 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T3E68 001:405.072 - 0.015ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T3E68 001:405.088 JLINK_Reset()
+T3E68 001:405.122   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3E68 001:406.033   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 001:406.983   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T3E68 001:407.721   Reset: Reset device via AIRCR.SYSRESETREQ.
+T3E68 001:407.745   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T3E68 001:462.268   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 001:463.191   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 001:464.151   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 001:470.934   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 001:480.619   CPU_WriteMem(4 bytes @ 0xE0002000)
+T3E68 001:481.666   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T3E68 001:482.609   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3E68 001:483.483   CPU_WriteMem(4 bytes @ 0xE0001000)
+T3E68 001:484.465 - 79.375ms
+T3E68 001:484.607 JLINK_HasError()
+T3E68 001:484.808 JLINK_ReadReg(R15 (PC))
+T3E68 001:484.866 - 0.060ms returns 0x000000D8
+T3E68 001:484.897 JLINK_ReadReg(XPSR)
+T3E68 001:484.924 - 0.026ms returns 0x01000000
+T3E68 001:486.728 JLINK_ReadMemEx(0x000000D8, 0x3C Bytes, Flags = 0x02000000)
+T3E68 001:486.783   CPU_ReadMem(128 bytes @ 0x000000C0)
+T3E68 001:490.042    -- Updating C cache (128 bytes @ 0x000000C0)
+T3E68 001:490.099    -- Read from C cache (60 bytes @ 0x000000D8)
+T3E68 001:490.124   Data:  06 49 08 68 85 46 06 48 80 47 06 48 00 47 FE E7 ...
+T3E68 001:490.147 - 3.421ms returns 60 (0x3C)
+T3E68 001:490.171 JLINK_ReadMemEx(0x000000D8, 0x2 Bytes, Flags = 0x02000000)
+T3E68 001:490.190    -- Read from C cache (2 bytes @ 0x000000D8)
+T3E68 001:490.211   Data:  06 49
+T3E68 001:490.232 - 0.061ms returns 2 (0x2)
+T3E68 001:490.252 JLINK_ReadMemEx(0x000000DA, 0x2 Bytes, Flags = 0x02000000)
+T3E68 001:490.267    -- Read from C cache (2 bytes @ 0x000000DA)
+T3E68 001:490.287   Data:  08 68
+T3E68 001:490.308 - 0.056ms returns 2 (0x2)
+T3E68 001:490.350 JLINK_ReadMemEx(0x000000DA, 0x2 Bytes, Flags = 0x02000000)
+T3E68 001:490.365    -- Read from C cache (2 bytes @ 0x000000DA)
+T3E68 001:490.386   Data:  08 68
+T3E68 001:490.406 - 0.057ms returns 2 (0x2)
+T3E68 001:490.423 JLINK_ReadMemEx(0x000000DC, 0x3C Bytes, Flags = 0x02000000)
+T3E68 001:490.438    -- Read from C cache (60 bytes @ 0x000000DC)
+T3E68 001:490.460   Data:  85 46 06 48 80 47 06 48 00 47 FE E7 FE E7 FE E7 ...
+T3E68 001:490.480 - 0.058ms returns 60 (0x3C)
+T3E68 001:490.498 JLINK_ReadMemEx(0x000000DC, 0x2 Bytes, Flags = 0x02000000)
+T3E68 001:490.513    -- Read from C cache (2 bytes @ 0x000000DC)
+T3E68 001:490.534   Data:  85 46
+T3E68 001:490.557 - 0.059ms returns 2 (0x2)
+T3E68 002:310.782 JLINK_ReadMemEx(0x000000DC, 0x3C Bytes, Flags = 0x02000000)
+T3E68 002:310.813    -- Read from C cache (60 bytes @ 0x000000DC)
+T3E68 002:310.822   Data:  85 46 06 48 80 47 06 48 00 47 FE E7 FE E7 FE E7 ...
+T3E68 002:310.829 - 0.047ms returns 60 (0x3C)
+T3E68 002:310.835 JLINK_ReadMemEx(0x000000DC, 0x2 Bytes, Flags = 0x02000000)
+T3E68 002:310.840    -- Read from C cache (2 bytes @ 0x000000DC)
+T3E68 002:310.847   Data:  85 46
+T3E68 002:310.854 - 0.019ms returns 2 (0x2)
+T3E68 002:310.860 JLINK_ReadMemEx(0x000000DE, 0x2 Bytes, Flags = 0x02000000)
+T3E68 002:310.865    -- Read from C cache (2 bytes @ 0x000000DE)
+T3E68 002:310.871   Data:  06 48
+T3E68 002:310.877 - 0.017ms returns 2 (0x2)
+T3E68 002:697.582 JLINK_HasError()
+T3E68 002:697.615 JLINK_ReadReg(R0)
+T3E68 002:698.386 - 0.770ms returns 0x0000F000
+T3E68 002:698.405 JLINK_ReadReg(R1)
+T3E68 002:698.411 - 0.005ms returns 0x20000010
+T3E68 002:698.416 JLINK_ReadReg(R2)
+T3E68 002:698.421 - 0.004ms returns 0x00000000
+T3E68 002:698.432 JLINK_ReadReg(R3)
+T3E68 002:698.440 - 0.007ms returns 0xE000E400
+T3E68 002:698.445 JLINK_ReadReg(R4)
+T3E68 002:698.449 - 0.004ms returns 0x000043C4
+T3E68 002:698.454 JLINK_ReadReg(R5)
+T3E68 002:698.459 - 0.004ms returns 0x00000001
+T3E68 002:698.464 JLINK_ReadReg(R6)
+T3E68 002:698.469 - 0.004ms returns 0x000043C4
+T3E68 002:698.474 JLINK_ReadReg(R7)
+T3E68 002:698.478 - 0.004ms returns 0x3BEAF206
+T3E68 002:698.490 JLINK_ReadReg(R8)
+T3E68 002:698.494 - 0.010ms returns 0xE656FB12
+T3E68 002:698.499 JLINK_ReadReg(R9)
+T3E68 002:698.504 - 0.004ms returns 0xA3776286
+T3E68 002:698.509 JLINK_ReadReg(R10)
+T3E68 002:698.513 - 0.004ms returns 0x8DF10B88
+T3E68 002:698.518 JLINK_ReadReg(R11)
+T3E68 002:698.523 - 0.004ms returns 0x4CAC2004
+T3E68 002:698.528 JLINK_ReadReg(R12)
+T3E68 002:698.532 - 0.004ms returns 0x80B02F0A
+T3E68 002:698.537 JLINK_ReadReg(R13 (SP))
+T3E68 002:698.542 - 0.005ms returns 0x20000280
+T3E68 002:698.547 JLINK_ReadReg(R14)
+T3E68 002:698.552 - 0.004ms returns 0x000037A5
+T3E68 002:698.557 JLINK_ReadReg(R15 (PC))
+T3E68 002:698.562 - 0.004ms returns 0x000000D8
+T3E68 002:698.567 JLINK_ReadReg(XPSR)
+T3E68 002:698.571 - 0.004ms returns 0x01000000
+T3E68 002:698.577 JLINK_ReadReg(MSP)
+T3E68 002:698.582 - 0.004ms returns 0x20000280
+T3E68 002:698.587 JLINK_ReadReg(PSP)
+T3E68 002:698.592 - 0.004ms returns 0x08264034
+T3E68 002:698.597 JLINK_ReadReg(CFBP)
+T3E68 002:698.601 - 0.004ms returns 0x00000000
+T4A34 003:680.676 JLINK_ReadMemEx(0x000000D8, 0x2 Bytes, Flags = 0x02000000)
+T4A34 003:680.776    -- Read from C cache (2 bytes @ 0x000000D8)
+T4A34 003:680.808   Data:  06 49
+T4A34 003:680.842 - 0.167ms returns 2 (0x2)
+T4A34 003:680.868 JLINK_HasError()
+T4A34 003:680.894 JLINK_HasError()
+T4A34 003:680.920 JLINK_Go()
+T4A34 003:681.825   CPU_ReadMem(4 bytes @ 0xE0001000)
+T4A34 003:682.750   CPU_WriteMem(4 bytes @ 0xE0001000)
+T4A34 003:683.668   CPU_WriteMem(4 bytes @ 0xE0001004)
+T4A34 003:688.184   Memory map 'after startup completion point' is active
+T4A34 003:688.220 - 7.300ms
+T4A34 003:788.442 JLINK_HasError()
+T4A34 003:788.546 JLINK_IsHalted()
+T4A34 003:789.600 - 1.051ms returns FALSE
+T4A34 003:890.164 JLINK_HasError()
+T4A34 003:890.242 JLINK_IsHalted()
+T4A34 003:891.969 - 1.724ms returns FALSE
+T4A34 003:993.144 JLINK_HasError()
+T4A34 003:993.304 JLINK_IsHalted()
+T4A34 003:994.611 - 1.302ms returns FALSE
+T4A34 004:095.172 JLINK_HasError()
+T4A34 004:095.289 JLINK_IsHalted()
+T4A34 004:096.459 - 1.165ms returns FALSE
+T4A34 004:196.893 JLINK_HasError()
+T4A34 004:197.040 JLINK_HasError()
+T4A34 004:197.820 JLINK_IsHalted()
+T4A34 004:199.221 - 1.398ms returns FALSE
+T4A34 004:300.084 JLINK_HasError()
+T4A34 004:300.237 JLINK_IsHalted()
+T4A34 004:301.373 - 1.133ms returns FALSE
+T4A34 004:401.958 JLINK_HasError()
+T4A34 004:402.066 JLINK_IsHalted()
+T4A34 004:403.023 - 0.953ms returns FALSE
+T4A34 004:503.479 JLINK_HasError()
+T4A34 004:503.575 JLINK_IsHalted()
+T4A34 004:504.583 - 1.006ms returns FALSE
+T4A34 004:605.277 JLINK_HasError()
+T4A34 004:605.384 JLINK_IsHalted()
+T4A34 004:606.411 - 1.023ms returns FALSE
+T4A34 004:706.848 JLINK_HasError()
+T4A34 004:707.000 JLINK_IsHalted()
+T4A34 004:708.359 - 1.355ms returns FALSE
+T4A34 004:809.338 JLINK_HasError()
+T4A34 004:809.409 JLINK_HasError()
+T4A34 004:809.697 JLINK_IsHalted()
+T4A34 004:810.557 - 0.859ms returns FALSE
+T4A34 004:910.709 JLINK_HasError()
+T4A34 004:910.786 JLINK_IsHalted()
+T4A34 004:911.806 - 1.018ms returns FALSE
+T4A34 005:012.073 JLINK_HasError()
+T4A34 005:012.138 JLINK_IsHalted()
+T4A34 005:012.949 - 0.809ms returns FALSE
+T4A34 005:113.139 JLINK_HasError()
+T4A34 005:113.206 JLINK_IsHalted()
+T4A34 005:114.277 - 1.069ms returns FALSE
+T4A34 005:215.391 JLINK_HasError()
+T4A34 005:215.439 JLINK_IsHalted()
+T4A34 005:216.373 - 0.933ms returns FALSE
+T4A34 005:317.234 JLINK_HasError()
+T4A34 005:317.347 JLINK_IsHalted()
+T4A34 005:318.312 - 0.963ms returns FALSE
+T4A34 005:418.858 JLINK_HasError()
+T4A34 005:418.953 JLINK_HasError()
+T4A34 005:419.589 JLINK_IsHalted()
+T4A34 005:420.636 - 1.044ms returns FALSE
+T4A34 005:521.852 JLINK_HasError()
+T4A34 005:521.930 JLINK_IsHalted()
+T4A34 005:522.915 - 0.982ms returns FALSE
+T4A34 005:624.008 JLINK_HasError()
+T4A34 005:624.063 JLINK_IsHalted()
+T4A34 005:624.992 - 0.927ms returns FALSE
+T4A34 005:725.847 JLINK_HasError()
+T4A34 005:725.960 JLINK_IsHalted()
+T4A34 005:727.074 - 1.112ms returns FALSE
+T4A34 005:827.589 JLINK_HasError()
+T4A34 005:827.740 JLINK_IsHalted()
+T4A34 005:828.724 - 0.983ms returns FALSE
+T4A34 005:929.156 JLINK_HasError()
+T4A34 005:929.223 JLINK_HasError()
+T4A34 005:929.793 JLINK_IsHalted()
+T4A34 005:930.705 - 0.910ms returns FALSE
+T3E68 006:022.172 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:022.248   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 006:023.066   Data:  24 05
+T3E68 006:023.087 - 0.915ms returns 2 (0x2)
+T3E68 006:023.111 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:023.124   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 006:023.895   Data:  17 00
+T3E68 006:023.913 - 0.802ms returns 2 (0x2)
+T3E68 006:023.930 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:023.943   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 006:024.813   Data:  38 05
+T3E68 006:024.857 - 0.926ms returns 2 (0x2)
+T3E68 006:024.891 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:024.911   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 006:025.804   Data:  AF 05
+T3E68 006:025.851 - 0.959ms returns 2 (0x2)
+T3E68 006:025.888 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:025.909   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 006:026.807   Data:  FF 0F
+T3E68 006:026.858 - 0.970ms returns 2 (0x2)
+T3E68 006:026.916 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:026.939   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 006:027.828   Data:  24 05
+T3E68 006:027.878 - 0.963ms returns 2 (0x2)
+T3E68 006:027.911 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:027.936   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 006:028.850   Data:  17 00
+T3E68 006:028.901 - 0.990ms returns 2 (0x2)
+T3E68 006:028.934 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:028.959   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 006:029.963   Data:  38 05
+T3E68 006:030.055 - 1.120ms returns 2 (0x2)
+T3E68 006:030.112 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:030.158   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 006:031.143   Data:  AF 05
+T3E68 006:031.270 - 1.158ms returns 2 (0x2)
+T3E68 006:031.357 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:031.420   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 006:032.357   Data:  18 0F
+T3E68 006:032.416 - 1.059ms returns 2 (0x2)
+T4A34 006:032.536 JLINK_HasError()
+T4A34 006:032.613 JLINK_IsHalted()
+T4A34 006:033.589 - 0.974ms returns FALSE
+T3E68 006:043.269 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:043.315   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 006:044.240   Data:  24 05
+T3E68 006:044.265 - 0.996ms returns 2 (0x2)
+T3E68 006:044.281 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:044.293   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 006:045.143   Data:  17 00
+T3E68 006:045.167 - 0.886ms returns 2 (0x2)
+T3E68 006:045.187 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:045.200   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 006:045.997   Data:  38 05
+T3E68 006:046.023 - 0.836ms returns 2 (0x2)
+T3E68 006:046.045 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:046.059   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 006:046.914   Data:  AF 05
+T3E68 006:046.941 - 0.895ms returns 2 (0x2)
+T3E68 006:046.961 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:046.975   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 006:047.842   Data:  EE 0F
+T3E68 006:047.872 - 0.910ms returns 2 (0x2)
+T4A34 006:133.896 JLINK_HasError()
+T4A34 006:134.027 JLINK_IsHalted()
+T4A34 006:135.278 - 1.247ms returns FALSE
+T4A34 006:235.704 JLINK_HasError()
+T4A34 006:235.847 JLINK_IsHalted()
+T4A34 006:236.992 - 1.139ms returns FALSE
+T4A34 006:337.555 JLINK_HasError()
+T4A34 006:337.711 JLINK_IsHalted()
+T4A34 006:338.794 - 1.080ms returns FALSE
+T4A34 006:439.159 JLINK_HasError()
+T4A34 006:439.268 JLINK_IsHalted()
+T4A34 006:440.348 - 1.075ms returns FALSE
+T4A34 006:540.661 JLINK_HasError()
+T4A34 006:540.770 JLINK_HasError()
+T3E68 006:541.096 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:541.217   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 006:542.350   Data:  24 05
+T3E68 006:542.455 - 1.359ms returns 2 (0x2)
+T3E68 006:542.528 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:542.580   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 006:543.725   Data:  17 00
+T3E68 006:543.801 - 1.272ms returns 2 (0x2)
+T3E68 006:543.847 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:543.882   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 006:545.003   Data:  38 05
+T3E68 006:545.079 - 1.232ms returns 2 (0x2)
+T3E68 006:545.135 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:545.170   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 006:546.275   Data:  AF 05
+T3E68 006:546.350 - 1.214ms returns 2 (0x2)
+T3E68 006:546.398 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 006:546.433   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 006:547.468   Data:  FA 0F
+T3E68 006:547.543 - 1.145ms returns 2 (0x2)
+T4A34 006:548.617 JLINK_IsHalted()
+T4A34 006:549.637 - 1.019ms returns FALSE
+T4A34 006:650.833 JLINK_HasError()
+T4A34 006:650.979 JLINK_IsHalted()
+T4A34 006:652.333 - 1.348ms returns FALSE
+T4A34 006:752.846 JLINK_HasError()
+T4A34 006:753.050 JLINK_IsHalted()
+T4A34 006:754.385 - 1.328ms returns FALSE
+T4A34 006:855.278 JLINK_HasError()
+T4A34 006:855.448 JLINK_IsHalted()
+T4A34 006:856.558 - 1.107ms returns FALSE
+T4A34 006:956.969 JLINK_HasError()
+T4A34 006:957.112 JLINK_IsHalted()
+T4A34 006:958.443 - 1.326ms returns FALSE
+T4A34 007:059.624 JLINK_HasError()
+T4A34 007:059.765 JLINK_HasError()
+T3E68 007:060.258 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 007:060.453   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 007:061.577   Data:  24 05
+T3E68 007:061.743 - 1.487ms returns 2 (0x2)
+T3E68 007:061.841 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 007:061.910   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 007:063.151   Data:  17 00
+T3E68 007:063.289 - 1.448ms returns 2 (0x2)
+T3E68 007:063.377 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 007:063.443   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 007:064.596   Data:  38 05
+T3E68 007:064.736 - 1.358ms returns 2 (0x2)
+T3E68 007:064.835 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 007:064.900   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 007:065.973   Data:  AE 05
+T3E68 007:066.112 - 1.277ms returns 2 (0x2)
+T3E68 007:067.393 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 007:067.479   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 007:068.507   Data:  FE 0F
+T3E68 007:068.640 - 1.247ms returns 2 (0x2)
+T4A34 007:070.077 JLINK_IsHalted()
+T4A34 007:071.221 - 1.142ms returns FALSE
+T4A34 007:171.837 JLINK_HasError()
+T4A34 007:171.974 JLINK_IsHalted()
+T4A34 007:173.153 - 1.174ms returns FALSE
+T4A34 007:273.715 JLINK_HasError()
+T4A34 007:273.861 JLINK_IsHalted()
+T4A34 007:275.147 - 1.280ms returns FALSE
+T4A34 007:376.108 JLINK_HasError()
+T4A34 007:376.264 JLINK_IsHalted()
+T4A34 007:377.476 - 1.206ms returns FALSE
+T4A34 007:478.290 JLINK_HasError()
+T4A34 007:478.409 JLINK_IsHalted()
+T4A34 007:479.484 - 1.073ms returns FALSE
+T4A34 007:579.929 JLINK_HasError()
+T4A34 007:580.088 JLINK_HasError()
+T3E68 007:580.551 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 007:580.756   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 007:581.887   Data:  25 05
+T3E68 007:582.054 - 1.505ms returns 2 (0x2)
+T3E68 007:583.452 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 007:583.608   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 007:584.621   Data:  18 00
+T3E68 007:584.741 - 1.291ms returns 2 (0x2)
+T3E68 007:585.666 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 007:585.749   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 007:586.893   Data:  39 05
+T3E68 007:586.970 - 1.304ms returns 2 (0x2)
+T3E68 007:588.361 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 007:588.449   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 007:589.340   Data:  AD 05
+T3E68 007:589.416 - 1.056ms returns 2 (0x2)
+T3E68 007:590.313 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 007:590.384   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 007:591.392   Data:  FA 0F
+T3E68 007:591.453 - 1.139ms returns 2 (0x2)
+T4A34 007:592.303 JLINK_IsHalted()
+T4A34 007:593.431 - 1.126ms returns FALSE
+T4A34 007:693.834 JLINK_HasError()
+T4A34 007:694.003 JLINK_IsHalted()
+T4A34 007:695.245 - 1.239ms returns FALSE
+T4A34 007:795.706 JLINK_HasError()
+T4A34 007:795.850 JLINK_IsHalted()
+T4A34 007:797.134 - 1.279ms returns FALSE
+T4A34 007:898.232 JLINK_HasError()
+T4A34 007:898.261 JLINK_IsHalted()
+T4A34 007:899.105 - 0.843ms returns FALSE
+T4A34 008:000.029 JLINK_HasError()
+T4A34 008:000.066 JLINK_IsHalted()
+T4A34 008:000.882 - 0.815ms returns FALSE
+T4A34 008:101.143 JLINK_HasError()
+T4A34 008:101.289 JLINK_HasError()
+T3E68 008:101.768 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 008:101.928   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 008:103.137   Data:  25 05
+T3E68 008:103.303 - 1.537ms returns 2 (0x2)
+T3E68 008:104.824 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 008:105.009   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 008:105.992   Data:  18 00
+T3E68 008:106.094 - 1.273ms returns 2 (0x2)
+T3E68 008:107.827 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 008:107.928   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 008:108.839   Data:  38 05
+T3E68 008:108.894 - 1.068ms returns 2 (0x2)
+T3E68 008:109.762 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 008:109.827   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 008:110.699   Data:  AE 05
+T3E68 008:110.765 - 1.003ms returns 2 (0x2)
+T3E68 008:111.329 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 008:111.372   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 008:112.245   Data:  FA 0F
+T3E68 008:112.310 - 0.982ms returns 2 (0x2)
+T4A34 008:113.193 JLINK_IsHalted()
+T4A34 008:114.169 - 0.975ms returns FALSE
+T4A34 008:214.538 JLINK_HasError()
+T4A34 008:214.681 JLINK_IsHalted()
+T4A34 008:215.945 - 1.259ms returns FALSE
+T4A34 008:316.361 JLINK_HasError()
+T4A34 008:316.524 JLINK_IsHalted()
+T4A34 008:317.746 - 1.218ms returns FALSE
+T4A34 008:418.082 JLINK_HasError()
+T4A34 008:418.240 JLINK_IsHalted()
+T4A34 008:419.466 - 1.221ms returns FALSE
+T4A34 008:519.722 JLINK_HasError()
+T4A34 008:519.854 JLINK_IsHalted()
+T4A34 008:520.953 - 1.092ms returns FALSE
+T4A34 008:621.972 JLINK_HasError()
+T4A34 008:622.086 JLINK_HasError()
+T3E68 008:622.451 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 008:622.598   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 008:623.638   Data:  24 05
+T3E68 008:623.754 - 1.304ms returns 2 (0x2)
+T3E68 008:624.665 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 008:624.739   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 008:625.677   Data:  18 00
+T3E68 008:625.742 - 1.078ms returns 2 (0x2)
+T3E68 008:625.788 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 008:625.826   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 008:626.714   Data:  38 05
+T3E68 008:626.773 - 0.985ms returns 2 (0x2)
+T3E68 008:627.641 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 008:627.712   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 008:628.685   Data:  AD 05
+T3E68 008:628.744 - 1.104ms returns 2 (0x2)
+T3E68 008:629.407 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 008:629.461   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 008:630.398   Data:  FC 0F
+T3E68 008:630.456 - 1.049ms returns 2 (0x2)
+T4A34 008:631.393 JLINK_IsHalted()
+T4A34 008:632.438 - 1.044ms returns FALSE
+T4A34 008:732.839 JLINK_HasError()
+T4A34 008:732.998 JLINK_IsHalted()
+T4A34 008:734.226 - 1.223ms returns FALSE
+T4A34 008:834.663 JLINK_HasError()
+T4A34 008:834.837 JLINK_IsHalted()
+T4A34 008:836.108 - 1.266ms returns FALSE
+T4A34 008:936.797 JLINK_HasError()
+T4A34 008:936.962 JLINK_IsHalted()
+T4A34 008:938.193 - 1.224ms returns FALSE
+T4A34 009:039.362 JLINK_HasError()
+T4A34 009:039.482 JLINK_IsHalted()
+T4A34 009:040.558 - 1.073ms returns FALSE
+T4A34 009:141.262 JLINK_HasError()
+T4A34 009:141.376 JLINK_HasError()
+T3E68 009:141.763 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 009:141.888   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 009:142.840   Data:  25 05
+T3E68 009:142.921 - 1.158ms returns 2 (0x2)
+T3E68 009:144.266 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 009:144.338   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 009:145.283   Data:  17 00
+T3E68 009:145.350 - 1.083ms returns 2 (0x2)
+T3E68 009:146.098 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 009:146.144   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 009:147.130   Data:  39 05
+T3E68 009:147.206 - 1.108ms returns 2 (0x2)
+T3E68 009:147.888 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 009:147.938   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 009:149.042   Data:  AC 05
+T3E68 009:149.150 - 1.262ms returns 2 (0x2)
+T3E68 009:149.985 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 009:150.046   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 009:151.191   Data:  FE 0F
+T3E68 009:151.287 - 1.303ms returns 2 (0x2)
+T4A34 009:152.789 JLINK_IsHalted()
+T4A34 009:153.722 - 0.932ms returns FALSE
+T4A34 009:253.914 JLINK_HasError()
+T4A34 009:254.095 JLINK_IsHalted()
+T4A34 009:255.365 - 1.264ms returns FALSE
+T4A34 009:356.283 JLINK_HasError()
+T4A34 009:356.392 JLINK_IsHalted()
+T4A34 009:357.358 - 0.963ms returns FALSE
+T4A34 009:457.763 JLINK_HasError()
+T4A34 009:457.933 JLINK_IsHalted()
+T4A34 009:459.263 - 1.324ms returns FALSE
+T4A34 009:559.953 JLINK_HasError()
+T4A34 009:560.024 JLINK_IsHalted()
+T4A34 009:560.966 - 0.940ms returns FALSE
+T4A34 009:662.136 JLINK_HasError()
+T4A34 009:662.284 JLINK_HasError()
+T3E68 009:662.788 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 009:663.018   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 009:664.020   Data:  25 05
+T3E68 009:664.090 - 1.305ms returns 2 (0x2)
+T3E68 009:666.588 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 009:666.730   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 009:667.598   Data:  18 00
+T3E68 009:667.658 - 1.071ms returns 2 (0x2)
+T3E68 009:669.173 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 009:669.234   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 009:670.190   Data:  39 05
+T3E68 009:670.258 - 1.086ms returns 2 (0x2)
+T3E68 009:671.910 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 009:671.992   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 009:672.834   Data:  AC 05
+T3E68 009:672.887 - 0.978ms returns 2 (0x2)
+T3E68 009:674.011 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 009:674.061   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 009:674.818   Data:  FE 0F
+T3E68 009:674.859 - 0.848ms returns 2 (0x2)
+T4A34 009:675.446 JLINK_IsHalted()
+T4A34 009:676.430 - 0.984ms returns FALSE
+T4A34 009:776.753 JLINK_HasError()
+T4A34 009:776.898 JLINK_IsHalted()
+T4A34 009:778.166 - 1.265ms returns FALSE
+T4A34 009:878.614 JLINK_HasError()
+T4A34 009:878.777 JLINK_IsHalted()
+T4A34 009:879.848 - 1.068ms returns FALSE
+T4A34 009:980.137 JLINK_HasError()
+T4A34 009:980.229 JLINK_IsHalted()
+T4A34 009:981.347 - 1.116ms returns FALSE
+T4A34 010:081.611 JLINK_HasError()
+T4A34 010:081.694 JLINK_IsHalted()
+T4A34 010:082.603 - 0.907ms returns FALSE
+T4A34 010:182.951 JLINK_HasError()
+T4A34 010:183.089 JLINK_HasError()
+T3E68 010:186.074 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 010:186.184   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 010:187.106   Data:  25 05
+T3E68 010:187.183 - 1.110ms returns 2 (0x2)
+T3E68 010:187.255 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 010:187.310   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 010:188.285   Data:  18 00
+T3E68 010:188.380 - 1.125ms returns 2 (0x2)
+T3E68 010:189.471 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 010:189.541   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 010:190.431   Data:  38 05
+T3E68 010:190.497 - 1.026ms returns 2 (0x2)
+T3E68 010:191.177 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 010:191.222   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 010:192.114   Data:  AC 05
+T3E68 010:192.171 - 0.995ms returns 2 (0x2)
+T3E68 010:192.206 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 010:192.234   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 010:193.042   Data:  FA 0F
+T3E68 010:193.110 - 0.903ms returns 2 (0x2)
+T4A34 010:193.904 JLINK_IsHalted()
+T4A34 010:194.862 - 0.958ms returns FALSE
+T4A34 010:295.145 JLINK_HasError()
+T4A34 010:295.283 JLINK_IsHalted()
+T4A34 010:296.362 - 1.077ms returns FALSE
+T4A34 010:397.287 JLINK_HasError()
+T4A34 010:397.439 JLINK_IsHalted()
+T4A34 010:398.699 - 1.255ms returns FALSE
+T4A34 010:499.248 JLINK_HasError()
+T4A34 010:499.410 JLINK_IsHalted()
+T4A34 010:500.578 - 1.162ms returns FALSE
+T4A34 010:601.448 JLINK_HasError()
+T4A34 010:601.567 JLINK_IsHalted()
+T4A34 010:602.691 - 1.120ms returns FALSE
+T4A34 010:703.119 JLINK_HasError()
+T4A34 010:703.283 JLINK_HasError()
+T3E68 010:703.724 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 010:703.941   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 010:704.998   Data:  26 05
+T3E68 010:705.161 - 1.439ms returns 2 (0x2)
+T3E68 010:706.454 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 010:706.549   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 010:707.538   Data:  17 00
+T3E68 010:707.646 - 1.192ms returns 2 (0x2)
+T3E68 010:708.478 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 010:708.546   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 010:709.589   Data:  38 05
+T3E68 010:709.692 - 1.214ms returns 2 (0x2)
+T3E68 010:710.550 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 010:710.618   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 010:711.639   Data:  AB 05
+T3E68 010:711.741 - 1.190ms returns 2 (0x2)
+T3E68 010:712.593 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 010:712.660   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 010:713.811   Data:  F9 0F
+T3E68 010:713.913 - 1.331ms returns 2 (0x2)
+T4A34 010:715.018 JLINK_IsHalted()
+T4A34 010:716.203 - 1.185ms returns FALSE
+T4A34 010:816.641 JLINK_HasError()
+T4A34 010:816.836 JLINK_IsHalted()
+T4A34 010:818.254 - 1.409ms returns FALSE
+T4A34 010:918.814 JLINK_HasError()
+T4A34 010:918.990 JLINK_IsHalted()
+T4A34 010:920.246 - 1.251ms returns FALSE
+T4A34 011:020.666 JLINK_HasError()
+T4A34 011:020.820 JLINK_IsHalted()
+T4A34 011:021.837 - 1.015ms returns FALSE
+T4A34 011:122.006 JLINK_HasError()
+T4A34 011:122.138 JLINK_IsHalted()
+T4A34 011:123.167 - 1.027ms returns FALSE
+T4A34 011:223.533 JLINK_HasError()
+T4A34 011:223.643 JLINK_HasError()
+T3E68 011:224.081 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 011:224.252   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 011:225.362   Data:  26 05
+T3E68 011:225.478 - 1.398ms returns 2 (0x2)
+T3E68 011:226.460 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 011:226.529   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 011:227.589   Data:  17 00
+T3E68 011:227.701 - 1.241ms returns 2 (0x2)
+T3E68 011:228.591 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 011:228.657   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 011:229.744   Data:  38 05
+T3E68 011:229.886 - 1.295ms returns 2 (0x2)
+T3E68 011:229.966 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 011:230.026   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 011:231.120   Data:  AC 05
+T3E68 011:231.262 - 1.296ms returns 2 (0x2)
+T3E68 011:232.406 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 011:232.482   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 011:233.353   Data:  FE 0F
+T3E68 011:233.418 - 1.012ms returns 2 (0x2)
+T4A34 011:234.931 JLINK_IsHalted()
+T4A34 011:236.039 - 1.108ms returns FALSE
+T4A34 011:336.460 JLINK_HasError()
+T4A34 011:336.612 JLINK_IsHalted()
+T4A34 011:337.710 - 1.092ms returns FALSE
+T4A34 011:439.033 JLINK_HasError()
+T4A34 011:439.174 JLINK_IsHalted()
+T4A34 011:440.478 - 1.299ms returns FALSE
+T4A34 011:541.859 JLINK_HasError()
+T4A34 011:542.006 JLINK_IsHalted()
+T4A34 011:543.254 - 1.244ms returns FALSE
+T4A34 011:643.658 JLINK_HasError()
+T4A34 011:643.746 JLINK_IsHalted()
+T4A34 011:644.808 - 1.060ms returns FALSE
+T4A34 011:745.168 JLINK_HasError()
+T4A34 011:745.310 JLINK_HasError()
+T3E68 011:745.792 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 011:745.990   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 011:747.166   Data:  26 05
+T3E68 011:747.308 - 1.518ms returns 2 (0x2)
+T3E68 011:747.388 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 011:747.453   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 011:748.604   Data:  18 00
+T3E68 011:748.745 - 1.357ms returns 2 (0x2)
+T3E68 011:749.869 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 011:749.951   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 011:751.129   Data:  38 05
+T3E68 011:751.248 - 1.380ms returns 2 (0x2)
+T3E68 011:751.313 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 011:751.365   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 011:752.320   Data:  AB 05
+T3E68 011:752.455 - 1.142ms returns 2 (0x2)
+T3E68 011:753.875 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 011:753.990   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 011:755.089   Data:  FC 0F
+T3E68 011:755.192 - 1.317ms returns 2 (0x2)
+T4A34 011:756.330 JLINK_IsHalted()
+T4A34 011:757.530 - 1.201ms returns FALSE
+T4A34 011:857.920 JLINK_HasError()
+T4A34 011:858.066 JLINK_IsHalted()
+T4A34 011:859.253 - 1.181ms returns FALSE
+T4A34 011:959.670 JLINK_HasError()
+T4A34 011:959.823 JLINK_IsHalted()
+T4A34 011:961.168 - 1.339ms returns FALSE
+T4A34 012:061.622 JLINK_HasError()
+T4A34 012:061.778 JLINK_IsHalted()
+T4A34 012:062.936 - 1.154ms returns FALSE
+T4A34 012:163.267 JLINK_HasError()
+T4A34 012:163.450 JLINK_IsHalted()
+T4A34 012:164.813 - 1.357ms returns FALSE
+T4A34 012:265.586 JLINK_HasError()
+T4A34 012:265.717 JLINK_HasError()
+T3E68 012:266.104 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 012:266.272   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 012:267.310   Data:  26 05
+T3E68 012:267.401 - 1.298ms returns 2 (0x2)
+T3E68 012:267.457 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 012:267.513   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 012:268.544   Data:  17 00
+T3E68 012:268.609 - 1.151ms returns 2 (0x2)
+T3E68 012:269.560 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 012:269.632   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 012:270.593   Data:  39 05
+T3E68 012:270.674 - 1.115ms returns 2 (0x2)
+T3E68 012:271.432 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 012:271.488   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 012:272.395   Data:  AB 05
+T3E68 012:272.478 - 1.047ms returns 2 (0x2)
+T3E68 012:273.322 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 012:273.388   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 012:274.483   Data:  FE 0F
+T3E68 012:274.589 - 1.267ms returns 2 (0x2)
+T4A34 012:275.714 JLINK_IsHalted()
+T4A34 012:276.738 - 1.022ms returns FALSE
+T4A34 012:377.107 JLINK_HasError()
+T4A34 012:377.249 JLINK_IsHalted()
+T4A34 012:378.582 - 1.329ms returns FALSE
+T4A34 012:479.542 JLINK_HasError()
+T4A34 012:479.660 JLINK_IsHalted()
+T4A34 012:480.645 - 0.982ms returns FALSE
+T4A34 012:581.035 JLINK_HasError()
+T4A34 012:581.176 JLINK_IsHalted()
+T4A34 012:582.354 - 1.171ms returns FALSE
+T4A34 012:682.774 JLINK_HasError()
+T4A34 012:682.936 JLINK_IsHalted()
+T4A34 012:684.258 - 1.317ms returns FALSE
+T4A34 012:785.623 JLINK_HasError()
+T4A34 012:785.778 JLINK_HasError()
+T3E68 012:786.300 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 012:786.570   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 012:787.708   Data:  25 05
+T3E68 012:787.817 - 1.520ms returns 2 (0x2)
+T3E68 012:788.953 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 012:789.029   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 012:790.259   Data:  18 00
+T3E68 012:790.390 - 1.437ms returns 2 (0x2)
+T3E68 012:791.319 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 012:791.386   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 012:792.401   Data:  38 05
+T3E68 012:792.504 - 1.185ms returns 2 (0x2)
+T3E68 012:793.450 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 012:793.515   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 012:794.505   Data:  AA 05
+T3E68 012:794.597 - 1.148ms returns 2 (0x2)
+T3E68 012:795.397 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 012:795.460   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 012:796.458   Data:  FC 0F
+T3E68 012:796.570 - 1.173ms returns 2 (0x2)
+T4A34 012:797.738 JLINK_IsHalted()
+T4A34 012:798.902 - 1.163ms returns FALSE
+T4A34 012:899.270 JLINK_HasError()
+T4A34 012:899.342 JLINK_IsHalted()
+T4A34 012:900.334 - 0.991ms returns FALSE
+T4A34 013:001.345 JLINK_HasError()
+T4A34 013:001.438 JLINK_IsHalted()
+T4A34 013:002.494 - 1.053ms returns FALSE
+T4A34 013:103.062 JLINK_HasError()
+T4A34 013:103.120 JLINK_IsHalted()
+T4A34 013:103.986 - 0.863ms returns FALSE
+T4A34 013:204.723 JLINK_HasError()
+T4A34 013:204.826 JLINK_IsHalted()
+T4A34 013:205.734 - 0.905ms returns FALSE
+T4A34 013:306.074 JLINK_HasError()
+T4A34 013:306.144 JLINK_HasError()
+T3E68 013:306.314 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 013:306.384   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 013:307.242   Data:  26 05
+T3E68 013:307.289 - 0.975ms returns 2 (0x2)
+T3E68 013:307.721 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 013:307.742   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 013:308.693   Data:  18 00
+T3E68 013:308.728 - 1.007ms returns 2 (0x2)
+T3E68 013:309.071 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 013:309.093   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 013:310.062   Data:  39 05
+T3E68 013:310.099 - 1.028ms returns 2 (0x2)
+T3E68 013:310.483 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 013:310.508   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 013:311.455   Data:  AA 05
+T3E68 013:311.495 - 1.012ms returns 2 (0x2)
+T3E68 013:311.919 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 013:311.946   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 013:312.877   Data:  FF 0F
+T3E68 013:312.924 - 1.005ms returns 2 (0x2)
+T4A34 013:313.555 JLINK_IsHalted()
+T4A34 013:314.522 - 0.966ms returns FALSE
+T4A34 013:415.335 JLINK_HasError()
+T4A34 013:415.397 JLINK_IsHalted()
+T4A34 013:416.456 - 1.053ms returns FALSE
+T4A34 013:516.707 JLINK_HasError()
+T4A34 013:516.822 JLINK_IsHalted()
+T4A34 013:518.074 - 1.248ms returns FALSE
+T4A34 013:618.450 JLINK_HasError()
+T4A34 013:618.595 JLINK_IsHalted()
+T4A34 013:620.152 - 1.553ms returns FALSE
+T4A34 013:720.414 JLINK_HasError()
+T4A34 013:720.478 JLINK_IsHalted()
+T4A34 013:730.776 - 10.296ms returns ERROR
+T4A34 013:730.814 JLINK_HasError()
+T4A34 013:730.832 JLINK_Halt()
+T4A34 013:736.454   
+  ***** Warning: 
+T4A34 013:736.491   CPU could not be halted
+T4A34 013:736.510 - 5.678ms returns 0x01
+T4A34 013:736.538 JLINK_IsHalted()
+T4A34 013:746.712 - 10.172ms returns ERROR
+T4A34 013:746.754 JLINK_IsHalted()
+T4A34 013:756.904 - 10.148ms returns ERROR
+T4A34 013:756.952 JLINK_IsHalted()
+T4A34 013:767.184 - 10.230ms returns ERROR
+T4A34 013:767.229 JLINK_HasError()
+T4A34 013:767.352 JLINK_ReadReg(R15 (PC))
+T4A34 013:777.594   CPU is running
+T4A34 013:777.658   
+  ***** Error: 
+T4A34 013:777.677   Cannot read register 15 (R15) while CPU is running
+T4A34 013:777.698 - 10.345ms returns 0x00000000
+T4A34 013:778.272 JLINK_ReadReg(XPSR)
+T4A34 013:788.493   CPU is running
+T4A34 013:788.555   
+  ***** Error: 
+T4A34 013:788.582   Cannot read register 16 (XPSR) while CPU is running
+T4A34 013:788.627 - 10.355ms returns 0x00000000
+T4A34 013:789.786 JLINK_HasError()
+T4A34 013:789.829 JLINK_HasError()
+T4A34 013:789.851 JLINK_ReadMemU32(0xE000ED30, 0x1 Items)
+T4A34 013:789.888   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T4A34 013:792.995   failed
+T4A34 013:793.043 - 3.191ms returns -1 (0xFFFFFFFF)
+T4A34 013:793.234 JLINK_HasError()
+T4A34 013:793.275 JLINK_ReadReg(R0)
+T4A34 013:803.525   CPU is running
+T4A34 013:803.584   
+  ***** Error: 
+T4A34 013:803.608   Cannot read register 0 (R0) while CPU is running
+T4A34 013:803.635 - 10.358ms returns 0x00000000
+T4A34 013:803.834 JLINK_ReadReg(R1)
+T4A34 013:814.118   CPU is running
+T4A34 013:814.181   
+  ***** Error: 
+T4A34 013:814.208   Cannot read register 1 (R1) while CPU is running
+T4A34 013:814.240 - 10.405ms returns 0x00000000
+T4A34 013:814.550 JLINK_ReadReg(R2)
+T4A34 013:824.850   CPU is running
+T4A34 013:824.923   
+  ***** Error: 
+T4A34 013:824.957   Cannot read register 2 (R2) while CPU is running
+T4A34 013:824.992 - 10.441ms returns 0x00000000
+T4A34 013:825.354 JLINK_ReadReg(R3)
+T4A34 013:835.699   CPU is running
+T4A34 013:835.792   
+  ***** Error: 
+T4A34 013:835.845   Cannot read register 3 (R3) while CPU is running
+T4A34 013:835.904 - 10.547ms returns 0x00000000
+T4A34 013:836.370 JLINK_ReadReg(R4)
+T4A34 013:846.778   CPU is running
+T4A34 013:846.861   
+  ***** Error: 
+T4A34 013:846.901   Cannot read register 4 (R4) while CPU is running
+T4A34 013:846.944 - 10.574ms returns 0x00000000
+T4A34 013:847.350 JLINK_ReadReg(R5)
+T4A34 013:857.683   CPU is running
+T4A34 013:857.758   
+  ***** Error: 
+T4A34 013:857.798   Cannot read register 5 (R5) while CPU is running
+T4A34 013:857.843 - 10.492ms returns 0x00000000
+T4A34 013:858.262 JLINK_ReadReg(R6)
+T4A34 013:868.563   CPU is running
+T4A34 013:868.646   
+  ***** Error: 
+T4A34 013:868.693   Cannot read register 6 (R6) while CPU is running
+T4A34 013:868.742 - 10.478ms returns 0x00000000
+T4A34 013:869.194 JLINK_ReadReg(R7)
+T4A34 013:879.589   CPU is running
+T4A34 013:879.640   
+  ***** Error: 
+T4A34 013:879.661   Cannot read register 7 (R7) while CPU is running
+T4A34 013:879.685 - 10.492ms returns 0x00000000
+T4A34 013:879.907 JLINK_ReadReg(R8)
+T4A34 013:890.118   CPU is running
+T4A34 013:890.170   
+  ***** Error: 
+T4A34 013:890.181   Cannot read register 8 (R8) while CPU is running
+T4A34 013:890.192 - 10.285ms returns 0x00000000
+T4A34 013:890.336 JLINK_ReadReg(R9)
+T4A34 013:900.518   CPU is running
+T4A34 013:900.547   
+  ***** Error: 
+T4A34 013:900.558   Cannot read register 9 (R9) while CPU is running
+T4A34 013:900.571 - 10.234ms returns 0x00000000
+T4A34 013:902.403 JLINK_ReadReg(R10)
+T4A34 013:912.606   CPU is running
+T4A34 013:912.637   
+  ***** Error: 
+T4A34 013:912.643   Cannot read register 10 (R10) while CPU is running
+T4A34 013:912.651 - 10.249ms returns 0x00000000
+T4A34 013:912.848 JLINK_ReadReg(R11)
+T4A34 013:923.072   CPU is running
+T4A34 013:923.101   
+  ***** Error: 
+T4A34 013:923.107   Cannot read register 11 (R11) while CPU is running
+T4A34 013:923.117 - 10.267ms returns 0x00000000
+T4A34 013:923.517 JLINK_ReadReg(R12)
+T4A34 013:934.072   CPU is running
+T4A34 013:934.109   
+  ***** Error: 
+T4A34 013:934.120   Cannot read register 12 (R12) while CPU is running
+T4A34 013:934.134 - 10.624ms returns 0x00000000
+T4A34 013:936.056 JLINK_ReadReg(R13 (SP))
+T4A34 013:946.421   CPU is running
+T4A34 013:946.477   
+  ***** Error: 
+T4A34 013:946.494   Cannot read register 13 (R13) while CPU is running
+T4A34 013:946.517 - 10.460ms returns 0x00000000
+T4A34 013:946.878 JLINK_ReadReg(R14)
+T4A34 013:957.398   CPU is running
+T4A34 013:957.478   
+  ***** Error: 
+T4A34 013:957.506   Cannot read register 14 (R14) while CPU is running
+T4A34 013:957.533 - 10.655ms returns 0x00000000
+T4A34 013:957.995 JLINK_ReadReg(R15 (PC))
+T4A34 013:968.518   CPU is running
+T4A34 013:968.654   
+  ***** Error: 
+T4A34 013:968.690   Cannot read register 15 (R15) while CPU is running
+T4A34 013:968.736 - 10.740ms returns 0x00000000
+T4A34 013:970.322 JLINK_ReadReg(XPSR)
+T4A34 013:980.909   CPU is running
+T4A34 013:980.960   
+  ***** Error: 
+T4A34 013:980.978   Cannot read register 16 (XPSR) while CPU is running
+T4A34 013:980.997 - 10.677ms returns 0x00000000
+T4A34 013:981.896 JLINK_ReadReg(MSP)
+T4A34 013:992.338   CPU is running
+T4A34 013:992.394   
+  ***** Error: 
+T4A34 013:992.411   Cannot read register 17 (MSP) while CPU is running
+T4A34 013:992.430 - 10.533ms returns 0x00000000
+T4A34 013:993.742 JLINK_ReadReg(PSP)
+T4A34 014:004.200   CPU is running
+T4A34 014:004.309   
+  ***** Error: 
+T4A34 014:004.334   Cannot read register 18 (PSP) while CPU is running
+T4A34 014:004.363 - 10.618ms returns 0x00000000
+T4A34 014:004.870 JLINK_ReadReg(CFBP)
+T4A34 014:015.294   CPU is running
+T4A34 014:015.355   
+  ***** Error: 
+T4A34 014:015.374   Cannot read register 20 (CFBP) while CPU is running
+T4A34 014:015.395 - 10.525ms returns 0x00000000
+T3E68 014:015.861 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:015.944   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 014:019.110   failed
+T3E68 014:019.210 - 3.347ms returns -1 (0xFFFFFFFF)
+T3E68 014:019.256 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:019.301   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 014:022.598   failed
+T3E68 014:022.675 - 3.419ms returns -1 (0xFFFFFFFF)
+T3E68 014:022.714 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:022.749   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 014:025.882   failed
+T3E68 014:025.965 - 3.251ms returns -1 (0xFFFFFFFF)
+T3E68 014:026.021 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:026.074   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 014:029.342   failed
+T3E68 014:029.429 - 3.408ms returns -1 (0xFFFFFFFF)
+T3E68 014:029.475 JLINK_ReadMemEx(0x2000001C, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:029.517   CPU_ReadMem(2 bytes @ 0x2000001C)
+T3E68 014:032.694   failed
+T3E68 014:032.789 - 3.313ms returns -1 (0xFFFFFFFF)
+T3E68 014:032.840 JLINK_ReadMemEx(0x2000001C, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:032.888   CPU_ReadMem(1 bytes @ 0x2000001C)
+T3E68 014:036.090   failed
+T3E68 014:036.200 - 3.359ms returns -1 (0xFFFFFFFF)
+T3E68 014:038.347 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:038.498   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 014:041.789   failed
+T3E68 014:041.853 - 3.508ms returns -1 (0xFFFFFFFF)
+T3E68 014:041.880 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:041.912   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 014:045.395   failed
+T3E68 014:045.470 - 3.589ms returns -1 (0xFFFFFFFF)
+T3E68 014:045.512 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:045.558   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 014:048.920   failed
+T3E68 014:049.035 - 3.523ms returns -1 (0xFFFFFFFF)
+T3E68 014:049.077 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:049.130   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 014:052.750   failed
+T3E68 014:052.902 - 3.824ms returns -1 (0xFFFFFFFF)
+T3E68 014:052.954 JLINK_ReadMemEx(0x2000001E, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:053.021   CPU_ReadMem(2 bytes @ 0x2000001E)
+T3E68 014:056.352   failed
+T3E68 014:056.458 - 3.504ms returns -1 (0xFFFFFFFF)
+T3E68 014:056.499 JLINK_ReadMemEx(0x2000001E, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:056.544   CPU_ReadMem(1 bytes @ 0x2000001E)
+T3E68 014:059.774   failed
+T3E68 014:059.909 - 3.409ms returns -1 (0xFFFFFFFF)
+T3E68 014:060.912 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:060.986   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 014:064.282   failed
+T3E68 014:064.398 - 3.486ms returns -1 (0xFFFFFFFF)
+T3E68 014:064.450 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:064.506   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 014:067.803   failed
+T3E68 014:067.942 - 3.493ms returns -1 (0xFFFFFFFF)
+T3E68 014:068.005 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:068.069   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 014:071.402   failed
+T3E68 014:071.571 - 3.565ms returns -1 (0xFFFFFFFF)
+T3E68 014:071.666 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:071.733   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 014:075.074   failed
+T3E68 014:075.184 - 3.519ms returns -1 (0xFFFFFFFF)
+T3E68 014:075.232 JLINK_ReadMemEx(0x20000020, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:075.283   CPU_ReadMem(2 bytes @ 0x20000020)
+T3E68 014:078.563   failed
+T3E68 014:078.701 - 3.468ms returns -1 (0xFFFFFFFF)
+T3E68 014:078.762 JLINK_ReadMemEx(0x20000020, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:078.824   CPU_ReadMem(1 bytes @ 0x20000020)
+T3E68 014:082.205   failed
+T3E68 014:082.350 - 3.589ms returns -1 (0xFFFFFFFF)
+T3E68 014:083.621 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:083.709   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 014:086.859   failed
+T3E68 014:086.957 - 3.336ms returns -1 (0xFFFFFFFF)
+T3E68 014:086.995 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:087.051   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 014:090.357   failed
+T3E68 014:090.474 - 3.478ms returns -1 (0xFFFFFFFF)
+T3E68 014:090.515 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:090.568   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 014:093.925   failed
+T3E68 014:094.053 - 3.537ms returns -1 (0xFFFFFFFF)
+T3E68 014:094.094 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:094.152   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 014:097.539   failed
+T3E68 014:097.678 - 3.583ms returns -1 (0xFFFFFFFF)
+T3E68 014:097.730 JLINK_ReadMemEx(0x20000022, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:097.797   CPU_ReadMem(2 bytes @ 0x20000022)
+T3E68 014:101.176   failed
+T3E68 014:101.328 - 3.597ms returns -1 (0xFFFFFFFF)
+T3E68 014:101.395 JLINK_ReadMemEx(0x20000022, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:101.469   CPU_ReadMem(1 bytes @ 0x20000022)
+T3E68 014:104.814   failed
+T3E68 014:104.974 - 3.580ms returns -1 (0xFFFFFFFF)
+T3E68 014:106.899 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:107.021   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 014:110.226   failed
+T3E68 014:110.323 - 3.425ms returns -1 (0xFFFFFFFF)
+T3E68 014:110.365 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:110.411   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 014:113.715   failed
+T3E68 014:113.846 - 3.480ms returns -1 (0xFFFFFFFF)
+T3E68 014:113.906 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:113.968   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 014:117.275   failed
+T3E68 014:117.416 - 3.510ms returns -1 (0xFFFFFFFF)
+T3E68 014:117.477 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:117.549   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 014:120.678   failed
+T3E68 014:120.813 - 3.335ms returns -1 (0xFFFFFFFF)
+T3E68 014:120.872 JLINK_ReadMemEx(0x20000024, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:120.938   CPU_ReadMem(2 bytes @ 0x20000024)
+T3E68 014:124.118   failed
+T3E68 014:124.192 - 3.321ms returns -1 (0xFFFFFFFF)
+T3E68 014:124.235 JLINK_ReadMemEx(0x20000024, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:124.278   CPU_ReadMem(1 bytes @ 0x20000024)
+T3E68 014:127.411   failed
+T3E68 014:127.520 - 3.285ms returns -1 (0xFFFFFFFF)
+T3E68 014:128.608 JLINK_ReadMemEx(0x00000000, 0x3C Bytes, Flags = 0x02000000)
+T3E68 014:128.686   CPU_ReadMem(60 bytes @ 0x00000000)
+T3E68 014:132.037   failed
+T3E68 014:132.163 - 3.555ms returns -1 (0xFFFFFFFF)
+T3E68 014:132.206 JLINK_ReadMemEx(0x00000000, 0x3C Bytes, Flags = 0x02000000)
+T3E68 014:132.256   CPU_ReadMem(60 bytes @ 0x00000000)
+T3E68 014:135.634   failed
+T3E68 014:135.776 - 3.568ms returns -1 (0xFFFFFFFF)
+T3E68 014:135.827 JLINK_ReadMemEx(0x00000000, 0x10 Bytes, Flags = 0x02000000)
+T3E68 014:135.886   CPU_ReadMem(16 bytes @ 0x00000000)
+T3E68 014:139.019   failed
+T3E68 014:139.125 - 3.297ms returns -1 (0xFFFFFFFF)
+T3E68 014:139.163 JLINK_ReadMemEx(0x00000000, 0x4 Bytes, Flags = 0x02000000)
+T3E68 014:139.208   CPU_ReadMem(4 bytes @ 0x00000000)
+T3E68 014:142.506   failed
+T3E68 014:142.635 - 3.471ms returns -1 (0xFFFFFFFF)
+T3E68 014:142.701 JLINK_ReadMemEx(0x00000000, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:142.766   CPU_ReadMem(2 bytes @ 0x00000000)
+T3E68 014:146.138   failed
+T3E68 014:146.278 - 3.577ms returns -1 (0xFFFFFFFF)
+T3E68 014:146.330 JLINK_ReadMemEx(0x00000000, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:146.389   CPU_ReadMem(1 bytes @ 0x00000000)
+T3E68 014:149.738   failed
+T3E68 014:149.888 - 3.558ms returns -1 (0xFFFFFFFF)
+T3E68 014:149.949 JLINK_ReadMemEx(0x00000000, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:150.013   CPU_ReadMem(2 bytes @ 0x00000000)
+T3E68 014:153.203   failed
+T3E68 014:153.315 - 3.366ms returns -1 (0xFFFFFFFF)
+T3E68 014:153.390 JLINK_ReadMemEx(0x00000000, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:153.458   CPU_ReadMem(2 bytes @ 0x00000000)
+T3E68 014:156.902   failed
+T3E68 014:157.010 - 3.620ms returns -1 (0xFFFFFFFF)
+T3E68 014:157.061 JLINK_ReadMemEx(0x00000000, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:157.109   CPU_ReadMem(2 bytes @ 0x00000000)
+T3E68 014:160.386   failed
+T3E68 014:160.458 - 3.397ms returns -1 (0xFFFFFFFF)
+T3E68 014:160.506 JLINK_ReadMemEx(0x00000000, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:160.547   CPU_ReadMem(2 bytes @ 0x00000000)
+T3E68 014:163.819   failed
+T3E68 014:163.909 - 3.403ms returns -1 (0xFFFFFFFF)
+T3E68 014:163.963 JLINK_ReadMemEx(0x00000000, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:164.008   CPU_ReadMem(2 bytes @ 0x00000000)
+T3E68 014:167.168   failed
+T3E68 014:167.250 - 3.286ms returns -1 (0xFFFFFFFF)
+T3E68 014:167.323 JLINK_ReadMemEx(0x00000000, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:167.437   CPU_ReadMem(1 bytes @ 0x00000000)
+T3E68 014:170.714   failed
+T3E68 014:170.781 - 3.460ms returns -1 (0xFFFFFFFF)
+T3E68 014:170.814 JLINK_ReadMemEx(0x00000002, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:170.842   CPU_ReadMem(2 bytes @ 0x00000002)
+T3E68 014:174.026   failed
+T3E68 014:174.115 - 3.300ms returns -1 (0xFFFFFFFF)
+T3E68 014:174.155 JLINK_ReadMemEx(0x00000002, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:174.192   CPU_ReadMem(2 bytes @ 0x00000002)
+T3E68 014:177.517   failed
+T3E68 014:177.643 - 3.487ms returns -1 (0xFFFFFFFF)
+T3E68 014:177.696 JLINK_ReadMemEx(0x00000002, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:177.747   CPU_ReadMem(2 bytes @ 0x00000002)
+T3E68 014:181.107   failed
+T3E68 014:181.251 - 3.554ms returns -1 (0xFFFFFFFF)
+T3E68 014:181.315 JLINK_ReadMemEx(0x00000002, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:181.374   CPU_ReadMem(2 bytes @ 0x00000002)
+T3E68 014:184.814   failed
+T3E68 014:185.021 - 3.705ms returns -1 (0xFFFFFFFF)
+T3E68 014:185.102 JLINK_ReadMemEx(0x00000002, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:185.181   CPU_ReadMem(2 bytes @ 0x00000002)
+T3E68 014:188.635   failed
+T3E68 014:188.736 - 3.634ms returns -1 (0xFFFFFFFF)
+T3E68 014:188.794 JLINK_ReadMemEx(0x00000002, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:188.846   CPU_ReadMem(1 bytes @ 0x00000002)
+T3E68 014:192.202   failed
+T3E68 014:192.312 - 3.519ms returns -1 (0xFFFFFFFF)
+T3E68 014:192.414 JLINK_ReadMemEx(0x00000002, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:192.456   CPU_ReadMem(2 bytes @ 0x00000002)
+T3E68 014:195.704   failed
+T3E68 014:195.821 - 3.406ms returns -1 (0xFFFFFFFF)
+T3E68 014:195.877 JLINK_ReadMemEx(0x00000002, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:195.925   CPU_ReadMem(2 bytes @ 0x00000002)
+T3E68 014:199.261   failed
+T3E68 014:199.378 - 3.500ms returns -1 (0xFFFFFFFF)
+T3E68 014:199.438 JLINK_ReadMemEx(0x00000002, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:199.493   CPU_ReadMem(2 bytes @ 0x00000002)
+T3E68 014:202.877   failed
+T3E68 014:203.013 - 3.573ms returns -1 (0xFFFFFFFF)
+T3E68 014:203.083 JLINK_ReadMemEx(0x00000002, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:203.146   CPU_ReadMem(2 bytes @ 0x00000002)
+T3E68 014:206.554   failed
+T3E68 014:206.661 - 3.578ms returns -1 (0xFFFFFFFF)
+T3E68 014:206.717 JLINK_ReadMemEx(0x00000002, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:206.765   CPU_ReadMem(2 bytes @ 0x00000002)
+T3E68 014:210.114   failed
+T3E68 014:210.243 - 3.525ms returns -1 (0xFFFFFFFF)
+T3E68 014:210.302 JLINK_ReadMemEx(0x00000002, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:210.390   CPU_ReadMem(1 bytes @ 0x00000002)
+T3E68 014:213.718   failed
+T3E68 014:213.845 - 3.542ms returns -1 (0xFFFFFFFF)
+T3E68 014:213.920 JLINK_ReadMemEx(0x00000004, 0x3C Bytes, Flags = 0x02000000)
+T3E68 014:213.981   CPU_ReadMem(60 bytes @ 0x00000004)
+T3E68 014:217.392   failed
+T3E68 014:217.538 - 3.617ms returns -1 (0xFFFFFFFF)
+T3E68 014:217.619 JLINK_ReadMemEx(0x00000004, 0x3C Bytes, Flags = 0x02000000)
+T3E68 014:217.680   CPU_ReadMem(60 bytes @ 0x00000004)
+T3E68 014:220.928   failed
+T3E68 014:221.011 - 3.392ms returns -1 (0xFFFFFFFF)
+T3E68 014:221.059 JLINK_ReadMemEx(0x00000004, 0xC Bytes, Flags = 0x02000000)
+T3E68 014:221.104   CPU_ReadMem(12 bytes @ 0x00000004)
+T3E68 014:224.301   failed
+T3E68 014:224.371 - 3.313ms returns -1 (0xFFFFFFFF)
+T3E68 014:224.408 JLINK_ReadMemEx(0x00000004, 0x4 Bytes, Flags = 0x02000000)
+T3E68 014:224.446   CPU_ReadMem(4 bytes @ 0x00000004)
+T3E68 014:227.720   failed
+T3E68 014:227.830 - 3.421ms returns -1 (0xFFFFFFFF)
+T3E68 014:227.885 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:227.934   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:231.160   failed
+T3E68 014:231.277 - 3.391ms returns -1 (0xFFFFFFFF)
+T3E68 014:231.338 JLINK_ReadMemEx(0x00000004, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:231.400   CPU_ReadMem(1 bytes @ 0x00000004)
+T3E68 014:234.629   failed
+T3E68 014:234.706 - 3.369ms returns -1 (0xFFFFFFFF)
+T3E68 014:234.754 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:234.795   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:238.022   failed
+T3E68 014:238.086 - 3.334ms returns -1 (0xFFFFFFFF)
+T3E68 014:238.120 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:238.150   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:241.370   failed
+T3E68 014:241.458 - 3.337ms returns -1 (0xFFFFFFFF)
+T3E68 014:241.506 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:241.550   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:244.726   failed
+T3E68 014:244.834 - 3.327ms returns -1 (0xFFFFFFFF)
+T3E68 014:244.886 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:244.934   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:248.318   failed
+T3E68 014:248.435 - 3.547ms returns -1 (0xFFFFFFFF)
+T3E68 014:248.498 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:248.552   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:251.898   failed
+T3E68 014:252.000 - 3.503ms returns -1 (0xFFFFFFFF)
+T3E68 014:252.051 JLINK_ReadMemEx(0x00000004, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:252.096   CPU_ReadMem(1 bytes @ 0x00000004)
+T3E68 014:255.323   failed
+T3E68 014:255.426 - 3.374ms returns -1 (0xFFFFFFFF)
+T3E68 014:255.694 JLINK_ReadMemEx(0x00000004, 0x3C Bytes, Flags = 0x02000000)
+T3E68 014:255.755   CPU_ReadMem(60 bytes @ 0x00000004)
+T3E68 014:259.114   failed
+T3E68 014:259.202 - 3.508ms returns -1 (0xFFFFFFFF)
+T3E68 014:259.240 JLINK_ReadMemEx(0x00000004, 0x3C Bytes, Flags = 0x02000000)
+T3E68 014:259.280   CPU_ReadMem(60 bytes @ 0x00000004)
+T3E68 014:262.698   failed
+T3E68 014:262.806 - 3.566ms returns -1 (0xFFFFFFFF)
+T3E68 014:262.843 JLINK_ReadMemEx(0x00000004, 0xC Bytes, Flags = 0x02000000)
+T3E68 014:262.880   CPU_ReadMem(12 bytes @ 0x00000004)
+T3E68 014:266.134   failed
+T3E68 014:266.222 - 3.379ms returns -1 (0xFFFFFFFF)
+T3E68 014:266.258 JLINK_ReadMemEx(0x00000004, 0x4 Bytes, Flags = 0x02000000)
+T3E68 014:266.296   CPU_ReadMem(4 bytes @ 0x00000004)
+T3E68 014:269.651   failed
+T3E68 014:269.746 - 3.487ms returns -1 (0xFFFFFFFF)
+T3E68 014:269.782 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:269.822   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:273.030   failed
+T3E68 014:273.115 - 3.332ms returns -1 (0xFFFFFFFF)
+T3E68 014:273.150 JLINK_ReadMemEx(0x00000004, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:273.189   CPU_ReadMem(1 bytes @ 0x00000004)
+T3E68 014:276.498   failed
+T3E68 014:276.586 - 3.435ms returns -1 (0xFFFFFFFF)
+T3E68 014:276.622 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:276.677   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:279.957   failed
+T3E68 014:280.045 - 3.422ms returns -1 (0xFFFFFFFF)
+T3E68 014:280.082 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:280.120   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:283.291   failed
+T3E68 014:283.379 - 3.298ms returns -1 (0xFFFFFFFF)
+T3E68 014:283.426 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:283.464   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:286.600   failed
+T3E68 014:286.694 - 3.269ms returns -1 (0xFFFFFFFF)
+T3E68 014:286.739 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:286.781   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:290.003   failed
+T3E68 014:290.078 - 3.338ms returns -1 (0xFFFFFFFF)
+T3E68 014:290.120 JLINK_ReadMemEx(0x00000004, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:290.155   CPU_ReadMem(2 bytes @ 0x00000004)
+T3E68 014:293.288   failed
+T3E68 014:293.386 - 3.265ms returns -1 (0xFFFFFFFF)
+T3E68 014:293.432 JLINK_ReadMemEx(0x00000004, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:293.475   CPU_ReadMem(1 bytes @ 0x00000004)
+T3E68 014:296.616   failed
+T3E68 014:296.696 - 3.263ms returns -1 (0xFFFFFFFF)
+T3E68 014:296.752 JLINK_ReadMemEx(0x00000006, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:296.795   CPU_ReadMem(2 bytes @ 0x00000006)
+T3E68 014:299.950   failed
+T3E68 014:300.005 - 3.253ms returns -1 (0xFFFFFFFF)
+T3E68 014:300.038 JLINK_ReadMemEx(0x00000006, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:300.069   CPU_ReadMem(2 bytes @ 0x00000006)
+T3E68 014:303.168   failed
+T3E68 014:303.214 - 3.176ms returns -1 (0xFFFFFFFF)
+T3E68 014:303.242 JLINK_ReadMemEx(0x00000006, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:303.266   CPU_ReadMem(2 bytes @ 0x00000006)
+T3E68 014:306.248   failed
+T3E68 014:306.296 - 3.055ms returns -1 (0xFFFFFFFF)
+T3E68 014:306.325 JLINK_ReadMemEx(0x00000006, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:306.350   CPU_ReadMem(2 bytes @ 0x00000006)
+T3E68 014:309.258   failed
+T3E68 014:309.304 - 2.979ms returns -1 (0xFFFFFFFF)
+T3E68 014:309.331 JLINK_ReadMemEx(0x00000006, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:309.354   CPU_ReadMem(2 bytes @ 0x00000006)
+T3E68 014:312.493   failed
+T3E68 014:312.542 - 3.212ms returns -1 (0xFFFFFFFF)
+T3E68 014:312.576 JLINK_ReadMemEx(0x00000006, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:312.605   CPU_ReadMem(1 bytes @ 0x00000006)
+T3E68 014:315.854   failed
+T3E68 014:315.914 - 3.337ms returns -1 (0xFFFFFFFF)
+T3E68 014:316.128 JLINK_ReadMemEx(0x00000006, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:316.184   CPU_ReadMem(2 bytes @ 0x00000006)
+T3E68 014:319.413   failed
+T3E68 014:319.494 - 3.367ms returns -1 (0xFFFFFFFF)
+T3E68 014:319.541 JLINK_ReadMemEx(0x00000006, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:319.586   CPU_ReadMem(2 bytes @ 0x00000006)
+T3E68 014:322.846   failed
+T3E68 014:322.925 - 3.385ms returns -1 (0xFFFFFFFF)
+T3E68 014:322.962 JLINK_ReadMemEx(0x00000006, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:322.998   CPU_ReadMem(2 bytes @ 0x00000006)
+T3E68 014:326.250   failed
+T3E68 014:326.323 - 3.361ms returns -1 (0xFFFFFFFF)
+T3E68 014:326.363 JLINK_ReadMemEx(0x00000006, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:326.403   CPU_ReadMem(2 bytes @ 0x00000006)
+T3E68 014:329.654   failed
+T3E68 014:329.738 - 3.373ms returns -1 (0xFFFFFFFF)
+T3E68 014:329.782 JLINK_ReadMemEx(0x00000006, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:329.829   CPU_ReadMem(2 bytes @ 0x00000006)
+T3E68 014:333.150   failed
+T3E68 014:333.243 - 3.460ms returns -1 (0xFFFFFFFF)
+T3E68 014:333.294 JLINK_ReadMemEx(0x00000006, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:333.347   CPU_ReadMem(1 bytes @ 0x00000006)
+T3E68 014:336.467   failed
+T3E68 014:336.563 - 3.268ms returns -1 (0xFFFFFFFF)
+T3E68 014:336.622 JLINK_ReadMemEx(0x00000008, 0x3C Bytes, Flags = 0x02000000)
+T3E68 014:336.677   CPU_ReadMem(60 bytes @ 0x00000008)
+T3E68 014:339.970   failed
+T3E68 014:340.069 - 3.446ms returns -1 (0xFFFFFFFF)
+T3E68 014:340.109 JLINK_ReadMemEx(0x00000008, 0x3C Bytes, Flags = 0x02000000)
+T3E68 014:340.170   CPU_ReadMem(60 bytes @ 0x00000008)
+T3E68 014:343.408   failed
+T3E68 014:343.469 - 3.361ms returns -1 (0xFFFFFFFF)
+T3E68 014:343.509 JLINK_ReadMemEx(0x00000008, 0x8 Bytes, Flags = 0x02000000)
+T3E68 014:343.542   CPU_ReadMem(8 bytes @ 0x00000008)
+T3E68 014:346.725   failed
+T3E68 014:346.776 - 3.266ms returns -1 (0xFFFFFFFF)
+T3E68 014:346.808 JLINK_ReadMemEx(0x00000008, 0x4 Bytes, Flags = 0x02000000)
+T3E68 014:346.838   CPU_ReadMem(4 bytes @ 0x00000008)
+T3E68 014:350.038   failed
+T3E68 014:350.133 - 3.323ms returns -1 (0xFFFFFFFF)
+T3E68 014:350.178 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:350.216   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:353.394   failed
+T3E68 014:353.526 - 3.348ms returns -1 (0xFFFFFFFF)
+T3E68 014:353.590 JLINK_ReadMemEx(0x00000008, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:353.656   CPU_ReadMem(1 bytes @ 0x00000008)
+T3E68 014:356.928   failed
+T3E68 014:356.995 - 3.405ms returns -1 (0xFFFFFFFF)
+T3E68 014:357.035 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:357.072   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:360.350   failed
+T3E68 014:360.421 - 3.384ms returns -1 (0xFFFFFFFF)
+T3E68 014:360.467 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:360.509   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:363.715   failed
+T3E68 014:363.805 - 3.336ms returns -1 (0xFFFFFFFF)
+T3E68 014:363.859 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:363.909   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:367.226   failed
+T3E68 014:367.291 - 3.432ms returns -1 (0xFFFFFFFF)
+T3E68 014:367.334 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:367.373   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:370.536   failed
+T3E68 014:370.640 - 3.304ms returns -1 (0xFFFFFFFF)
+T3E68 014:370.710 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:370.763   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:374.000   failed
+T3E68 014:374.090 - 3.379ms returns -1 (0xFFFFFFFF)
+T3E68 014:374.134 JLINK_ReadMemEx(0x00000008, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:374.174   CPU_ReadMem(1 bytes @ 0x00000008)
+T3E68 014:377.502   failed
+T3E68 014:377.613 - 3.477ms returns -1 (0xFFFFFFFF)
+T3E68 014:377.717 JLINK_ReadMemEx(0x00000008, 0x3C Bytes, Flags = 0x02000000)
+T3E68 014:377.765   CPU_ReadMem(60 bytes @ 0x00000008)
+T3E68 014:381.096   failed
+T3E68 014:381.206 - 3.489ms returns -1 (0xFFFFFFFF)
+T3E68 014:381.259 JLINK_ReadMemEx(0x00000008, 0x3C Bytes, Flags = 0x02000000)
+T3E68 014:381.309   CPU_ReadMem(60 bytes @ 0x00000008)
+T3E68 014:384.691   failed
+T3E68 014:384.771 - 3.512ms returns -1 (0xFFFFFFFF)
+T3E68 014:384.824 JLINK_ReadMemEx(0x00000008, 0x8 Bytes, Flags = 0x02000000)
+T3E68 014:384.870   CPU_ReadMem(8 bytes @ 0x00000008)
+T3E68 014:388.104   failed
+T3E68 014:388.226 - 3.400ms returns -1 (0xFFFFFFFF)
+T3E68 014:388.291 JLINK_ReadMemEx(0x00000008, 0x4 Bytes, Flags = 0x02000000)
+T3E68 014:388.352   CPU_ReadMem(4 bytes @ 0x00000008)
+T3E68 014:391.726   failed
+T3E68 014:391.846 - 3.556ms returns -1 (0xFFFFFFFF)
+T3E68 014:391.906 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:391.954   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:395.179   failed
+T3E68 014:395.306 - 3.398ms returns -1 (0xFFFFFFFF)
+T3E68 014:395.368 JLINK_ReadMemEx(0x00000008, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:395.424   CPU_ReadMem(1 bytes @ 0x00000008)
+T3E68 014:398.821   failed
+T3E68 014:398.955 - 3.586ms returns -1 (0xFFFFFFFF)
+T3E68 014:399.026 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:399.085   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:402.290   failed
+T3E68 014:402.422 - 3.397ms returns -1 (0xFFFFFFFF)
+T3E68 014:402.496 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:402.565   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:405.867   failed
+T3E68 014:405.970 - 3.474ms returns -1 (0xFFFFFFFF)
+T3E68 014:406.026 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:406.072   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:409.563   failed
+T3E68 014:409.658 - 3.632ms returns -1 (0xFFFFFFFF)
+T3E68 014:409.702 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:409.741   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:413.010   failed
+T3E68 014:413.118 - 3.415ms returns -1 (0xFFFFFFFF)
+T3E68 014:413.168 JLINK_ReadMemEx(0x00000008, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:413.213   CPU_ReadMem(2 bytes @ 0x00000008)
+T3E68 014:416.498   failed
+T3E68 014:416.579 - 3.409ms returns -1 (0xFFFFFFFF)
+T3E68 014:416.632 JLINK_ReadMemEx(0x00000008, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:416.680   CPU_ReadMem(1 bytes @ 0x00000008)
+T3E68 014:419.899   failed
+T3E68 014:420.027 - 3.394ms returns -1 (0xFFFFFFFF)
+T3E68 014:420.106 JLINK_ReadMemEx(0x0000000A, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:420.166   CPU_ReadMem(2 bytes @ 0x0000000A)
+T3E68 014:423.469   failed
+T3E68 014:423.558 - 3.454ms returns -1 (0xFFFFFFFF)
+T3E68 014:423.602 JLINK_ReadMemEx(0x0000000A, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:423.642   CPU_ReadMem(2 bytes @ 0x0000000A)
+T3E68 014:426.696   failed
+T3E68 014:426.744 - 3.142ms returns -1 (0xFFFFFFFF)
+T3E68 014:426.776 JLINK_ReadMemEx(0x0000000A, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:426.803   CPU_ReadMem(2 bytes @ 0x0000000A)
+T3E68 014:430.000   failed
+T3E68 014:430.045 - 3.268ms returns -1 (0xFFFFFFFF)
+T3E68 014:430.072 JLINK_ReadMemEx(0x0000000A, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:430.098   CPU_ReadMem(2 bytes @ 0x0000000A)
+T3E68 014:433.158   failed
+T3E68 014:433.213 - 3.140ms returns -1 (0xFFFFFFFF)
+T3E68 014:433.248 JLINK_ReadMemEx(0x0000000A, 0x2 Bytes, Flags = 0x02000000)
+T3E68 014:433.280   CPU_ReadMem(2 bytes @ 0x0000000A)
+T3E68 014:436.446   failed
+T3E68 014:436.541 - 3.291ms returns -1 (0xFFFFFFFF)
+T3E68 014:436.594 JLINK_ReadMemEx(0x0000000A, 0x1 Bytes, Flags = 0x02000000)
+T3E68 014:436.645   CPU_ReadMem(1 bytes @ 0x0000000A)
+T3E68 014:439.922   failed
+T3E68 014:439.982 - 3.389ms returns -1 (0xFFFFFFFF)
+T3E68 014:823.566 JLINK_HasError()
+T3E68 014:823.662 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T3E68 014:823.690 - 0.026ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T3E68 014:823.715 JLINK_Reset()
+T3E68 014:823.778   Memory map 'before startup completion point' is active
+T3E68 014:823.814   CPU is running
+T3E68 014:823.851   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3E68 014:826.848   CPU is running
+T3E68 014:826.912   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 014:829.837   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T3E68 014:830.304   Reset: Reset device via AIRCR.SYSRESETREQ.
+T3E68 014:830.355   CPU is running
+T3E68 014:830.389   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T3E68 014:884.315   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 014:887.653   Reset: SYSRESETREQ has confused core.
+T3E68 014:888.186   
+  ***** Error: 
+T3E68 014:888.258   Supply voltage too low (1 Volt is required, Measured: 0.0 Volt).
+Please check target power.
+T3E68 014:894.861   Failed to power up DAP
+T3E68 014:894.971   Reset: Using fallback: Reset pin.
+T3E68 014:895.014   CPU is running
+T3E68 014:895.058   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3E68 014:898.125   CPU is running
+T3E68 014:898.256   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 014:901.408   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T3E68 014:901.550   Reset: Reset device via reset pin
+T3E68 015:101.989   
+  ***** Warning: 
+T3E68 015:102.040   RESET (pin 15) high, but should be low. Please check target hardware.
+T3E68 015:234.701   Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).
+T3E68 015:234.891   Reset: Reconnecting and manually halting CPU.
+T3E68 015:242.237   Failed to power up DAP
+T3E68 015:248.650   
+  ***** Warning: 
+T3E68 015:248.786   CPU could not be halted
+T3E68 015:248.838   CPU is running
+T3E68 015:248.893   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 015:257.570   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 015:271.765   Reset: Core did not halt after reset, trying to disable WDT.
+T3E68 015:271.934   CPU is running
+T3E68 015:272.042   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3E68 015:275.374   CPU is running
+T3E68 015:275.534   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 015:279.200   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T3E68 015:279.400   Reset: Reset device via reset pin
+T3E68 015:480.832   
+  ***** Warning: 
+T3E68 015:480.899   RESET (pin 15) high, but should be low. Please check target hardware.
+T3E68 015:613.258   Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).
+T3E68 015:613.411   Reset: Reconnecting and manually halting CPU.
+T3E68 015:620.677   Failed to power up DAP
+T3E68 015:626.693   
+  ***** Warning: 
+T3E68 015:626.808   CPU could not be halted
+T3E68 015:626.859   CPU_ReadMem(4 bytes @ 0x400F2000)
+T3E68 015:630.086   CPU_ReadMem(4 bytes @ 0x40040000)
+T3E68 015:634.184   CPU is running
+T3E68 015:634.339   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 015:648.533   Reset: Failed. Toggling reset pin and trying reset strategy again.
+T3E68 015:850.715   
+  ***** Warning: 
+T3E68 015:850.797   RESET (pin 15) high, but should be low. Please check target hardware.
+T3E68 015:857.397   Failed to power up DAP
+T3E68 015:857.723   CPU is running
+T3E68 015:857.795   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3E68 015:860.685   CPU is running
+T3E68 015:860.718   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 015:863.629   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T3E68 015:864.162   Reset: Reset device via AIRCR.SYSRESETREQ.
+T3E68 015:864.182   CPU is running
+T3E68 015:864.200   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T3E68 015:918.354   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 015:921.723   Reset: SYSRESETREQ has confused core.
+T3E68 015:928.869   Failed to power up DAP
+T3E68 015:929.056   Reset: Using fallback: Reset pin.
+T3E68 015:929.125   CPU is running
+T3E68 015:929.195   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3E68 015:932.298   CPU is running
+T3E68 015:932.445   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 015:935.701   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T3E68 015:935.768   Reset: Reset device via reset pin
+T3E68 016:136.870   
+  ***** Warning: 
+T3E68 016:136.914   RESET (pin 15) high, but should be low. Please check target hardware.
+T3E68 016:268.986   Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).
+T3E68 016:269.210   Reset: Reconnecting and manually halting CPU.
+T3E68 016:276.642   Failed to power up DAP
+T3E68 016:282.699   
+  ***** Warning: 
+T3E68 016:282.917   CPU could not be halted
+T3E68 016:283.022   CPU is running
+T3E68 016:283.138   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 016:291.882   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3E68 016:306.322   Reset: Core did not halt after reset, trying to disable WDT.
+T3E68 016:306.470   CPU is running
+T3E68 016:306.525   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3E68 016:309.693   CPU is running
+T3E68 016:309.760   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 016:312.960   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T3E68 016:313.109   Reset: Reset device via reset pin
+T3E68 016:514.872   
+  ***** Warning: 
+T3E68 016:514.925   RESET (pin 15) high, but should be low. Please check target hardware.
+T3E68 016:647.315   Reset: VC_CORERESET did not halt CPU. (Debug logic also reset by reset pin?).
+T3E68 016:647.461   Reset: Reconnecting and manually halting CPU.
+T3E68 016:654.600   Failed to power up DAP
+T3E68 016:660.646   
+  ***** Warning: 
+T3E68 016:660.802   CPU could not be halted
+T3E68 016:660.877   CPU_ReadMem(4 bytes @ 0x400F2000)
+T3E68 016:664.680   CPU_ReadMem(4 bytes @ 0x40040000)
+T3E68 016:668.470   CPU is running
+T3E68 016:668.707   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 016:693.549   CPU is running
+T3E68 016:693.731   CPU_WriteMem(4 bytes @ 0xE0002000)
+T3E68 016:697.374   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T3E68 016:701.360   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3E68 016:704.771   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3E68 016:708.557   CPU_WriteMem(4 bytes @ 0xE0001000)
+T3E68 016:728.619   
+  ***** Warning: 
+T3E68 016:728.755   CPU could not be halted
+T3E68 016:728.830   
+  ***** Error: 
+T3E68 016:728.870   Failed to halt CPU.
+T3E68 016:728.918 - 1905.203ms
+T3E68 016:729.074 JLINK_HasError()
+T3E68 016:732.496 JLINK_Close()
+T3E68 016:739.170 - 6.672ms
+T3E68 016:739.253   
+T3E68 016:739.275   Closed

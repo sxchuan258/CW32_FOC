@@ -1,0 +1,15 @@
+.\output\exe\i2c_eeprom.o: Driver\Libraries\src\i2c_eeprom.c
+.\output\exe\i2c_eeprom.o: .\Driver\Libraries\inc\i2c_eeprom.h
+.\output\exe\i2c_eeprom.o: .\Driver\Libraries\inc\cw32l010_i2c.h
+.\output\exe\i2c_eeprom.o: .\Driver\Libraries\inc\system_cw32l010.h
+.\output\exe\i2c_eeprom.o: .\Driver\Libraries\inc\cw32l010.h
+.\output\exe\i2c_eeprom.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h
+.\output\exe\i2c_eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\exe\i2c_eeprom.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\output\exe\i2c_eeprom.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\output\exe\i2c_eeprom.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\output\exe\i2c_eeprom.o: .\Driver\Libraries\inc\base_types.h
+.\output\exe\i2c_eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\output\exe\i2c_eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\output\exe\i2c_eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\output\exe\i2c_eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h

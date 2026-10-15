@@ -1,0 +1,317 @@
+Dependencies for Project '工程模板', Target '工程模板': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARM_Compiler_5.06u7
+F (.\Driver\cw32l010_adc.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_adc.o --omf_browse .\output\exe\cw32l010_adc.crf --depend .\output\exe\cw32l010_adc.d)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\cw32l010_adc.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010_gpio.h)(0x66121440)
+I (Driver\cw32l010_sysctrl.h)(0x66121440)
+F (.\Driver\cw32l010_atim.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_atim.o --omf_browse .\output\exe\cw32l010_atim.crf --depend .\output\exe\cw32l010_atim.d)
+I (Driver\cw32l010_atim.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+F (.\Driver\cw32l010_btim.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_btim.o --omf_browse .\output\exe\cw32l010_btim.crf --depend .\output\exe\cw32l010_btim.d)
+I (Driver\cw32l010_btim.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010_sysctrl.h)(0x66121440)
+F (.\Driver\cw32l010_crc.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_crc.o --omf_browse .\output\exe\cw32l010_crc.crf --depend .\output\exe\cw32l010_crc.d)
+I (Driver\cw32l010_crc.h)(0x66121440)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+F (.\Driver\cw32l010_debug.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_debug.o --omf_browse .\output\exe\cw32l010_debug.crf --depend .\output\exe\cw32l010_debug.d)
+I (Driver\cw32l010_debug.h)(0x66121440)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+F (.\Driver\cw32l010_digitalsign.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_digitalsign.o --omf_browse .\output\exe\cw32l010_digitalsign.crf --depend .\output\exe\cw32l010_digitalsign.d)
+I (Driver\cw32l010_digitalsign.h)(0x66121440)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+F (.\Driver\cw32l010_flash.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_flash.o --omf_browse .\output\exe\cw32l010_flash.crf --depend .\output\exe\cw32l010_flash.d)
+I (Driver\cw32l010_flash.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+F (.\Driver\cw32l010_gpio.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_gpio.o --omf_browse .\output\exe\cw32l010_gpio.crf --depend .\output\exe\cw32l010_gpio.d)
+I (Driver\cw32l010_gpio.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010_sysctrl.h)(0x66121440)
+F (.\Driver\cw32l010_gtim.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_gtim.o --omf_browse .\output\exe\cw32l010_gtim.crf --depend .\output\exe\cw32l010_gtim.d)
+I (Driver\cw32l010_gtim.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010_sysctrl.h)(0x66121440)
+F (.\Driver\cw32l010_i2c.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_i2c.o --omf_browse .\output\exe\cw32l010_i2c.crf --depend .\output\exe\cw32l010_i2c.d)
+I (Driver\cw32l010_i2c.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+F (.\Driver\cw32l010_iwdt.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_iwdt.o --omf_browse .\output\exe\cw32l010_iwdt.crf --depend .\output\exe\cw32l010_iwdt.d)
+I (Driver\cw32l010_iwdt.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010_sysctrl.h)(0x66121440)
+F (.\Driver\cw32l010_lptim.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_lptim.o --omf_browse .\output\exe\cw32l010_lptim.crf --depend .\output\exe\cw32l010_lptim.d)
+I (Driver\cw32l010_lptim.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+F (.\Driver\cw32l010_lvd.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_lvd.o --omf_browse .\output\exe\cw32l010_lvd.crf --depend .\output\exe\cw32l010_lvd.d)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\cw32l010_lvd.h)(0x66121440)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+F (.\Driver\cw32l010_pwr.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_pwr.o --omf_browse .\output\exe\cw32l010_pwr.crf --depend .\output\exe\cw32l010_pwr.d)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\cw32l010_pwr.h)(0x66121440)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+F (.\Driver\cw32l010_rtc.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_rtc.o --omf_browse .\output\exe\cw32l010_rtc.crf --depend .\output\exe\cw32l010_rtc.d)
+I (Driver\cw32l010_rtc.h)(0x66121440)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\cw32l010_sysctrl.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+F (.\Driver\cw32l010_spi.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_spi.o --omf_browse .\output\exe\cw32l010_spi.crf --depend .\output\exe\cw32l010_spi.d)
+I (Driver\cw32l010_spi.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+F (.\Driver\cw32l010_sysctrl.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_sysctrl.o --omf_browse .\output\exe\cw32l010_sysctrl.crf --depend .\output\exe\cw32l010_sysctrl.d)
+I (Driver\cw32l010_sysctrl.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+F (.\Driver\cw32l010_systick.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_systick.o --omf_browse .\output\exe\cw32l010_systick.crf --depend .\output\exe\cw32l010_systick.d)
+I (Driver\cw32l010_systick.h)(0x66121440)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+F (.\Driver\cw32l010_uart.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_uart.o --omf_browse .\output\exe\cw32l010_uart.crf --depend .\output\exe\cw32l010_uart.d)
+I (Driver\cw32l010_uart.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+F (.\Driver\cw32l010_vc.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_vc.o --omf_browse .\output\exe\cw32l010_vc.crf --depend .\output\exe\cw32l010_vc.d)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\cw32l010_vc.h)(0x66121440)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (Driver\cw32l010_adc.h)(0x66121440)
+F (.\Driver\system_cw32l010.c)(0x66121440)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\system_cw32l010.o --omf_browse .\output\exe\system_cw32l010.crf --depend .\output\exe\system_cw32l010.d)
+I (Driver\system_cw32l010.h)(0x66121440)
+I (Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+F (.\Driver\startup_cw32l010.s)(0x66121440)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "_RTE_ SETA 1"-o .\output\exe\startup_cw32l010.o --depend .\output\exe\startup_cw32l010.d)
+F (.\User\interrupts_cw32l010.c)(0x6684AF95)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\interrupts_cw32l010.o --omf_browse .\output\exe\interrupts_cw32l010.crf --depend .\output\exe\interrupts_cw32l010.d)
+I (User\interrupts_cw32l010.h)(0x66121440)
+F (.\User\main.c)(0x6684BCB0)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_________-ID:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\Software\Keil5.39\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="539" -D_RTE_ -D_RTE_-o .\output\exe\main.o --omf_browse .\output\exe\main.crf --depend .\output\exe\main.d)
+I (User\main.h)(0x6684BC7D)
+I (.\Driver\cw32l010.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (D:\Software\Keil5.39\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Driver\cw32l010_gpio.h)(0x66121440)
+I (.\Driver\system_cw32l010.h)(0x66121440)
+I (.\Driver\base_types.h)(0x66121440)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8E3CC2)
+I (D:\Software\Keil5.39\ARM\ARM_Compiler_5.06u7\include\assert.h)(0x5E8E3CC2)
+I (.\Driver\cw32l010_sysctrl.h)(0x66121440)
+I (.\Driver\cw32l010_systick.h)(0x66121440)
+I (User\interrupts_cw32l010.h)(0x66121440)

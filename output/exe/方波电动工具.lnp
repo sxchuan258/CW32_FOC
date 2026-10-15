@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+".\output\exe\startup_cw32l010.o"
+".\output\exe\cw32l010_adc.o"
+".\output\exe\cw32l010_atim.o"
+".\output\exe\cw32l010_btim.o"
+".\output\exe\cw32l010_crc.o"
+".\output\exe\cw32l010_flash.o"
+".\output\exe\cw32l010_gpio.o"
+".\output\exe\cw32l010_gtim.o"
+".\output\exe\cw32l010_pwr.o"
+".\output\exe\cw32l010_sysctrl.o"
+".\output\exe\system_cw32l010.o"
+".\output\exe\main.o"
+".\output\exe\interrupts_cw32l010.o"
+".\output\exe\init.o"
+".\output\exe\flash_opration.o"
+".\output\exe\global.o"
+".\output\exe\motor.o"
+".\output\exe\sensorlessp.o"
+".\output\exe\sensorless.o"
+".\output\exe\control.o"
+".\output\exe\filter.o"
+--library_type=microlib --strict --scatter ".\output\exe\方波电动工具.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --symbols
+--info sizes --info totals
+--list ".\output\list\方波电动工具.map" -o .\output\exe\方波电动工具.axf
