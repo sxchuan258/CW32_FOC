@@ -29,13 +29,14 @@ int main(void)
   RCC_Configuration();
 	DPWMConfiguration();	
 	RST_KEYConfiguration();
+	ADC_Configuration();
+	GTIM_Init();
 	BLDC_Configuration();
 	SENSORLESS_TIM_Config(); //使能BTIM2,禁止BTIM3
-	//GTIM_Init();
-	ADC_Configuration();
+
 	NVIC_SetPriority(BTIM3_IRQn ,0);
-	NVIC_SetPriority(ADC_IRQn ,1);
-	NVIC_SetPriority(GTIM1_IRQn ,2);
+	NVIC_SetPriority(ATIM_IRQn ,2);
+	NVIC_SetPriority(GTIM1_IRQn ,1);
 	
 	if(*((uint8_t *)(SpeedWrite_PgaeBase*512)) == 0xff)
 	{
@@ -48,33 +49,6 @@ int main(void)
 //		Flash_WriteOneByte(Flash.SpeedWrite_AddrNow);
 	}
 }
-
-//void GTIM1_IRQHandler(void)
-//{
-//	if(GTIM_GetITStatus(CW_GTIM1, GTIM_IT_UPDATA))
-//	{
-//				
-//		GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_UPDATA);
-//		
-//		if(Motor.RunState == 4)
-//		{
-//			/* Motor.Speed_u32记录了一个电转速的运行时间，具体时间为BTIM1->CNT/BTIM1->Prescaler。
-//				 所以，实际转速Motor.Speed = 60/Motor.Speed_u32/2 (RPM) */
-//			Motor.Speed = 60*375000/Motor.Speed_u32/2;
-//		
-//			Motor.Speed = LowPass_Fliter(Motor.Speed);
-//			
-//			if(System.OpenLopp_RunTimes<100)
-//			{
-//				System.OpenLopp_RunTimes++;
-//			}
-//			else
-//			{
-//				Motor.Duty = PID_Control(Motor.Speed);
-//			}
-//		}
-//	}
-//}
 
 void BTIM3_IRQHandler(void)
 {

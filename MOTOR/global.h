@@ -46,9 +46,15 @@
 #define PWM_BL_ON GPIO_WritePin(PWM_BN_PORT,PWM_BN_PIN,GPIO_Pin_SET)
 #define PWM_CL_ON GPIO_WritePin(PWM_CN_PORT,PWM_CN_PIN,GPIO_Pin_SET)
               
+//=============== Motor Para =================//
+#define MotorFlux       (0.0024f)
+#define MotorLs         (0.000023f)
+#define MotorRs         (0.011f)
+#define MotorPolePair   (4)
 
-//ÔØ²¨ÆµÂÊ20k
-#define PWM_PERIOD 1500
+//ÔØ²¨ÆµÂÊ16k
+#define PWM_PERIOD 		3000
+#define PWM_FREQUENCY 48000000/PWM_PERIOD
 // (48000000 / 20000 )-1; 
 
 #define OnepercentPWM (PWM_PERIOD+1)/100
@@ -71,6 +77,12 @@
 #define FORCE_RUN_STATE		(3)
 #define SENSORLESS_STATE	(4)
 
+#define VF_MODE						(0)
+#define IF_MODE						(1)
+#define CURRENT_MODE			(2)
+#define SPEED_MODE				(3)
+#define POWER_MODE				(4)
+
 #define DUTY_MIN (450)
 #define DUTY_MAX (500)
 #define TIME_MIN (75)
@@ -83,7 +95,48 @@ extern uint16_t SampleData[5];
 
 typedef struct
 {
-	unsigned char RunState;
+  int16_t Real;  /**< \brief Real part */
+  int16_t Imag;  /**< \brief Imaginary part */
+}sType_Complex;
+
+typedef struct
+{
+  int16_t A;   /**< \brief Phase A current */
+  int16_t B;   /**< \brief Phase B current */
+  int16_t C;   /**< \brief Phase C current */
+}sType_PhaseCurr;
+
+typedef struct
+{
+	uint16_t Low;
+	uint16_t High;
+}stype_PWMDuty;
+
+typedef struct
+{
+	stype_PWMDuty comp60;
+	stype_PWMDuty comp61;
+	stype_PWMDuty comp62;
+}sType_ActPwms;
+
+typedef struct
+{
+	uint16_t  KdcFactorVp;
+	uint16_t  KdcFactorLim;
+	boolean_t SwapPhase;
+}sType_InvParam;
+
+typedef struct
+{
+	sType_Complex Vs; /*fixdt(1,16,15)*/
+	uint16_t Sector;
+	int16_t kCurrDir;
+} sType_Svm;
+
+typedef struct
+{
+	unsigned char CurrentLoopRunState;
+	unsigned char SpeedLoopRUNState;
 	unsigned char Phase;
 	unsigned char DemagnetizationTimeCnt;
 	unsigned char ForceState;
@@ -103,8 +156,23 @@ typedef struct
 	unsigned int  Speed_u32;
 	unsigned int  Speed_u32_1_6;
 	unsigned int  Speed;
-//	double error;
-//	double errorsum;
+	unsigned int  SpeedRef;
+	unsigned int  SpdToAngAcc;
+	unsigned int	Angle;
+	unsigned int  AngleAccStep;
+	
+	sType_Complex RotCurrRef;
+	sType_Complex AngSinCos;
+	sType_Complex StatCurr;
+	sType_Complex RotCurr;
+	sType_Complex StatVolt;
+	sType_Complex RotVolt;
+	
+	sType_PhaseCurr PhaseCurr;
+	
+	sType_InvParam  InvParam;
+	
+	sType_Svm				Svm;
 }Motor_Type;
 
 typedef struct

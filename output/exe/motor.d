@@ -24,3 +24,10 @@
 .\output\exe\motor.o: .\Driver\Libraries\inc\cw32l010_rtc.h
 .\output\exe\motor.o: .\Driver\Libraries\inc\cw32l010_uart.h
 .\output\exe\motor.o: MOTOR\sensorless.h
+.\output\exe\motor.o: MOTOR\Mat.h
+.\output\exe\motor.o: MOTOR\GF_SinCos.h
+.\output\exe\motor.o: MOTOR\GMC_Clark.h
+.\output\exe\motor.o: MOTOR\GMC_Park.h
+.\output\exe\motor.o: MOTOR\GMC_ParkInv.h
+.\output\exe\motor.o: MOTOR\GMC_ElimDcBusRip.h
+.\output\exe\motor.o: MOTOR\GMC_SvmStd.h

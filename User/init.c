@@ -56,17 +56,11 @@ void ADC_Configuration(void)
 
 	ADC_InitStructure.ADC_ClkDiv = ADC_Clk_Div2;
   ADC_InitStructure.ADC_ConvertMode = ADC_ConvertMode_Once;    // 单次多通道采样
-  ADC_InitStructure.ADC_SQREns = ADC_SqrEns0to4;               // 6通道
+  ADC_InitStructure.ADC_SQREns = ADC_SqrEns0to1;               // 6通道
   ADC_InitStructure.ADC_IN0.ADC_InputChannel = ADC_InputCH2;
   ADC_InitStructure.ADC_IN0.ADC_SampTime = ADC_SampTime9Clk;
-	ADC_InitStructure.ADC_IN1.ADC_InputChannel = ADC_InputCH13;
+	ADC_InitStructure.ADC_IN1.ADC_InputChannel = ADC_InputCH9;
   ADC_InitStructure.ADC_IN1.ADC_SampTime = ADC_SampTime9Clk;
-	ADC_InitStructure.ADC_IN2.ADC_InputChannel = ADC_InputCH12;
-  ADC_InitStructure.ADC_IN2.ADC_SampTime = ADC_SampTime9Clk;
-	ADC_InitStructure.ADC_IN3.ADC_InputChannel = ADC_InputCH11;
-  ADC_InitStructure.ADC_IN3.ADC_SampTime = ADC_SampTime9Clk;
-	ADC_InitStructure.ADC_IN4.ADC_InputChannel = ADC_InputCH9;
-  ADC_InitStructure.ADC_IN4.ADC_SampTime = ADC_SampTime9Clk;
 	ADC_Init(&ADC_InitStructure);
 	
 	ADC_ExtTrigCfg(ADC_TRIG_ATIMCC4, ENABLE);
@@ -107,12 +101,12 @@ void BLDC_Configuration(void)
 	
 	ATIM_InitTypeDef ATIM_InitStruct;
   ATIM_OCInitTypeDef ATIM_OCInitStruct = {0};
-  ATIM_InitStruct.BufferState 			 = ENABLE;               							 //使能缓存寄存器    
+  ATIM_InitStruct.BufferState 			 = ENABLE;               						 //使能缓存寄存器    
   ATIM_InitStruct.CounterAlignedMode = ATIM_COUNT_ALIGN_MODE_CENTER_UP;  //边沿对齐
-  ATIM_InitStruct.CounterDirection 	 = ATIM_COUNTING_UP;        					 //向上计数；
-  ATIM_InitStruct.CounterOPMode 		 = ATIM_OP_MODE_REPETITIVE;    				 //连续运行模式       
-  ATIM_InitStruct.Prescaler 				 = 1 - 1;                          		 //计算时钟 48 MHz
-  ATIM_InitStruct.ReloadValue 			 = PWM_PERIOD - 1;                   	 //PWM_TS = 2999(16kHz)
+  ATIM_InitStruct.CounterDirection 	 = ATIM_COUNTING_UP;        				 //向上计数；
+  ATIM_InitStruct.CounterOPMode 		 = ATIM_OP_MODE_REPETITIVE;    			 //连续运行模式       
+  ATIM_InitStruct.Prescaler 				 = 1 - 1;                          	 //计算时钟 48 MHz
+  ATIM_InitStruct.ReloadValue 			 = (PWM_PERIOD >> 1) - 1;             //PWM_TS = 2999(16kHz)
   ATIM_InitStruct.RepetitionCounter  = 0;
   ATIM_Init(&ATIM_InitStruct);
 	
@@ -130,10 +124,10 @@ void BLDC_Configuration(void)
 	ATIM_OC4Init(&ATIM_OCInitStruct);
 //	ATIM_OC6Init(&ATIM_OCInitStruct);
 	
-	ATIM_SetCompare1(1000);
+	ATIM_SetCompare1(950);
   ATIM_SetCompare2(1100);
 	ATIM_SetCompare3(1250);
-	ATIM_SetCompare4(1125); 
+	ATIM_SetCompare4(990); 
 	
 	ATIM_CH1Config(ENABLE);
 	ATIM_CH2Config(ENABLE);
@@ -144,6 +138,10 @@ void BLDC_Configuration(void)
 	
 	ATIM_ClearITPendingBit(ATIM_IT_UIE);
 	ATIM_ITConfig(ATIM_IT_UIE ,ENABLE);
+	
+	ATIM_ClearITPendingBit(ATIM_IT_CC4IE);
+	ATIM_ITConfig(ATIM_IT_CC4IE ,ENABLE);
+	
   ATIM_Cmd(ENABLE);    
 }
 
@@ -174,25 +172,25 @@ void SENSORLESS_TIM_Config(void)
   BTIM_ITConfig(CW_BTIM3, BTIM_IT_UPDATE, ENABLE);
 }
 
-//void GTIM_Init(void)
-//{
-//	__SYSCTRL_GTIM1_CLK_ENABLE();
-//	
-//	__disable_irq();
-//  NVIC_EnableIRQ(GTIM1_IRQn);
-//  __enable_irq();
-//	
-//	GTIM_InitTypeDef GTIM_InitStruct = {0};
-//	GTIM_InitStruct.ARRBuffState = GTIM_ARR_BUFF_EN;
-//	GTIM_InitStruct.Direction = GTIM_DIRECTION_UP;
-//	GTIM_InitStruct.PulseMode = GTIM_PULSE_MODE_DIS;
-//	GTIM_InitStruct.EventOption = GTIM_EVENT_NORMAL;
-//	GTIM_InitStruct.UpdateOption = GTIM_UPDATE_EN;
-//	GTIM_InitStruct.Prescaler = 4800 - 1;
-//	GTIM_InitStruct.ReloadValue = 100;
-//	GTIM_TimeBaseInit(CW_GTIM1, &GTIM_InitStruct);
-//	
-//	GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_UPDATA);
-//	GTIM_ITConfig(CW_GTIM1, GTIM_IT_UPDATA, ENABLE);
-//	GTIM_Cmd(CW_GTIM1, DISABLE);
-//}
+void GTIM_Init(void)
+{
+	__SYSCTRL_GTIM1_CLK_ENABLE();
+	
+	__disable_irq();
+  NVIC_EnableIRQ(GTIM1_IRQn);
+  __enable_irq();
+	
+	GTIM_InitTypeDef GTIM_InitStruct = {0};
+	GTIM_InitStruct.ARRBuffState = GTIM_ARR_BUFF_EN;
+	GTIM_InitStruct.Direction = GTIM_DIRECTION_UP;
+	GTIM_InitStruct.PulseMode = GTIM_PULSE_MODE_DIS;
+	GTIM_InitStruct.EventOption = GTIM_EVENT_NORMAL;
+	GTIM_InitStruct.UpdateOption = GTIM_UPDATE_EN;
+	GTIM_InitStruct.Prescaler = 480 - 1;
+	GTIM_InitStruct.ReloadValue = 100;
+	GTIM_TimeBaseInit(CW_GTIM1, &GTIM_InitStruct);
+	
+	GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_UPDATA);
+	GTIM_ITConfig(CW_GTIM1, GTIM_IT_UPDATA, ENABLE);
+	GTIM_Cmd(CW_GTIM1, ENABLE);
+}

@@ -492,6 +492,36 @@
               <FileType>1</FileType>
               <FilePath>.\MOTOR\sensorless.c</FilePath>
             </File>
+            <File>
+              <FileName>GF_SinCos.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MOTOR\GF_SinCos.c</FilePath>
+            </File>
+            <File>
+              <FileName>GMC_Clark.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MOTOR\GMC_Clark.c</FilePath>
+            </File>
+            <File>
+              <FileName>GMC_Park.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MOTOR\GMC_Park.c</FilePath>
+            </File>
+            <File>
+              <FileName>GMC_ParkInv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MOTOR\GMC_ParkInv.c</FilePath>
+            </File>
+            <File>
+              <FileName>GMC_SvmStd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MOTOR\GMC_SvmStd.c</FilePath>
+            </File>
+            <File>
+              <FileName>GMC_ElimDcBusRip.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MOTOR\GMC_ElimDcBusRip.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
