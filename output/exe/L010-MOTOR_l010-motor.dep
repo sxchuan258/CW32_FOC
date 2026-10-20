@@ -1,513 +1,513 @@
 Dependencies for Project 'L010-MOTOR', Target 'l010-motor': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\User\startup_cw32l010.s)(0x6AD04213)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include--pd "__UVISION_VERSION SETA 533" --pd "_RTE_ SETA 1" --pd "_RTE_ SETA 1"-o .\output\exe\startup_cw32l010.o --depend .\output\exe\startup_cw32l010.d)
-F (.\Driver\Libraries\src\cw32l010_adc.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_adc.o --omf_browse .\output\exe\cw32l010_adc.crf --depend .\output\exe\cw32l010_adc.d)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-F (.\Driver\Libraries\src\cw32l010_atim.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_atim.o --omf_browse .\output\exe\cw32l010_atim.crf --depend .\output\exe\cw32l010_atim.d)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-F (.\Driver\Libraries\src\cw32l010_btim.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_btim.o --omf_browse .\output\exe\cw32l010_btim.crf --depend .\output\exe\cw32l010_btim.d)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-F (.\Driver\Libraries\src\cw32l010_crc.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_crc.o --omf_browse .\output\exe\cw32l010_crc.crf --depend .\output\exe\cw32l010_crc.d)
-I (.\Driver\Libraries\inc\cw32l010_crc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-F (.\Driver\Libraries\src\cw32l010_flash.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_flash.o --omf_browse .\output\exe\cw32l010_flash.crf --depend .\output\exe\cw32l010_flash.d)
-I (.\Driver\Libraries\inc\cw32l010_flash.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-F (.\Driver\Libraries\src\cw32l010_gpio.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_gpio.o --omf_browse .\output\exe\cw32l010_gpio.crf --depend .\output\exe\cw32l010_gpio.d)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-F (.\Driver\Libraries\src\cw32l010_gtim.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_gtim.o --omf_browse .\output\exe\cw32l010_gtim.crf --depend .\output\exe\cw32l010_gtim.d)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-F (.\Driver\Libraries\src\cw32l010_pwr.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_pwr.o --omf_browse .\output\exe\cw32l010_pwr.crf --depend .\output\exe\cw32l010_pwr.d)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\Driver\Libraries\inc\cw32l010_pwr.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-F (.\Driver\Libraries\src\cw32l010_sysctrl.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_sysctrl.o --omf_browse .\output\exe\cw32l010_sysctrl.crf --depend .\output\exe\cw32l010_sysctrl.d)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-F (.\Driver\Libraries\src\system_cw32l010.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\system_cw32l010.o --omf_browse .\output\exe\system_cw32l010.crf --depend .\output\exe\system_cw32l010.d)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-F (.\User\main.c)(0x6AD6F885)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\main.o --omf_browse .\output\exe\main.crf --depend .\output\exe\main.d)
-I (User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-I (User\init.h)(0x6AD04213)
-I (.\MOTOR\global.h)(0x6AD6DC1B)
-I (.\MOTOR\motor.h)(0x6AD6DDFA)
-I (.\Contol_Algorithm\Fliter.h)(0x6AD04213)
-I (.\Contol_Algorithm\Control.h)(0x6AD04213)
-I (.\MOTOR\sensorless.h)(0x6AD04213)
-I (User\Flash_Opration.h)(0x6AD04213)
-F (.\User\interrupts_cw32l010.c)(0x6AD061E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\interrupts_cw32l010.o --omf_browse .\output\exe\interrupts_cw32l010.crf --depend .\output\exe\interrupts_cw32l010.d)
-I (User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\User\init.c)(0x6AD6F9FD)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\init.o --omf_browse .\output\exe\init.crf --depend .\output\exe\init.d)
-I (User\init.h)(0x6AD04213)
-I (.\MOTOR\global.h)(0x6AD6DC1B)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\User\Flash_Opration.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\flash_opration.o --omf_browse .\output\exe\flash_opration.crf --depend .\output\exe\flash_opration.d)
-I (User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-I (.\MOTOR\global.h)(0x6AD6DC1B)
-I (User\Flash_Opration.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_flash.h)(0x6AD04213)
-F (.\MOTOR\global.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\global.o --omf_browse .\output\exe\global.crf --depend .\output\exe\global.d)
-I (MOTOR\global.h)(0x6AD6DC1B)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\MOTOR\MOTOR.C)(0x6AD73800)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\motor.o --omf_browse .\output\exe\motor.crf --depend .\output\exe\motor.d)
-I (MOTOR\motor.h)(0x6AD6DDFA)
-I (MOTOR\global.h)(0x6AD6DC1B)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-I (MOTOR\sensorless.h)(0x6AD04213)
-I (MOTOR\Mat.h)(0x6AD6D8E8)
-I (MOTOR\GF_SinCos.h)(0x6AD5C813)
-I (MOTOR\GMC_Clark.h)(0x6AD5DD01)
-I (MOTOR\GMC_Park.h)(0x6AD5DD0E)
-I (MOTOR\GMC_ParkInv.h)(0x6AD5DD1B)
-I (MOTOR\GMC_ElimDcBusRip.h)(0x6AD6C8ED)
-I (MOTOR\GMC_SvmStd.h)(0x6AD6DCBC)
-F (.\MOTOR\sensorlessP.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\sensorlessp.o --omf_browse .\output\exe\sensorlessp.crf --depend .\output\exe\sensorlessp.d)
-I (MOTOR\sensorlessP.h)(0x6AD04213)
-F (.\MOTOR\sensorless.c)(0x6AD6F59E)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\sensorless.o --omf_browse .\output\exe\sensorless.crf --depend .\output\exe\sensorless.d)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-I (MOTOR\global.h)(0x6AD6DC1B)
-I (MOTOR\sensorlessP.h)(0x6AD04213)
-I (MOTOR\sensorless.h)(0x6AD04213)
-I (MOTOR\motor.h)(0x6AD6DDFA)
-I (.\User\init.h)(0x6AD04213)
-F (.\MOTOR\GF_SinCos.c)(0x6AD5CC7A)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gf_sincos.o --omf_browse .\output\exe\gf_sincos.crf --depend .\output\exe\gf_sincos.d)
-I (MOTOR\GF_SinCos.h)(0x6AD5C813)
-I (MOTOR\global.h)(0x6AD6DC1B)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\MOTOR\GMC_Clark.c)(0x6AD5E2CD)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_clark.o --omf_browse .\output\exe\gmc_clark.crf --depend .\output\exe\gmc_clark.d)
-I (MOTOR\GMC_Clark.h)(0x6AD5DD01)
-I (MOTOR\global.h)(0x6AD6DC1B)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\MOTOR\GMC_Park.c)(0x6AD5E2B2)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_park.o --omf_browse .\output\exe\gmc_park.crf --depend .\output\exe\gmc_park.d)
-I (MOTOR\GMC_Park.h)(0x6AD5DD0E)
-I (MOTOR\global.h)(0x6AD6DC1B)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\MOTOR\GMC_ParkInv.c)(0x6AD5E2A4)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_parkinv.o --omf_browse .\output\exe\gmc_parkinv.crf --depend .\output\exe\gmc_parkinv.d)
-I (MOTOR\GMC_ParkInv.h)(0x6AD5DD1B)
-I (MOTOR\global.h)(0x6AD6DC1B)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\MOTOR\GMC_SvmStd.c)(0x6AD6C77E)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_svmstd.o --omf_browse .\output\exe\gmc_svmstd.crf --depend .\output\exe\gmc_svmstd.d)
-I (MOTOR\GMC_SvmStd.h)(0x6AD6DCBC)
-I (MOTOR\global.h)(0x6AD6DC1B)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\MOTOR\GMC_ElimDcBusRip.c)(0x6AD6C8FF)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_elimdcbusrip.o --omf_browse .\output\exe\gmc_elimdcbusrip.crf --depend .\output\exe\gmc_elimdcbusrip.d)
-I (MOTOR\GMC_ElimDcBusRip.h)(0x6AD6C8ED)
-I (MOTOR\global.h)(0x6AD6DC1B)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\Contol_Algorithm\Control.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\control.o --omf_browse .\output\exe\control.crf --depend .\output\exe\control.d)
-I (Contol_Algorithm\Control.h)(0x6AD04213)
-I (.\MOTOR\global.h)(0x6AD6DC1B)
-I (.\User\main.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
-I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
-I (.\User\interrupts_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\base_types.h)(0x6AD04213)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (E:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
-I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
-I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\Contol_Algorithm\Filter.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\filter.o --omf_browse .\output\exe\filter.crf --depend .\output\exe\filter.d)
-I (Contol_Algorithm\Fliter.h)(0x6AD04213)
+F (.\User\startup_cw32l010.s)(0x6AD4C5CB)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include--pd "__UVISION_VERSION SETA 533" --pd "_RTE_ SETA 1" --pd "_RTE_ SETA 1"-o .\output\exe\startup_cw32l010.o --depend .\output\exe\startup_cw32l010.d)
+F (.\Driver\Libraries\src\cw32l010_adc.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_adc.o --omf_browse .\output\exe\cw32l010_adc.crf --depend .\output\exe\cw32l010_adc.d)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+F (.\Driver\Libraries\src\cw32l010_atim.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_atim.o --omf_browse .\output\exe\cw32l010_atim.crf --depend .\output\exe\cw32l010_atim.d)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+F (.\Driver\Libraries\src\cw32l010_btim.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_btim.o --omf_browse .\output\exe\cw32l010_btim.crf --depend .\output\exe\cw32l010_btim.d)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+F (.\Driver\Libraries\src\cw32l010_crc.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_crc.o --omf_browse .\output\exe\cw32l010_crc.crf --depend .\output\exe\cw32l010_crc.d)
+I (.\Driver\Libraries\inc\cw32l010_crc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+F (.\Driver\Libraries\src\cw32l010_flash.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_flash.o --omf_browse .\output\exe\cw32l010_flash.crf --depend .\output\exe\cw32l010_flash.d)
+I (.\Driver\Libraries\inc\cw32l010_flash.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+F (.\Driver\Libraries\src\cw32l010_gpio.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_gpio.o --omf_browse .\output\exe\cw32l010_gpio.crf --depend .\output\exe\cw32l010_gpio.d)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+F (.\Driver\Libraries\src\cw32l010_gtim.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_gtim.o --omf_browse .\output\exe\cw32l010_gtim.crf --depend .\output\exe\cw32l010_gtim.d)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+F (.\Driver\Libraries\src\cw32l010_pwr.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_pwr.o --omf_browse .\output\exe\cw32l010_pwr.crf --depend .\output\exe\cw32l010_pwr.d)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\Driver\Libraries\inc\cw32l010_pwr.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+F (.\Driver\Libraries\src\cw32l010_sysctrl.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cw32l010_sysctrl.o --omf_browse .\output\exe\cw32l010_sysctrl.crf --depend .\output\exe\cw32l010_sysctrl.d)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+F (.\Driver\Libraries\src\system_cw32l010.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\system_cw32l010.o --omf_browse .\output\exe\system_cw32l010.crf --depend .\output\exe\system_cw32l010.d)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+F (.\User\main.c)(0x6AD75229)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\main.o --omf_browse .\output\exe\main.crf --depend .\output\exe\main.d)
+I (User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+I (User\init.h)(0x6AD4C5CB)
+I (.\MOTOR\global.h)(0x6AD78CC8)
+I (.\MOTOR\motor.h)(0x6AD75229)
+I (.\Contol_Algorithm\Fliter.h)(0x6AD4C5CB)
+I (.\Contol_Algorithm\Control.h)(0x6AD4C5CB)
+I (.\MOTOR\sensorless.h)(0x6AD4C5CB)
+I (User\Flash_Opration.h)(0x6AD4C5CB)
+F (.\User\interrupts_cw32l010.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\interrupts_cw32l010.o --omf_browse .\output\exe\interrupts_cw32l010.crf --depend .\output\exe\interrupts_cw32l010.d)
+I (User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+F (.\User\init.c)(0x6AD75FA3)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\init.o --omf_browse .\output\exe\init.crf --depend .\output\exe\init.d)
+I (User\init.h)(0x6AD4C5CB)
+I (.\MOTOR\global.h)(0x6AD78CC8)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+F (.\User\Flash_Opration.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\flash_opration.o --omf_browse .\output\exe\flash_opration.crf --depend .\output\exe\flash_opration.d)
+I (User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+I (.\MOTOR\global.h)(0x6AD78CC8)
+I (User\Flash_Opration.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_flash.h)(0x6AD4C5CB)
+F (.\MOTOR\global.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\global.o --omf_browse .\output\exe\global.crf --depend .\output\exe\global.d)
+I (MOTOR\global.h)(0x6AD78CC8)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+F (.\MOTOR\MOTOR.C)(0x6AD78FD3)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\motor.o --omf_browse .\output\exe\motor.crf --depend .\output\exe\motor.d)
+I (MOTOR\motor.h)(0x6AD75229)
+I (MOTOR\global.h)(0x6AD78CC8)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+I (MOTOR\sensorless.h)(0x6AD4C5CB)
+I (MOTOR\Mat.h)(0x6AD75229)
+I (MOTOR\GF_SinCos.h)(0x6AD75229)
+I (MOTOR\GMC_Clark.h)(0x6AD75229)
+I (MOTOR\GMC_Park.h)(0x6AD75229)
+I (MOTOR\GMC_ParkInv.h)(0x6AD75229)
+I (MOTOR\GMC_ElimDcBusRip.h)(0x6AD75229)
+I (MOTOR\GMC_SvmStd.h)(0x6AD75229)
+F (.\MOTOR\sensorlessP.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\sensorlessp.o --omf_browse .\output\exe\sensorlessp.crf --depend .\output\exe\sensorlessp.d)
+I (MOTOR\sensorlessP.h)(0x6AD4C5CB)
+F (.\MOTOR\sensorless.c)(0x6AD75229)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\sensorless.o --omf_browse .\output\exe\sensorless.crf --depend .\output\exe\sensorless.d)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+I (MOTOR\global.h)(0x6AD78CC8)
+I (MOTOR\sensorlessP.h)(0x6AD4C5CB)
+I (MOTOR\sensorless.h)(0x6AD4C5CB)
+I (MOTOR\motor.h)(0x6AD75229)
+I (.\User\init.h)(0x6AD4C5CB)
+F (.\MOTOR\GF_SinCos.c)(0x6AD75229)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gf_sincos.o --omf_browse .\output\exe\gf_sincos.crf --depend .\output\exe\gf_sincos.d)
+I (MOTOR\GF_SinCos.h)(0x6AD75229)
+I (MOTOR\global.h)(0x6AD78CC8)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+F (.\MOTOR\GMC_Clark.c)(0x6AD75229)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_clark.o --omf_browse .\output\exe\gmc_clark.crf --depend .\output\exe\gmc_clark.d)
+I (MOTOR\GMC_Clark.h)(0x6AD75229)
+I (MOTOR\global.h)(0x6AD78CC8)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+F (.\MOTOR\GMC_Park.c)(0x6AD75229)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_park.o --omf_browse .\output\exe\gmc_park.crf --depend .\output\exe\gmc_park.d)
+I (MOTOR\GMC_Park.h)(0x6AD75229)
+I (MOTOR\global.h)(0x6AD78CC8)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+F (.\MOTOR\GMC_ParkInv.c)(0x6AD75229)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_parkinv.o --omf_browse .\output\exe\gmc_parkinv.crf --depend .\output\exe\gmc_parkinv.d)
+I (MOTOR\GMC_ParkInv.h)(0x6AD75229)
+I (MOTOR\global.h)(0x6AD78CC8)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+F (.\MOTOR\GMC_SvmStd.c)(0x6AD75229)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_svmstd.o --omf_browse .\output\exe\gmc_svmstd.crf --depend .\output\exe\gmc_svmstd.d)
+I (MOTOR\GMC_SvmStd.h)(0x6AD75229)
+I (MOTOR\global.h)(0x6AD78CC8)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+F (.\MOTOR\GMC_ElimDcBusRip.c)(0x6AD75229)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_elimdcbusrip.o --omf_browse .\output\exe\gmc_elimdcbusrip.crf --depend .\output\exe\gmc_elimdcbusrip.d)
+I (MOTOR\GMC_ElimDcBusRip.h)(0x6AD75229)
+I (MOTOR\global.h)(0x6AD78CC8)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+F (.\Contol_Algorithm\Control.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\control.o --omf_browse .\output\exe\control.crf --depend .\output\exe\control.d)
+I (Contol_Algorithm\Control.h)(0x6AD4C5CB)
+I (.\MOTOR\global.h)(0x6AD78CC8)
+I (.\User\main.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
+I (D:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
+I (.\User\interrupts_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\system_cw32l010.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\base_types.h)(0x6AD4C5CB)
+I (D:\KEILAPP\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (D:\KEILAPP\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (.\Driver\Libraries\inc\cw32l010_sysctrl.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gpio.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_atim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_btim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD4C5CB)
+I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD4C5CB)
+F (.\Contol_Algorithm\Filter.c)(0x6AD4C5CB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm-I.\RTE\_l010-motor-ID:\KEILAPP\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\KEILAPP\ARM\PACK\WHXY\CW32L010_DFP\1.0.0\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\filter.o --omf_browse .\output\exe\filter.crf --depend .\output\exe\filter.d)
+I (Contol_Algorithm\Fliter.h)(0x6AD4C5CB)

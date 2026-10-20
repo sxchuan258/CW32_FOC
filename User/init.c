@@ -127,7 +127,7 @@ void BLDC_Configuration(void)
 	ATIM_SetCompare1(950);
   ATIM_SetCompare2(1100);
 	ATIM_SetCompare3(1250);
-	ATIM_SetCompare4(990); 
+	ATIM_SetCompare4(1140); 
 	
 	ATIM_CH1Config(ENABLE);
 	ATIM_CH2Config(ENABLE);

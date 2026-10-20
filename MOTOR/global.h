@@ -135,31 +135,31 @@ typedef struct
 
 typedef struct
 {
-	unsigned char CurrentLoopRunState;
-	unsigned char SpeedLoopRUNState;
-	unsigned char Phase;
-	unsigned char DemagnetizationTimeCnt;
-	unsigned char ForceState;
-	unsigned char SensorlessState;
-	unsigned char Slope;
-	unsigned int 	DetectBEMF_Times;
-	unsigned int  ForceRunTimeCnt;
-	unsigned int  ForceRunTimeBase;
-	unsigned int  Duty;
-	unsigned int  TerminalVoltage;
-	unsigned int  TerminalVoltageMax; //端电压最大阈值
-  unsigned int  TerminalVoltageMin; //端电压最小阈值
-  unsigned int  VbusZcp;//1/2Vbus反电动势过零比较值
-	unsigned int  Vbus;
-	unsigned int  CeventTime;
-	unsigned int  SixTyRunTime[6]; //每个相序的运行时间
-	unsigned int  Speed_u32;
-	unsigned int  Speed_u32_1_6;
-	unsigned int  Speed;
-	unsigned int  SpeedRef;
-	unsigned int  SpdToAngAcc;
-	unsigned int	Angle;
-	unsigned int  AngleAccStep;
+	unsigned char 	CurrentLoopRunState;
+	unsigned char 	SpeedLoopRUNState;
+	unsigned char 	Phase;
+	unsigned char 	DemagnetizationTimeCnt;
+	unsigned char 	ForceState;
+	unsigned char 	SensorlessState;
+	unsigned char 	Slope;
+	unsigned int 		DetectBEMF_Times;
+	unsigned int  	ForceRunTimeCnt;
+	unsigned int  	ForceRunTimeBase;
+	unsigned int  	Duty;
+	unsigned int  	TerminalVoltage;
+	unsigned int  	TerminalVoltageMax; //端电压最大阈值
+  unsigned int  	TerminalVoltageMin; //端电压最小阈值
+  unsigned int  	VbusZcp;//1/2Vbus反电动势过零比较值
+	unsigned int  	Vbus;
+	unsigned int  	CeventTime;
+	unsigned int  	SixTyRunTime[6]; //每个相序的运行时间
+	unsigned int  	Speed_u32;
+	unsigned int  	Speed_u32_1_6;
+	unsigned int  	Speed;
+	unsigned int  	SpeedRef;
+	unsigned short  SpdToAngAcc;
+	unsigned short	Angle;
+	unsigned short  AngleAccStep;
 	
 	sType_Complex RotCurrRef;
 	sType_Complex AngSinCos;

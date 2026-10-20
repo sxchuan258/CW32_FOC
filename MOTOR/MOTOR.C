@@ -4,13 +4,13 @@
 #include "main.h"
 #include "Mat.h"
 
-Motor_Type Motor;
-sType_SvmOut 	gFocSvm = {16384, 16384, 16384};
-sType_ActPwms gActPwmsOut;
+Motor_Type 				 Motor;
+sType_SvmOut 			 gFocSvm = {16384, 16384, 16384};
+sType_ActPwms 		 gActPwmsOut;
 extern System_Type System;
-extern uint16_t SampleData[5]; 
+extern uint16_t 	 SampleData[5]; 
 
-void Speed_Remap(unsigned int Aim ,unsigned int Now_Value ,unsigned char Step_Value)
+unsigned int Speed_Remap(unsigned int Aim ,unsigned int Now_Value ,unsigned char Step_Value)
 {
 	if(Now_Value < Aim)
 	{
@@ -24,6 +24,7 @@ void Speed_Remap(unsigned int Aim ,unsigned int Now_Value ,unsigned char Step_Va
 	{
 		
 	}
+	return Now_Value;
 }
 
 void Motor_SpeedLoopRun(void)
@@ -60,7 +61,7 @@ void Motor_SpeedLoopRun(void)
 		break;
 			
 		case FORCE_RUN_STATE:
-			Speed_Remap(500 ,Motor.SpeedRef ,1);
+			Motor.SpeedRef = Speed_Remap(500 ,Motor.SpeedRef ,1);
 			if(Motor.SpeedRef >= 500)
 			{
 				//Motor.CurrentLoopRunState = SENSORLESS_STATE;
@@ -119,7 +120,7 @@ void Motor_CurrentLoopRun(void)
 	switch(Motor.SpeedLoopRUNState)
 	{
 		case VF_MODE:
-			Motor.RotVolt.Real = 2300;
+			Motor.RotVolt.Real = 2000;
 			Motor.RotVolt.Imag = 0;
 		break;
 		
@@ -138,9 +139,9 @@ void Motor_CurrentLoopRun(void)
 	gActPwmsOut.comp60.Low	= gActPwmsOut.comp60.High;
 	gActPwmsOut.comp61.Low	= gActPwmsOut.comp61.High;
 	gActPwmsOut.comp62.Low	= gActPwmsOut.comp62.High;
-//	ATIM_SetCompare1(gActPwmsOut.comp60.High);
-//  ATIM_SetCompare2(gActPwmsOut.comp61.High);
-//	ATIM_SetCompare3(gActPwmsOut.comp62.High);
+	ATIM_SetCompare1(gActPwmsOut.comp60.High);
+  ATIM_SetCompare2(gActPwmsOut.comp61.High);
+	ATIM_SetCompare3(gActPwmsOut.comp62.High);
 }
 
 void TerminalVoltageGet(void)
