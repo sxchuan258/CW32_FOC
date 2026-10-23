@@ -63,7 +63,10 @@ void ADC_Configuration(void)
   ADC_InitStructure.ADC_IN1.ADC_SampTime = ADC_SampTime9Clk;
 	ADC_Init(&ADC_InitStructure);
 	
-	ADC_ExtTrigCfg(ADC_TRIG_ATIMCC4, ENABLE);
+	ADC_ClearITPendingAll();
+  ADC_ITConfig(ADC_IT_EOS, ENABLE);
+  NVIC_EnableIRQ(ADC_IRQn);
+	ADC_ExtTrigCfg(ADC_TRIG_ATIMCC4 | ADC_TRIG_GTIM1CC1, ENABLE);
 
   //ADC使能
   ADC_Enable();
@@ -122,25 +125,22 @@ void BLDC_Configuration(void)
 	
 	ATIM_OCInitStruct.OCComplement = DISABLE;
 	ATIM_OC4Init(&ATIM_OCInitStruct);
-//	ATIM_OC6Init(&ATIM_OCInitStruct);
+	ATIM_OC5Init(&ATIM_OCInitStruct);
 	
-	ATIM_SetCompare1(950);
-  ATIM_SetCompare2(1100);
-	ATIM_SetCompare3(1250);
-	ATIM_SetCompare4(1140); 
+//	ATIM_SetCompare1(950);
+//  ATIM_SetCompare2(1100);
+//	ATIM_SetCompare3(1250);
+//	//ATIM_SetCompare4(1140); 
 	
 	ATIM_CH1Config(ENABLE);
 	ATIM_CH2Config(ENABLE);
 	ATIM_CH3Config(ENABLE);
 	ATIM_CH4Config(ENABLE);
-//	ATIM_CH6Config(ENABLE);
+	ATIM_CH5Config(ENABLE);
   ATIM_CtrlPWMOutputs(ENABLE);
 	
 	ATIM_ClearITPendingBit(ATIM_IT_UIE);
 	ATIM_ITConfig(ATIM_IT_UIE ,ENABLE);
-	
-	ATIM_ClearITPendingBit(ATIM_IT_CC4IE);
-	ATIM_ITConfig(ATIM_IT_CC4IE ,ENABLE);
 	
   ATIM_Cmd(ENABLE);    
 }
@@ -159,9 +159,9 @@ void SENSORLESS_TIM_Config(void)
   BTIM_InitStruct.BTIM_Period = 65530;
   BTIM_InitStruct.BTIM_Prescaler = 128 - 1;   //8MHz
 	
-	/* BTIM1用来计算360°电角度周期 */
+	/* BTIM1用来触发第一次ADC采样 */
 	BTIM_TimeBaseInit(CW_BTIM1, &BTIM_InitStruct);
-	/* BTIM2用来计算60°电角度周期 */
+	/* BTIM2用来触发第二次ADC采样*/
   BTIM_TimeBaseInit(CW_BTIM2, &BTIM_InitStruct);
 	/* BTIM2用来计算30°电角度周期 */
   BTIM_TimeBaseInit(CW_BTIM3, &BTIM_InitStruct);
@@ -181,14 +181,24 @@ void GTIM_Init(void)
   __enable_irq();
 	
 	GTIM_InitTypeDef GTIM_InitStruct = {0};
+	GTIM_OCModeCfgTypeDef GTIM_OCModeCfg;
+	
 	GTIM_InitStruct.ARRBuffState = GTIM_ARR_BUFF_EN;
 	GTIM_InitStruct.Direction = GTIM_DIRECTION_UP;
 	GTIM_InitStruct.PulseMode = GTIM_PULSE_MODE_DIS;
 	GTIM_InitStruct.EventOption = GTIM_EVENT_NORMAL;
 	GTIM_InitStruct.UpdateOption = GTIM_UPDATE_EN;
-	GTIM_InitStruct.Prescaler = 480 - 1;
-	GTIM_InitStruct.ReloadValue = 100;
+	GTIM_InitStruct.Prescaler = 1 - 1;
+	GTIM_InitStruct.ReloadValue = 48000;
 	GTIM_TimeBaseInit(CW_GTIM1, &GTIM_InitStruct);
+	
+	GTIM_OCModeCfg.FastMode = DISABLE;
+	GTIM_OCModeCfg.OCMode		= GTIM_OC_MODE_PWM1;
+	GTIM_OCModeCfg.OCPolarity = GTIM_OC_POLAR_NONINVERT;
+	GTIM_OCModeCfg.PreloadState = ENABLE;
+	GTIM_OC1ModeCfg(CW_GTIM1, &GTIM_OCModeCfg);
+	
+	GTIM_OC1Cmd(CW_GTIM1, ENABLE);
 	
 	GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_UPDATA);
 	GTIM_ITConfig(CW_GTIM1, GTIM_IT_UPDATA, ENABLE);

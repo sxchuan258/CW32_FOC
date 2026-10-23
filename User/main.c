@@ -32,9 +32,9 @@ int main(void)
 	ADC_Configuration();
 	GTIM_Init();
 	BLDC_Configuration();
-	SENSORLESS_TIM_Config(); //使能BTIM2,禁止BTIM3
+	SENSORLESS_TIM_Config();
 
-	NVIC_SetPriority(BTIM3_IRQn ,0);
+	NVIC_SetPriority(ADC_IRQn ,0);
 	NVIC_SetPriority(ATIM_IRQn ,2);
 	NVIC_SetPriority(GTIM1_IRQn ,1);
 	

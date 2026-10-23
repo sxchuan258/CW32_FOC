@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>CW32L010F8</Device>
           <Vendor>WHXY</Vendor>
-          <PackID>WHXY.CW32L010_DFP.1.0.0</PackID>
+          <PackID>WHXY.CW32L010_DFP.1.0.2</PackID>
           <Cpu>IRAM(0x20000000,0x01000) IROM(0x00000000,0x10000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>

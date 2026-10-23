@@ -99,7 +99,8 @@ void Motor_CurrentLoopRun(void)
 		break;
 		
 		case FORCE_RUN_STATE:		//进入VF强拖运行状态
-			Motor.Angle = Motor.Angle + Motor.AngleAccStep;
+			//Motor.Angle = Motor.Angle + Motor.AngleAccStep;
+			Motor.Angle = 7281;
 		break;
 		
 		case SENSORLESS_STATE: //进入无感运行状态
@@ -120,7 +121,7 @@ void Motor_CurrentLoopRun(void)
 	switch(Motor.SpeedLoopRUNState)
 	{
 		case VF_MODE:
-			Motor.RotVolt.Real = 2000;
+			Motor.RotVolt.Real = 1500;
 			Motor.RotVolt.Imag = 0;
 		break;
 		
@@ -133,15 +134,22 @@ void Motor_CurrentLoopRun(void)
 	GMC_ElimDcBusRip(Motor.Vbus, Motor.InvParam.KdcFactorVp, &Motor.Svm.Vs, &Motor.StatVolt);
 	Motor.Svm.Sector = GMC_SvmStd(&gFocSvm, &Motor.Svm.Vs);
 	
-	gActPwmsOut.comp60.High = gFocSvm.Ta * (PWM_PERIOD >> 1) >> 15;
-	gActPwmsOut.comp61.High = gFocSvm.Tb * (PWM_PERIOD >> 1) >> 15;
-	gActPwmsOut.comp62.High = gFocSvm.Tc * (PWM_PERIOD >> 1) >> 15;
+//	gActPwmsOut.comp60.High = gFocSvm.Ta * (PWM_PERIOD >> 1) >> 15;
+//	gActPwmsOut.comp61.High = gFocSvm.Tb * (PWM_PERIOD >> 1) >> 15;
+//	gActPwmsOut.comp62.High = gFocSvm.Tc * (PWM_PERIOD >> 1) >> 15;
+	gActPwmsOut.comp60.High = 500;
+	gActPwmsOut.comp61.High = 701;
+	gActPwmsOut.comp62.High = 820;
 	gActPwmsOut.comp60.Low	= gActPwmsOut.comp60.High;
 	gActPwmsOut.comp61.Low	= gActPwmsOut.comp61.High;
 	gActPwmsOut.comp62.Low	= gActPwmsOut.comp62.High;
 	ATIM_SetCompare1(gActPwmsOut.comp60.High);
   ATIM_SetCompare2(gActPwmsOut.comp61.High);
 	ATIM_SetCompare3(gActPwmsOut.comp62.High);
+	
+	ATIM_SetCompare4(gActPwmsOut.comp60.High+20);
+	//ATIM_SetCompare5(gActPwmsOut.comp61.High+3);
+	GTIM_SetCompare1(CW_GTIM1, 3000-gActPwmsOut.comp62.High+20);
 }
 
 void TerminalVoltageGet(void)
