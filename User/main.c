@@ -30,13 +30,14 @@ int main(void)
 	DPWMConfiguration();	
 	RST_KEYConfiguration();
 	ADC_Configuration();
+	
+	SENSORLESS_TIM_Config();
 	GTIM_Init();
 	BLDC_Configuration();
-	SENSORLESS_TIM_Config();
 
 	NVIC_SetPriority(ADC_IRQn ,0);
-	NVIC_SetPriority(ATIM_IRQn ,2);
-	NVIC_SetPriority(GTIM1_IRQn ,1);
+	NVIC_SetPriority(ATIM_IRQn ,1);
+	NVIC_SetPriority(BTIM3_IRQn ,2);
 	
 	if(*((uint8_t *)(SpeedWrite_PgaeBase*512)) == 0xff)
 	{
@@ -47,24 +48,6 @@ int main(void)
 	{
 //		Flash_ReadOpration(Flash.SpeedWrite_AddrNow);
 //		Flash_WriteOneByte(Flash.SpeedWrite_AddrNow);
-	}
-}
-
-void BTIM3_IRQHandler(void)
-{
-  if (BTIM_GetITStatus(CW_BTIM3, BTIM_IT_UPDATE))
-  {
-		BTIM_ClearITPendingBit(CW_BTIM3, BTIM_IT_UPDATE);
-		
-		Motor_SpeedClc(Motor.Phase ,CW_BTIM1->CNT);
-		
-		Motor.Phase = Motor_NewPhaseValueGet(Motor.Phase);
-		Motor_ChangePhase(Motor.Phase);
-		Motor.SensorlessState = 1;
-		
-		CW_BTIM1->CNT = 0;
-		CW_BTIM3->CNT = 0;
-		BTIM_Cmd(CW_BTIM3, DISABLE);
 	}
 }
 

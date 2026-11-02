@@ -110,8 +110,10 @@ void BLDC_Configuration(void)
   ATIM_InitStruct.CounterOPMode 		 = ATIM_OP_MODE_REPETITIVE;    			 //连续运行模式       
   ATIM_InitStruct.Prescaler 				 = 1 - 1;                          	 //计算时钟 48 MHz
   ATIM_InitStruct.ReloadValue 			 = (PWM_PERIOD >> 1) - 1;             //PWM_TS = 2999(16kHz)
-  ATIM_InitStruct.RepetitionCounter  = 0;
+  ATIM_InitStruct.RepetitionCounter  = 1;
   ATIM_Init(&ATIM_InitStruct);
+	
+	ATIM_MasterModeTrgo1Config(ATIM_MASTER_OUTPUT_UEV);
 	
 	ATIM_OCInitStruct.BufferState = ENABLE;
   ATIM_OCInitStruct.OCComplement = ENABLE;
@@ -142,7 +144,7 @@ void BLDC_Configuration(void)
 	ATIM_ClearITPendingBit(ATIM_IT_UIE);
 	ATIM_ITConfig(ATIM_IT_UIE ,ENABLE);
 	
-  ATIM_Cmd(ENABLE);    
+	ATIM_Cmd(ENABLE);   
 }
 
 void SENSORLESS_TIM_Config(void)
@@ -156,40 +158,51 @@ void SENSORLESS_TIM_Config(void)
 	
 	BTIM_InitStruct.BTIM_Mode = BTIM_MODE_TIMER;
 	BTIM_InitStruct.BTIM_CountMode = BTIM_COUNT_MODE_REPETITIVE;
-  BTIM_InitStruct.BTIM_Period = 65530;
-  BTIM_InitStruct.BTIM_Prescaler = 128 - 1;   //8MHz
+  BTIM_InitStruct.BTIM_Period = 1000 - 1;
+  BTIM_InitStruct.BTIM_Prescaler = 48 - 1;   //8MHz
 	
-	/* BTIM1用来触发第一次ADC采样 */
-	BTIM_TimeBaseInit(CW_BTIM1, &BTIM_InitStruct);
-	/* BTIM2用来触发第二次ADC采样*/
-  BTIM_TimeBaseInit(CW_BTIM2, &BTIM_InitStruct);
-	/* BTIM2用来计算30°电角度周期 */
+//	/* BTIM1用来触发第一次ADC采样 */
+//	BTIM_TimeBaseInit(CW_BTIM1, &BTIM_InitStruct);
+//	/* BTIM2用来触发第二次ADC采样*/
+//  BTIM_TimeBaseInit(CW_BTIM2, &BTIM_InitStruct);
+	/* BTIM3用来计算30°电角度周期 */
   BTIM_TimeBaseInit(CW_BTIM3, &BTIM_InitStruct);
 	
-	BTIM_Cmd(CW_BTIM1, ENABLE);
-  BTIM_Cmd(CW_BTIM2, ENABLE);
-	BTIM_Cmd(CW_BTIM3, DISABLE);
-  BTIM_ITConfig(CW_BTIM3, BTIM_IT_UPDATE, ENABLE);
+//	BTIM_Cmd(CW_BTIM1, ENABLE);
+//  BTIM_Cmd(CW_BTIM2, ENABLE);
+	
+	BTIM_ClearITPendingBit(CW_BTIM3, BTIM_IT_UPDATE);
+	BTIM_ITConfig(CW_BTIM3, BTIM_IT_UPDATE, ENABLE);
+	BTIM_Cmd(CW_BTIM3, ENABLE);
 }
 
 void GTIM_Init(void)
 {
 	__SYSCTRL_GTIM1_CLK_ENABLE();
 	
-	__disable_irq();
-  NVIC_EnableIRQ(GTIM1_IRQn);
-  __enable_irq();
+//	__disable_irq();
+//  NVIC_EnableIRQ(GTIM1_IRQn);
+//  __enable_irq();
 	
 	GTIM_InitTypeDef GTIM_InitStruct = {0};
 	GTIM_OCModeCfgTypeDef GTIM_OCModeCfg;
+	GTIM_SlaverCfgTypeDef GTIM_SlaverCfg;
 	
+	CW_GTIM1->SMCR_f.MSM = 1;
+	GTIM_SlaverCfg.PreloadSource = GTIM_PRELOAD_SOURCE_EVENT;
+	GTIM_SlaverCfg.PreloadState	 = GTIM_PRELOAD_DIS;
+	GTIM_SlaverCfg.SlaverMode		 = GTIM_SLAVER_MODE_GROUP_RST_TRIG;
+	GTIM_SlaverCfg.TrigInput		 = GTIM_TRIG_INPUT_ITR0;
+	GTIM_SlaverModeCfg(CW_GTIM1 ,&GTIM_SlaverCfg);
+	
+	GTIM_InitStruct.AlignMode 	 = GTIM_ALIGN_MODE_EDGE;
 	GTIM_InitStruct.ARRBuffState = GTIM_ARR_BUFF_EN;
 	GTIM_InitStruct.Direction = GTIM_DIRECTION_UP;
 	GTIM_InitStruct.PulseMode = GTIM_PULSE_MODE_DIS;
 	GTIM_InitStruct.EventOption = GTIM_EVENT_NORMAL;
 	GTIM_InitStruct.UpdateOption = GTIM_UPDATE_EN;
 	GTIM_InitStruct.Prescaler = 1 - 1;
-	GTIM_InitStruct.ReloadValue = 48000;
+	GTIM_InitStruct.ReloadValue = 3000-1;
 	GTIM_TimeBaseInit(CW_GTIM1, &GTIM_InitStruct);
 	
 	GTIM_OCModeCfg.FastMode = DISABLE;
@@ -198,9 +211,13 @@ void GTIM_Init(void)
 	GTIM_OCModeCfg.PreloadState = ENABLE;
 	GTIM_OC1ModeCfg(CW_GTIM1, &GTIM_OCModeCfg);
 	
+	GTIM_SetCompare1(CW_GTIM1, 100);
+	
 	GTIM_OC1Cmd(CW_GTIM1, ENABLE);
 	
-	GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_UPDATA);
-	GTIM_ITConfig(CW_GTIM1, GTIM_IT_UPDATA, ENABLE);
-	GTIM_Cmd(CW_GTIM1, ENABLE);
+//	GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC1);
+//	GTIM_ITConfig(CW_GTIM1, GTIM_IT_CC1 ,ENABLE);
+//	GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_UPDATA);
+//	GTIM_ITConfig(CW_GTIM1, GTIM_IT_UPDATA, DISABLE);
+	GTIM_Cmd(CW_GTIM1, DISABLE);
 }

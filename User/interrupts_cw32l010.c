@@ -238,10 +238,10 @@ void VC2_IRQHandler(void)
 //void GTIM1_IRQHandler(void)
 //{
 //    /* USER CODE BEGIN */
-////    if (GTIM_GetITStatus(CW_GTIM1, GTIM_IT_OV))
-////    {
-////        GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_OV);
-////    }
+//    if (GTIM_GetITStatus(CW_GTIM1, GTIM_IT_CC1))
+//    {
+//        GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC1);
+//    }
 //    /* USER CODE END */
 //}
 
