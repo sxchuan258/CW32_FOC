@@ -26,6 +26,7 @@
 ".\output\exe\gmc_elimdcbusrip.o"
 ".\output\exe\control.o"
 ".\output\exe\filter.o"
+".\output\exe\cursen.o"
 --library_type=microlib --strict --scatter ".\output\exe\CW32L010_MOTOR.sct"
 --keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --symbols
 --info sizes --info totals

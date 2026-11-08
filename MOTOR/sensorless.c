@@ -4,7 +4,9 @@
 #include "sensorless.h"
 #include "motor.h"
 #include "init.h"
+#include "CurSen.h"
 
+extern Motor_Type  Motor;
 extern System_Type System;
 unsigned short Ibus_AdcSample1;
 unsigned short Ibus_AdcSample2;
@@ -47,10 +49,12 @@ void ATIM_IRQHandler(void)
 	if(CW_ATIM->ISR_f.UIF)
 	{
 		ATIM_ClearITPendingBit(ATIM_IT_UIE);
+		GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC1);
+		GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC2);
 		
 //		ADC_GetSqr0Result(&SampleData[0]); //母线电压
 //	  ADC_GetSqr1Result(&Ibus_AdcSample2); //母线电流
-
+		Motor.PhaseCurr = CurSem_CurrentReconstruction(Motor.PhaseCurr);
 		Motor_CurrentLoopRun();
 		
 //		ADC_ClearITPendingAll();

@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Driver\Libraries\inc;.\User;.\MOTOR;.\Contol_Algorithm</IncludePath>
+              <IncludePath>.\Driver\Libraries\inc;.\User;.\MOTOR;.\Contol_Algorithm;.\BSW</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -540,6 +540,16 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>BSW</GroupName>
+          <Files>
+            <File>
+              <FileName>CurSen.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\BSW\CurSen.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
@@ -558,5 +568,14 @@
     </components>
     <files/>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>L010-MOTOR</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>

@@ -66,7 +66,7 @@ void ADC_Configuration(void)
 	ADC_ClearITPendingAll();
   ADC_ITConfig(ADC_IT_EOS, ENABLE);
   NVIC_EnableIRQ(ADC_IRQn);
-	ADC_ExtTrigCfg(ADC_TRIG_ATIMCC4 | ADC_TRIG_GTIM1CC1, ENABLE);
+	ADC_ExtTrigCfg(ADC_TRIG_GTIM1CC1 | ADC_TRIG_GTIM1CC2, ENABLE);
 
   //ADCÊ¹ÄÜ
   ADC_Enable();
@@ -202,18 +202,19 @@ void GTIM_Init(void)
 	GTIM_InitStruct.EventOption = GTIM_EVENT_NORMAL;
 	GTIM_InitStruct.UpdateOption = GTIM_UPDATE_EN;
 	GTIM_InitStruct.Prescaler = 1 - 1;
-	GTIM_InitStruct.ReloadValue = 3000-1;
+	GTIM_InitStruct.ReloadValue = PWM_PERIOD-1;
 	GTIM_TimeBaseInit(CW_GTIM1, &GTIM_InitStruct);
 	
 	GTIM_OCModeCfg.FastMode = DISABLE;
 	GTIM_OCModeCfg.OCMode		= GTIM_OC_MODE_PWM1;
 	GTIM_OCModeCfg.OCPolarity = GTIM_OC_POLAR_NONINVERT;
 	GTIM_OCModeCfg.PreloadState = ENABLE;
-	GTIM_OC1ModeCfg(CW_GTIM1, &GTIM_OCModeCfg);
 	
-	GTIM_SetCompare1(CW_GTIM1, 100);
+	GTIM_OC1ModeCfg(CW_GTIM1, &GTIM_OCModeCfg);
+	GTIM_OC2ModeCfg(CW_GTIM1, &GTIM_OCModeCfg);
 	
 	GTIM_OC1Cmd(CW_GTIM1, ENABLE);
+	GTIM_OC2Cmd(CW_GTIM1, ENABLE);
 	
 //	GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC1);
 //	GTIM_ITConfig(CW_GTIM1, GTIM_IT_CC1 ,ENABLE);

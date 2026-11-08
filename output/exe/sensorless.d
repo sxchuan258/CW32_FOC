@@ -26,3 +26,4 @@
 .\output\exe\sensorless.o: MOTOR\sensorless.h
 .\output\exe\sensorless.o: MOTOR\motor.h
 .\output\exe\sensorless.o: .\User\init.h
+.\output\exe\sensorless.o: .\BSW\CurSen.h

@@ -36,8 +36,8 @@ int main(void)
 	BLDC_Configuration();
 
 	NVIC_SetPriority(ADC_IRQn ,0);
-	NVIC_SetPriority(ATIM_IRQn ,1);
-	NVIC_SetPriority(BTIM3_IRQn ,2);
+	NVIC_SetPriority(ATIM_IRQn ,2);
+	NVIC_SetPriority(BTIM3_IRQn ,1);
 	
 	if(*((uint8_t *)(SpeedWrite_PgaeBase*512)) == 0xff)
 	{

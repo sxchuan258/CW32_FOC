@@ -129,9 +129,10 @@ typedef struct
 typedef struct
 {
 	sType_Complex Vs; /*fixdt(1,16,15)*/
-	uint16_t Sector;
+	uint8_t Sector;
+	uint8_t SectorOld;
 	int16_t kCurrDir;
-} sType_Svm;
+}sType_Svm;
 
 typedef struct
 {
