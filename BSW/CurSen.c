@@ -51,9 +51,9 @@ sType_PhaseCurr CurSen_CurrentReconstruction(sType_PhaseCurr abc)
 
 void CurSen_PwmPhaseWalk_Init(sType_ActPwms *PwmOut)
 {
-	PwmOut->ShiftCntLimMin 		= 60;
+	PwmOut->ShiftCntLimMin 		= 80;
 	PwmOut->ShiftCntLimMin_x2 = PwmOut->ShiftCntLimMin * 2;
-	PwmOut->ADC_TrigDelayCnt	= 30;
+	PwmOut->ADC_TrigDelayCnt	= 20;
 }
 
 void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
@@ -110,7 +110,7 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 			}
 			
 			PwmOut->ADC_Trig1Cnt = PwmOut->comp60.High + PwmOut->ADC_TrigDelayCnt;
-			PwmOut->ADC_Trig2Cnt = PWM_PERIOD - PwmOut->comp62.Low + PwmOut->ADC_TrigDelayCnt;
+			PwmOut->ADC_Trig2Cnt = PWM_PERIOD - PwmOut->comp62.High + PwmOut->ADC_TrigDelayCnt;
 		break;
 		
 		case 2:

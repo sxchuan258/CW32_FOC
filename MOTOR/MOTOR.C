@@ -3,6 +3,7 @@
 #include "sensorless.h"
 #include "main.h"
 #include "Mat.h"
+#include "CurSen.h"
 
 Motor_Type 				 Motor;
 sType_SvmOut 			 gFocSvm = {16384, 16384, 16384};
@@ -96,11 +97,12 @@ void Motor_CurrentLoopRun(void)
 	{
 		case ORIENT_INIT_STATE:
 			/* 初始化状态内环参数，例如观测器锁相环等 */
+			CurSen_PwmPhaseWalk_Init(&gActPwmsOut);
 		break;
 		
 		case FORCE_RUN_STATE:		//进入VF强拖运行状态
 			//Motor.Angle = Motor.Angle + Motor.AngleAccStep;
-			Motor.Angle = 5461;
+			Motor.Angle = 2000;
 		break;
 		
 		case SENSORLESS_STATE: //进入无感运行状态
@@ -134,21 +136,17 @@ void Motor_CurrentLoopRun(void)
 	GMC_ElimDcBusRip(Motor.Vbus, Motor.InvParam.KdcFactorVp, &Motor.Svm.Vs, &Motor.StatVolt);
 	Motor.Svm.Sector = GMC_SvmStd(&gFocSvm, &Motor.Svm.Vs);
 	
-//	gActPwmsOut.comp60.High = gFocSvm.Ta * (PWM_PERIOD >> 1) >> 15;
-//	gActPwmsOut.comp61.High = gFocSvm.Tb * (PWM_PERIOD >> 1) >> 15;
-//	gActPwmsOut.comp62.High = gFocSvm.Tc * (PWM_PERIOD >> 1) >> 15;
-	gActPwmsOut.comp60.High = 500;
-	gActPwmsOut.comp61.High = 600;
-	gActPwmsOut.comp62.High = 700;
-	gActPwmsOut.comp60.Low	= gActPwmsOut.comp60.High;
-	gActPwmsOut.comp61.Low	= gActPwmsOut.comp61.High;
-	gActPwmsOut.comp62.Low	= gActPwmsOut.comp62.High;
+	CurSen_PwmPhaseWalk_Run(&gActPwmsOut ,&gFocSvm);
+//	gActPwmsOut.comp60.High = 500;
+//	gActPwmsOut.comp61.High = 600;
+//	gActPwmsOut.comp62.High = 700;
+
 	ATIM_SetCompare1(gActPwmsOut.comp60.High);
   ATIM_SetCompare2(gActPwmsOut.comp61.High);
 	ATIM_SetCompare3(gActPwmsOut.comp62.High);
 
-	GTIM_SetCompare1(CW_GTIM1, gActPwmsOut.comp60.High+30);
-	GTIM_SetCompare2(CW_GTIM1, PWM_PERIOD-gActPwmsOut.comp62.High+30);
+	GTIM_SetCompare1(CW_GTIM1, gActPwmsOut.ADC_Trig1Cnt);
+	GTIM_SetCompare2(CW_GTIM1, gActPwmsOut.ADC_Trig2Cnt);
 }
 
 void TerminalVoltageGet(void)
