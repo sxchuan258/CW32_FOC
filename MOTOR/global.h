@@ -117,6 +117,13 @@ typedef struct
 	stype_PWMDuty comp60;
 	stype_PWMDuty comp61;
 	stype_PWMDuty comp62;
+	
+	uint16_t ShiftCntLimMin;
+	uint16_t ShiftCntLimMin_x2;
+	
+	uint8_t   ADC_TrigDelayCnt;
+	uint16_t  ADC_Trig1Cnt;
+	uint16_t  ADC_Trig2Cnt;
 }sType_ActPwms;
 
 typedef struct

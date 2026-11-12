@@ -54,7 +54,7 @@ void ATIM_IRQHandler(void)
 		
 //		ADC_GetSqr0Result(&SampleData[0]); //母线电压
 //	  ADC_GetSqr1Result(&Ibus_AdcSample2); //母线电流
-		Motor.PhaseCurr = CurSem_CurrentReconstruction(Motor.PhaseCurr);
+		Motor.PhaseCurr = CurSen_CurrentReconstruction(Motor.PhaseCurr);
 		Motor_CurrentLoopRun();
 		
 //		ADC_ClearITPendingAll();
