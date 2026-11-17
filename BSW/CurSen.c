@@ -1,46 +1,52 @@
 #include "CurSen.h"
 
 extern Motor_Type Motor;
+extern System_Type System;
 extern signed short Ibus_AdcSample1;
 extern signed short Ibus_AdcSample2;
 
 sType_PhaseCurr CurSen_CurrentReconstruction(sType_PhaseCurr abc)
 {
+	signed short Ibus_OffRun1;
+	signed short Ibus_OffRun2;
+	
+	Ibus_OffRun1 = Ibus_AdcSample1 - 2048;
+	Ibus_OffRun2 = Ibus_AdcSample2 - 2048;
 	switch(Motor.Svm.SectorOld)
 	{
 		case 1:
-			abc.A = Ibus_AdcSample1;
-			abc.C = -Ibus_AdcSample2;
+			abc.A = Ibus_OffRun1;
+			abc.C = -Ibus_OffRun2;
 			abc.B = -abc.A-abc.C;
 		break;
 		
 		case 2:
-			abc.B = Ibus_AdcSample1;
-			abc.C = -Ibus_AdcSample2;
+			abc.B = Ibus_OffRun1;
+			abc.C = -Ibus_OffRun2;
 			abc.A = -abc.B-abc.C;
 		break;
 		
 		case 3:
-			abc.B = Ibus_AdcSample1;
-			abc.A = -Ibus_AdcSample2;
+			abc.B = Ibus_OffRun1;
+			abc.A = -Ibus_OffRun2;
 			abc.C = -abc.B-abc.A;
 		break;
 		
 		case 4:
-			abc.C = Ibus_AdcSample1;
-			abc.A = -Ibus_AdcSample2;
+			abc.C = Ibus_OffRun1;
+			abc.A = -Ibus_OffRun2;
 			abc.B = -abc.C-abc.A;
 		break;
 		
 		case 5:
-			abc.C = Ibus_AdcSample1;
-			abc.B = -Ibus_AdcSample2;
+			abc.C = Ibus_OffRun1;
+			abc.B = -Ibus_OffRun2;
 			abc.A = -abc.C-abc.B;
 		break;
 		
 		case 6:
-			abc.A = Ibus_AdcSample1;
-			abc.B = -Ibus_AdcSample2;
+			abc.A = Ibus_OffRun1;
+			abc.B = -Ibus_OffRun2;
 			abc.C = -abc.A-abc.B;
 		break;
 	}
@@ -53,7 +59,8 @@ void CurSen_PwmPhaseWalk_Init(sType_ActPwms *PwmOut)
 {
 	PwmOut->ShiftCntLimMin 		= 80;
 	PwmOut->ShiftCntLimMin_x2 = PwmOut->ShiftCntLimMin * 2;
-	PwmOut->ADC_TrigDelayCnt	= 20;
+	PwmOut->ADC_TrigDelayCnt	= 30;
+	System.SampleTimeTooLow_Flag = 0;
 }
 
 void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
@@ -78,6 +85,7 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 			
 			if((T1 + T2) < PwmOut->ShiftCntLimMin_x2)
 			{
+				System.SampleTimeTooLow_Flag = 1;
 				if(T1 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T1;
@@ -104,8 +112,8 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp61.High = PwmOut->comp61.High - Delta;
-					PwmOut->comp61.Low	= PwmOut->comp61.Low	+ Delta;
+					PwmOut->comp61.High = PwmOut->comp61.High + Delta;
+					PwmOut->comp61.Low	= PwmOut->comp61.Low	- Delta;
 				}
 			}
 			
@@ -119,6 +127,7 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 			
 			if((T1 + T2) < PwmOut->ShiftCntLimMin_x2)
 			{
+				System.SampleTimeTooLow_Flag = 1;
 				if(T1 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T1;
@@ -145,8 +154,8 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp60.High = PwmOut->comp60.High - Delta;
-					PwmOut->comp60.Low	= PwmOut->comp60.Low	+ Delta;
+					PwmOut->comp60.High = PwmOut->comp60.High + Delta;
+					PwmOut->comp60.Low	= PwmOut->comp60.Low	- Delta;
 				}
 			}
 			
@@ -160,6 +169,7 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 			
 			if((T1 + T2) < PwmOut->ShiftCntLimMin_x2)
 			{
+				System.SampleTimeTooLow_Flag = 1;
 				if(T1 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T1;
@@ -186,8 +196,8 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp62.High = PwmOut->comp62.High - Delta;
-					PwmOut->comp62.Low	= PwmOut->comp62.Low	+ Delta;
+					PwmOut->comp62.High = PwmOut->comp62.High + Delta;
+					PwmOut->comp62.Low	= PwmOut->comp62.Low	- Delta;
 				}
 			}
 			
@@ -201,6 +211,7 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 			
 			if((T1 + T2) < PwmOut->ShiftCntLimMin_x2)
 			{
+				System.SampleTimeTooLow_Flag = 1;
 				if(T1 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T1;
@@ -227,8 +238,8 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp61.High = PwmOut->comp61.High - Delta;
-					PwmOut->comp61.Low	= PwmOut->comp61.Low	+ Delta;
+					PwmOut->comp61.High = PwmOut->comp61.High + Delta;
+					PwmOut->comp61.Low	= PwmOut->comp61.Low	- Delta;
 				}
 			}
 			
@@ -242,6 +253,7 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 			
 			if((T1 + T2) < PwmOut->ShiftCntLimMin_x2)
 			{
+				System.SampleTimeTooLow_Flag = 1;
 				if(T1 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T1;
@@ -268,8 +280,8 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp60.High = PwmOut->comp60.High - Delta;
-					PwmOut->comp60.Low	= PwmOut->comp60.Low	+ Delta;
+					PwmOut->comp60.High = PwmOut->comp60.High + Delta;
+					PwmOut->comp60.Low	= PwmOut->comp60.Low	- Delta;
 				}
 			}
 			
@@ -283,6 +295,7 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 			
 			if((T1 + T2) < PwmOut->ShiftCntLimMin_x2)
 			{
+				System.SampleTimeTooLow_Flag = 1;
 				if(T1 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T1;
@@ -309,8 +322,8 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp62.High = PwmOut->comp62.High - Delta;
-					PwmOut->comp62.Low	= PwmOut->comp62.Low	+ Delta;
+					PwmOut->comp62.High = PwmOut->comp62.High + Delta;
+					PwmOut->comp62.Low	= PwmOut->comp62.Low	- Delta;
 				}
 			}
 			

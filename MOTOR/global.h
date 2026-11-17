@@ -53,7 +53,7 @@
 #define MotorPolePair   (4)
 
 //ÔØ²¨ÆµÂÊ16k
-#define PWM_PERIOD 		3000
+#define PWM_PERIOD 		3840
 #define PWM_FREQUENCY 48000000/PWM_PERIOD
 // (48000000 / 20000 )-1; 
 
@@ -189,6 +189,7 @@ typedef struct
 	unsigned char SpeedClcDown_FristFlag;
 	unsigned int  Orient_Time;
 	unsigned char OpenLopp_RunTimes;
+	unsigned char SampleTimeTooLow_Flag;
 }System_Type;
 
 #define Read_Mode 		 0

@@ -62,8 +62,8 @@ void Motor_SpeedLoopRun(void)
 		break;
 			
 		case FORCE_RUN_STATE:
-			Motor.SpeedRef = Speed_Remap(500 ,Motor.SpeedRef ,1);
-			if(Motor.SpeedRef >= 500)
+			Motor.SpeedRef = Speed_Remap(650 ,Motor.SpeedRef ,1);
+			if(Motor.SpeedRef >= 650)
 			{
 				//Motor.CurrentLoopRunState = SENSORLESS_STATE;
 				//Motor.SpeedLoopRUNState		= SPEED_MODE;
@@ -101,8 +101,8 @@ void Motor_CurrentLoopRun(void)
 		break;
 		
 		case FORCE_RUN_STATE:		//进入VF强拖运行状态
-			//Motor.Angle = Motor.Angle + Motor.AngleAccStep;
-			Motor.Angle = 2000;
+			Motor.Angle = Motor.Angle + Motor.AngleAccStep;
+			//Motor.Angle = 2000;
 		break;
 		
 		case SENSORLESS_STATE: //进入无感运行状态
@@ -123,7 +123,7 @@ void Motor_CurrentLoopRun(void)
 	switch(Motor.SpeedLoopRUNState)
 	{
 		case VF_MODE:
-			Motor.RotVolt.Real = 1500;
+			Motor.RotVolt.Real = 2100;
 			Motor.RotVolt.Imag = 0;
 		break;
 		
@@ -137,16 +137,82 @@ void Motor_CurrentLoopRun(void)
 	Motor.Svm.Sector = GMC_SvmStd(&gFocSvm, &Motor.Svm.Vs);
 	
 	CurSen_PwmPhaseWalk_Run(&gActPwmsOut ,&gFocSvm);
+	Motor_PWMOUT();
 //	gActPwmsOut.comp60.High = 500;
 //	gActPwmsOut.comp61.High = 600;
 //	gActPwmsOut.comp62.High = 700;
-
-	ATIM_SetCompare1(gActPwmsOut.comp60.High);
-  ATIM_SetCompare2(gActPwmsOut.comp61.High);
-	ATIM_SetCompare3(gActPwmsOut.comp62.High);
+//	ATIM_SetCompare1(gActPwmsOut.comp60.High);
+//  ATIM_SetCompare2(gActPwmsOut.comp61.High);
+//	ATIM_SetCompare3(gActPwmsOut.comp62.High);
 
 	GTIM_SetCompare1(CW_GTIM1, gActPwmsOut.ADC_Trig1Cnt);
 	GTIM_SetCompare2(CW_GTIM1, gActPwmsOut.ADC_Trig2Cnt);
+}
+
+void Motor_PWMOUT(void)
+{
+	switch(Motor.Svm.Sector)
+	{
+		case 1:
+			CW_ATIM->CCR6 &= 0x03FFFFFF;
+			CW_ATIM->CCR6_f.GC6C2 = 1;
+			
+			ATIM_SetCompare1(gActPwmsOut.comp60.High);
+			ATIM_SetCompare2(gActPwmsOut.comp61.High);
+			ATIM_SetCompare3(gActPwmsOut.comp62.High);
+			ATIM_SetCompare6(gActPwmsOut.comp61.Low);
+		break;
+		
+		case 2:
+			CW_ATIM->CCR6 &= 0x03FFFFFF;
+			CW_ATIM->CCR6_f.GC6C1 = 1;
+			
+			ATIM_SetCompare1(gActPwmsOut.comp60.High);
+			ATIM_SetCompare2(gActPwmsOut.comp61.High);
+			ATIM_SetCompare3(gActPwmsOut.comp62.High);
+			ATIM_SetCompare6(gActPwmsOut.comp60.Low);
+		break;
+		
+		case 3:
+			CW_ATIM->CCR6 &= 0x03FFFFFF;
+			CW_ATIM->CCR6_f.GC6C3 = 1;
+			
+			ATIM_SetCompare1(gActPwmsOut.comp60.High);
+			ATIM_SetCompare2(gActPwmsOut.comp61.High);
+			ATIM_SetCompare3(gActPwmsOut.comp62.High);
+			ATIM_SetCompare6(gActPwmsOut.comp62.Low);
+		break;
+		
+		case 4:
+			CW_ATIM->CCR6 &= 0x03FFFFFF;
+			CW_ATIM->CCR6_f.GC6C2 = 1;
+			
+			ATIM_SetCompare1(gActPwmsOut.comp60.High);
+			ATIM_SetCompare2(gActPwmsOut.comp61.High);
+			ATIM_SetCompare3(gActPwmsOut.comp62.High);
+			ATIM_SetCompare6(gActPwmsOut.comp61.Low);
+		break;
+		
+		case 5:
+			CW_ATIM->CCR6 &= 0x03FFFFFF;
+			CW_ATIM->CCR6_f.GC6C1 = 1;
+			
+			ATIM_SetCompare1(gActPwmsOut.comp60.High);
+			ATIM_SetCompare2(gActPwmsOut.comp61.High);
+			ATIM_SetCompare3(gActPwmsOut.comp62.High);
+			ATIM_SetCompare6(gActPwmsOut.comp60.Low);
+		break;
+		
+		case 6:
+			CW_ATIM->CCR6 &= 0x03FFFFFF;
+			CW_ATIM->CCR6_f.GC6C3 = 1;
+			
+			ATIM_SetCompare1(gActPwmsOut.comp60.High);
+			ATIM_SetCompare2(gActPwmsOut.comp61.High);
+			ATIM_SetCompare3(gActPwmsOut.comp62.High);
+			ATIM_SetCompare6(gActPwmsOut.comp62.Low);
+		break;
+	}
 }
 
 void TerminalVoltageGet(void)
@@ -266,46 +332,6 @@ void Motor_ChangePhase(unsigned char NowPhaseValue)
 		
 		default:
 			//电机停转
-		break;
-	}
-}
-
-void Motor_SpeedClc(unsigned char NowPhaseValue ,unsigned int RunTime)
-{
-	switch(NowPhaseValue)
-	{
-		case 1:
-			Motor.SixTyRunTime[0] = RunTime;
-		break;
-		
-		case 2:
-			Motor.SixTyRunTime[1] = RunTime;
-		break;
-		
-		case 3:
-			Motor.SixTyRunTime[2] = RunTime;
-		break;
-		
-		case 4:
-			Motor.SixTyRunTime[3] = RunTime;
-		break;
-		
-		case 5:
-			Motor.SixTyRunTime[4] = RunTime;
-		break;
-		
-		case 6:
-			Motor.SixTyRunTime[5] = RunTime;
-			
-			if((Motor.SixTyRunTime[0] != 0) & (Motor.SixTyRunTime[1] != 0) & (Motor.SixTyRunTime[2] != 0) & 
-				 (Motor.SixTyRunTime[3] != 0) & (Motor.SixTyRunTime[4] != 0) & (Motor.SixTyRunTime[5] != 0))
-			{
-				Motor.Speed_u32 			= Motor.SixTyRunTime[0]+Motor.SixTyRunTime[1]+Motor.SixTyRunTime[2]+
-																Motor.SixTyRunTime[3]+Motor.SixTyRunTime[4]+Motor.SixTyRunTime[5];
-				Motor.Speed_u32_1_6 	= Motor.Speed_u32 / 6;
-				
-				if(System.SpeedClcDown_FristFlag != 1) System.SpeedClcDown_FristFlag = 1;
-			}
 		break;
 	}
 }

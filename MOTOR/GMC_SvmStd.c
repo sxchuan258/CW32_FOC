@@ -50,7 +50,7 @@ __attribute__((__used__)) uint8_t GMC_SvmStd(sType_SvmOut *pSvm, sType_Complex *
     U2 = (((int32_t)Vs->Real * 28377)>>15) - (Vs->Imag>>1);
     /* -Vd*sqrt(3)/2 - Vq/2*/
     U3 = -(((int32_t)Vs->Real * 28377)>>15) - (Vs->Imag>>1);
-    sector = SectorBuf[(U3>0)][(U2>0)][(U1>0)];
+    sector = SectorBuf[(U3>=0)][(U2>=0)][(U1>=0)];
 
     switch(sector)
     {
