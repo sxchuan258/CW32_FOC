@@ -30,12 +30,12 @@ void ADC_IRQHandler(void)
 		
 		if(CW_GTIM1->CNT_f.CNT < gActPwmsOut.ADC_Trig2Cnt)
 		{
-			ADC_GetSqr1Result(&Ibus_AdcSample1);
+			ADC_GetSqr0Result(&Ibus_AdcSample1);
 		}
 		else
 		{
-			ADC_GetSqr0Result(&SampleData[0]);
-			ADC_GetSqr1Result(&Ibus_AdcSample2);
+			ADC_GetSqr1Result(&SampleData[0]);
+			ADC_GetSqr0Result(&Ibus_AdcSample2);
 		}
 		
 		ADC_ClearITPendingAll();//清除AD所有中断标志

@@ -62,8 +62,8 @@ void Motor_SpeedLoopRun(void)
 		break;
 			
 		case FORCE_RUN_STATE:
-			Motor.SpeedRef = Speed_Remap(650 ,Motor.SpeedRef ,1);
-			if(Motor.SpeedRef >= 650)
+			Motor.SpeedRef = Speed_Remap(500 ,Motor.SpeedRef ,1);
+			if(Motor.SpeedRef >= 500)
 			{
 				//Motor.CurrentLoopRunState = SENSORLESS_STATE;
 				//Motor.SpeedLoopRUNState		= SPEED_MODE;
@@ -123,7 +123,7 @@ void Motor_CurrentLoopRun(void)
 	switch(Motor.SpeedLoopRUNState)
 	{
 		case VF_MODE:
-			Motor.RotVolt.Real = 2100;
+			Motor.RotVolt.Real = 1000;
 			Motor.RotVolt.Imag = 0;
 		break;
 		

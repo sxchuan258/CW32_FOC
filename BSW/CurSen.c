@@ -57,9 +57,9 @@ sType_PhaseCurr CurSen_CurrentReconstruction(sType_PhaseCurr abc)
 
 void CurSen_PwmPhaseWalk_Init(sType_ActPwms *PwmOut)
 {
-	PwmOut->ShiftCntLimMin 		= 80;
+	PwmOut->ShiftCntLimMin 		= 150;
 	PwmOut->ShiftCntLimMin_x2 = PwmOut->ShiftCntLimMin * 2;
-	PwmOut->ADC_TrigDelayCnt	= 30;
+	PwmOut->ADC_TrigDelayCnt	= 115;
 	System.SampleTimeTooLow_Flag = 0;
 }
 
@@ -112,13 +112,13 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp61.High = PwmOut->comp61.High + Delta;
-					PwmOut->comp61.Low	= PwmOut->comp61.Low	- Delta;
+					PwmOut->comp61.High = PwmOut->comp61.High - Delta;
+					PwmOut->comp61.Low	= PwmOut->comp61.Low	+ Delta;
 				}
 			}
 			
 			PwmOut->ADC_Trig1Cnt = PwmOut->comp60.High + PwmOut->ADC_TrigDelayCnt;
-			PwmOut->ADC_Trig2Cnt = PWM_PERIOD - PwmOut->comp62.High + PwmOut->ADC_TrigDelayCnt;
+			PwmOut->ADC_Trig2Cnt = PwmOut->comp61.High + PwmOut->ADC_TrigDelayCnt;
 		break;
 		
 		case 2:
@@ -154,13 +154,13 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp60.High = PwmOut->comp60.High + Delta;
-					PwmOut->comp60.Low	= PwmOut->comp60.Low	- Delta;
+					PwmOut->comp60.High = PwmOut->comp60.High - Delta;
+					PwmOut->comp60.Low	= PwmOut->comp60.Low	+ Delta;
 				}
 			}
 			
 			PwmOut->ADC_Trig1Cnt = PwmOut->comp61.High + PwmOut->ADC_TrigDelayCnt;
-			PwmOut->ADC_Trig2Cnt = PWM_PERIOD - PwmOut->comp62.Low + PwmOut->ADC_TrigDelayCnt;
+			PwmOut->ADC_Trig2Cnt = PwmOut->comp60.High + PwmOut->ADC_TrigDelayCnt;
 		break;
 		
 		case 3:
@@ -196,13 +196,13 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp62.High = PwmOut->comp62.High + Delta;
-					PwmOut->comp62.Low	= PwmOut->comp62.Low	- Delta;
+					PwmOut->comp62.High = PwmOut->comp62.High - Delta;
+					PwmOut->comp62.Low	= PwmOut->comp62.Low	+ Delta;
 				}
 			}
 			
 			PwmOut->ADC_Trig1Cnt = PwmOut->comp61.High + PwmOut->ADC_TrigDelayCnt;
-			PwmOut->ADC_Trig2Cnt = PWM_PERIOD - PwmOut->comp60.Low + PwmOut->ADC_TrigDelayCnt;
+			PwmOut->ADC_Trig2Cnt = PwmOut->comp62.High + PwmOut->ADC_TrigDelayCnt;
 		break;
 				
 		case 4:
@@ -238,13 +238,13 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp61.High = PwmOut->comp61.High + Delta;
-					PwmOut->comp61.Low	= PwmOut->comp61.Low	- Delta;
+					PwmOut->comp61.High = PwmOut->comp61.High - Delta;
+					PwmOut->comp61.Low	= PwmOut->comp61.Low	+ Delta;
 				}
 			}
 			
 			PwmOut->ADC_Trig1Cnt = PwmOut->comp62.High + PwmOut->ADC_TrigDelayCnt;
-			PwmOut->ADC_Trig2Cnt = PWM_PERIOD - PwmOut->comp60.Low + PwmOut->ADC_TrigDelayCnt;
+			PwmOut->ADC_Trig2Cnt = PwmOut->comp61.High + PwmOut->ADC_TrigDelayCnt;
 		break;
 						
 		case 5:
@@ -280,13 +280,13 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp60.High = PwmOut->comp60.High + Delta;
-					PwmOut->comp60.Low	= PwmOut->comp60.Low	- Delta;
+					PwmOut->comp60.High = PwmOut->comp60.High - Delta;
+					PwmOut->comp60.Low	= PwmOut->comp60.Low	+ Delta;
 				}
 			}
 			
 			PwmOut->ADC_Trig1Cnt = PwmOut->comp62.High + PwmOut->ADC_TrigDelayCnt;
-			PwmOut->ADC_Trig2Cnt = PWM_PERIOD - PwmOut->comp61.Low + PwmOut->ADC_TrigDelayCnt;
+			PwmOut->ADC_Trig2Cnt = PwmOut->comp60.High + PwmOut->ADC_TrigDelayCnt;
 		break;
 								
 		case 6:
@@ -322,13 +322,13 @@ void CurSen_PwmPhaseWalk_Run(sType_ActPwms *PwmOut ,sType_SvmOut *Pwm)
 				if(T2 < PwmOut->ShiftCntLimMin)
 				{
 					Delta 							= PwmOut->ShiftCntLimMin - T2;
-					PwmOut->comp62.High = PwmOut->comp62.High + Delta;
-					PwmOut->comp62.Low	= PwmOut->comp62.Low	- Delta;
+					PwmOut->comp62.High = PwmOut->comp62.High - Delta;
+					PwmOut->comp62.Low	= PwmOut->comp62.Low	+ Delta;
 				}
 			}
 			
 			PwmOut->ADC_Trig1Cnt = PwmOut->comp60.High + PwmOut->ADC_TrigDelayCnt;
-			PwmOut->ADC_Trig2Cnt = PWM_PERIOD - PwmOut->comp61.Low + PwmOut->ADC_TrigDelayCnt;
+			PwmOut->ADC_Trig2Cnt = PwmOut->comp62.High + PwmOut->ADC_TrigDelayCnt;
 		break;
 	}
 }

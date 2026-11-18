@@ -53,7 +53,7 @@
 #define MotorPolePair   (4)
 
 //ÔØ²¨ÆµÂÊ16k
-#define PWM_PERIOD 		3840
+#define PWM_PERIOD 		4800
 #define PWM_FREQUENCY 48000000/PWM_PERIOD
 // (48000000 / 20000 )-1; 
 

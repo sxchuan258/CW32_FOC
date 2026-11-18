@@ -54,13 +54,13 @@ void ADC_Configuration(void)
 	__SYSCTRL_ADC_CLK_ENABLE();
   ADC_InitTypeDef ADC_InitStructure = {0};
 
-	ADC_InitStructure.ADC_ClkDiv = ADC_Clk_Div2;
+	ADC_InitStructure.ADC_ClkDiv = ADC_Clk_Div1;
   ADC_InitStructure.ADC_ConvertMode = ADC_ConvertMode_Once;    // 单次多通道采样
   ADC_InitStructure.ADC_SQREns = ADC_SqrEns0to1;               // 6通道
-  ADC_InitStructure.ADC_IN0.ADC_InputChannel = ADC_InputCH2;
-  ADC_InitStructure.ADC_IN0.ADC_SampTime = ADC_SampTime9Clk;
-	ADC_InitStructure.ADC_IN1.ADC_InputChannel = ADC_InputCH9;
-  ADC_InitStructure.ADC_IN1.ADC_SampTime = ADC_SampTime9Clk;
+  ADC_InitStructure.ADC_IN0.ADC_InputChannel = ADC_InputCH9;
+  ADC_InitStructure.ADC_IN0.ADC_SampTime = ADC_SampTime12Clk;
+	ADC_InitStructure.ADC_IN1.ADC_InputChannel = ADC_InputCH2;
+  ADC_InitStructure.ADC_IN1.ADC_SampTime = ADC_SampTime6Clk;
 	ADC_Init(&ADC_InitStructure);
 	
 	ADC_ClearITPendingAll();
@@ -126,8 +126,8 @@ void BLDC_Configuration(void)
 	ATIM_OC3Init(&ATIM_OCInitStruct);
 	
 	ATIM_OCInitStruct.OCComplement = DISABLE;
-	ATIM_OC4Init(&ATIM_OCInitStruct);
-	ATIM_OC5Init(&ATIM_OCInitStruct);
+	//ATIM_OC4Init(&ATIM_OCInitStruct);
+	ATIM_OC6Init(&ATIM_OCInitStruct);
 	
 //	ATIM_SetCompare1(950);
 //  ATIM_SetCompare2(1100);
@@ -137,8 +137,8 @@ void BLDC_Configuration(void)
 	ATIM_CH1Config(ENABLE);
 	ATIM_CH2Config(ENABLE);
 	ATIM_CH3Config(ENABLE);
-	ATIM_CH4Config(ENABLE);
-	ATIM_CH5Config(ENABLE);
+	//ATIM_CH4Config(ENABLE);
+	ATIM_CH6Config(ENABLE);
   ATIM_CtrlPWMOutputs(ENABLE);
 	
 	ATIM_ClearITPendingBit(ATIM_IT_UIE);
