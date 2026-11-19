@@ -1,26 +1,24 @@
 #include "Control.h"
-#include "global.h"
 
 extern Motor_Type Motor;
 
-unsigned int PID_Control(unsigned int FeedBack_Value)
+int PID_Control(int16_t FeedBack_Value ,int16_t Ref ,PI_Type *PI)
 {
-	unsigned int 				OutPut_Value;
-	double 				Error;
-	static double ErrorSum = 0;
+	int Error;
 	
-	Error 	 		 = 3000 - FeedBack_Value*1.0;
-	ErrorSum 		 = ErrorSum + Error;
-	OutPut_Value = 0.04*Error + 0.005*ErrorSum;
+	Error 	 			= Ref - FeedBack_Value;
+	PI->IntegPart = PI->IntegPart + Error;
+	PI->Out  			= PI->Kp*Error + PI->Ki*PI->IntegPart;
+	PI->Out	 			= PI->Out >> 15;
 	
-	if(OutPut_Value < DUTY_MIN)
+	if(PI->Out < PI->PIMin)
 	{
-		OutPut_Value = DUTY_MIN;
+		PI->Out = PI->PIMin;
 	}
-	else if(OutPut_Value > 2850)
+	else if(PI->Out > PI->PIMax)
 	{
-		OutPut_Value = 2850;
+		PI->Out = PI->PIMax;
 	}
 	
-	return OutPut_Value;
+	return PI->Out;
 }

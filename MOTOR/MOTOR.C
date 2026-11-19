@@ -4,10 +4,13 @@
 #include "main.h"
 #include "Mat.h"
 #include "CurSen.h"
+#include "Control.h"
 
 Motor_Type 				 Motor;
 sType_SvmOut 			 gFocSvm = {16384, 16384, 16384};
 sType_ActPwms 		 gActPwmsOut;
+PI_Type						 RealCurrPI;
+PI_Type						 ImagCurrPI;
 extern System_Type System;
 extern uint16_t 	 SampleData[5]; 
 
@@ -42,7 +45,7 @@ void Motor_SpeedLoopRun(void)
 		
 	  case ORIENT_INIT_STATE:
 			/* 进入预定位初始化状态 */
-			Motor.RotCurrRef.Real 		= 100;
+			Motor.RotCurrRef.Real 		= 250;
 			Motor.RotCurrRef.Imag 		= 0;
 			Motor.CurrentLoopRunState = ORIENT_END_STATE;
 		break;
@@ -58,6 +61,16 @@ void Motor_SpeedLoopRun(void)
 				Motor.CurrentLoopRunState  = FORCE_RUN_STATE;
 				Motor.SpeedLoopRUNState		 = VF_MODE;
 				Motor.InvParam.KdcFactorVp = ((1L<<16)/1.732050807568877); // 1/根号3的16位标幺值
+				
+				RealCurrPI.Kp = 0.02   * (1 << 15);
+				RealCurrPI.Ki = 0.0008 * (1 << 15);
+				RealCurrPI.PIMax = 2000;
+				RealCurrPI.PIMin = 0;
+				
+				ImagCurrPI.Kp = RealCurrPI.Kp;
+				ImagCurrPI.Ki = RealCurrPI.Ki;
+				ImagCurrPI.PIMax = RealCurrPI.PIMax;
+				ImagCurrPI.PIMin = RealCurrPI.PIMin;
 			}
 		break;
 			
@@ -102,7 +115,6 @@ void Motor_CurrentLoopRun(void)
 		
 		case FORCE_RUN_STATE:		//进入VF强拖运行状态
 			Motor.Angle = Motor.Angle + Motor.AngleAccStep;
-			//Motor.Angle = 2000;
 		break;
 		
 		case SENSORLESS_STATE: //进入无感运行状态
@@ -115,7 +127,6 @@ void Motor_CurrentLoopRun(void)
 	}
 	
 	Motor.Vbus 			= SampleData[0] << 3; //Q15格式
-	
 	Motor.AngSinCos = GFLIB_SinCos_F16(Motor.Angle);
 	Motor.StatCurr 	= GMCLIB_Clark_F16(Motor.PhaseCurr);
 	Motor.RotCurr 	= GMCLIB_Park_F16(Motor.StatCurr, Motor.AngSinCos);
@@ -123,8 +134,8 @@ void Motor_CurrentLoopRun(void)
 	switch(Motor.SpeedLoopRUNState)
 	{
 		case VF_MODE:
-			Motor.RotVolt.Real = 1000;
-			Motor.RotVolt.Imag = 0;
+			Motor.RotVolt.Real = PID_Control(Motor.RotCurr.Real ,Motor.RotCurrRef.Real ,&RealCurrPI);
+			Motor.RotVolt.Imag = PID_Control(Motor.RotCurr.Imag ,Motor.RotCurrRef.Imag ,&ImagCurrPI);
 		break;
 		
 		default:
@@ -138,12 +149,6 @@ void Motor_CurrentLoopRun(void)
 	
 	CurSen_PwmPhaseWalk_Run(&gActPwmsOut ,&gFocSvm);
 	Motor_PWMOUT();
-//	gActPwmsOut.comp60.High = 500;
-//	gActPwmsOut.comp61.High = 600;
-//	gActPwmsOut.comp62.High = 700;
-//	ATIM_SetCompare1(gActPwmsOut.comp60.High);
-//  ATIM_SetCompare2(gActPwmsOut.comp61.High);
-//	ATIM_SetCompare3(gActPwmsOut.comp62.High);
 
 	GTIM_SetCompare1(CW_GTIM1, gActPwmsOut.ADC_Trig1Cnt);
 	GTIM_SetCompare2(CW_GTIM1, gActPwmsOut.ADC_Trig2Cnt);
@@ -213,171 +218,4 @@ void Motor_PWMOUT(void)
 			ATIM_SetCompare6(gActPwmsOut.comp62.Low);
 		break;
 	}
-}
-
-void TerminalVoltageGet(void)
-{
-	switch(Motor.Phase)
-	{
-		case 1:
-			Motor.Slope = 0;
-			Motor.TerminalVoltage = SampleData[3];
-		break;
-		
-		case 2:
-			Motor.Slope = 1;
-			Motor.TerminalVoltage = SampleData[2];
-		break;
-		
-		case 3:
-			Motor.Slope = 0;
-			Motor.TerminalVoltage = SampleData[1];
-		break;
-		
-		case 4:
-			Motor.Slope = 1;
-			Motor.TerminalVoltage = SampleData[3];
-		break;
-		
-		case 5:
-			Motor.Slope = 0;
-			Motor.TerminalVoltage = SampleData[2];
-		break;
-		
-		case 6:
-			Motor.Slope = 1;
-			Motor.TerminalVoltage = SampleData[1];
-		break;
-	}
-}
-
-unsigned char Motor_NewPhaseValueGet(unsigned char OldPhaseValue)
-{
-	
-	unsigned char NewPhaseValue;
-	
-	NewPhaseValue = OldPhaseValue+1;
-	if(NewPhaseValue > 6)
-	{
-		NewPhaseValue=1;
-	}
-	
-	return NewPhaseValue;
-}
-
-void Motor_ChangePhase(unsigned char NowPhaseValue)
-{
-	/* 当前相序为逆时针转动 */
-	switch(NowPhaseValue)
-	{
-		case 1:
-			//AB
-			ATIM_SetCompare1(0);
-			ATIM_SetCompare2(0);
-			ATIM_SetCompare3(Motor.Duty);
-			PWM_AL_OFF;
-			PWM_BL_ON;
-			PWM_CL_OFF;
-		break;
-		
-		case 2:
-			//AC
-			ATIM_SetCompare1(0);
-			ATIM_SetCompare2(0);
-			ATIM_SetCompare3(Motor.Duty);
-			PWM_AL_OFF;
-			PWM_BL_OFF;
-			PWM_CL_ON;
-		break;
-		
-		case 3:
-			//BC
-			ATIM_SetCompare1(0);
-			ATIM_SetCompare2(Motor.Duty);
-			ATIM_SetCompare3(0);
-			PWM_AL_OFF;
-			PWM_BL_OFF;
-			PWM_CL_ON;
-		break;
-		
-		case 4:
-			//BA
-			ATIM_SetCompare1(0);
-			ATIM_SetCompare2(Motor.Duty);
-			ATIM_SetCompare3(0);
-			PWM_AL_ON;
-			PWM_BL_OFF;
-			PWM_CL_OFF;
-		break;
-		
-		case 5:
-			//CA
-			ATIM_SetCompare1(Motor.Duty);
-			ATIM_SetCompare2(0);
-			ATIM_SetCompare3(0);
-			PWM_AL_ON;
-			PWM_BL_OFF;
-			PWM_CL_OFF;
-		break;
-		
-		case 6:
-			//CB
-			ATIM_SetCompare1(Motor.Duty);
-			ATIM_SetCompare2(0);
-			ATIM_SetCompare3(0);
-			PWM_AL_OFF;
-			PWM_BL_ON;
-			PWM_CL_OFF;
-		break;
-		
-		default:
-			//电机停转
-		break;
-	}
-}
-
-void Motor_ConventTimeClc(unsigned char NowPhaseValue ,unsigned int RunTime)
-{
-	switch(NowPhaseValue)
-	{
-		case 1:
-			Motor.CeventTime = RunTime + Motor.Speed_u32_1_6 - Motor.SixTyRunTime[0];
-		break;
-		
-		case 2:
-			Motor.CeventTime = RunTime + Motor.Speed_u32_1_6 - Motor.SixTyRunTime[1];
-		break;
-		
-		case 3:
-			Motor.CeventTime = RunTime + Motor.Speed_u32_1_6 - Motor.SixTyRunTime[2];
-		break;
-		
-		case 4:
-			Motor.CeventTime = RunTime + Motor.Speed_u32_1_6 - Motor.SixTyRunTime[3];
-		break;
-		
-		case 5:
-			Motor.CeventTime = RunTime + Motor.Speed_u32_1_6 - Motor.SixTyRunTime[4];
-		break;
-		
-		case 6:
-			Motor.CeventTime = RunTime + Motor.Speed_u32_1_6 - Motor.SixTyRunTime[5];
-		break;
-	}
-}
-
-unsigned char DemagnetizationTimeSet(unsigned int SpeedNow)
-{
-	unsigned char DemagnetizationTime;
-	
-	if(SpeedNow < 1000)
-	{
-		DemagnetizationTime = 3;
-	}
-	else
-	{
-		DemagnetizationTime = 3+(SpeedNow-1000)/1000;
-	}
-	
-	return DemagnetizationTime;
 }

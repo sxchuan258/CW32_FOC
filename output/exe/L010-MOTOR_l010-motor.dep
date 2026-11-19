@@ -167,10 +167,10 @@ I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
 I (User\init.h)(0x6AD04213)
-I (.\MOTOR\global.h)(0x6AFD668B)
-I (.\MOTOR\motor.h)(0x6AFD661F)
+I (.\MOTOR\global.h)(0x6AFE874C)
+I (.\MOTOR\motor.h)(0x6AFE6803)
 I (.\Contol_Algorithm\Fliter.h)(0x6AD04213)
-I (.\Contol_Algorithm\Control.h)(0x6AD04213)
+I (.\Contol_Algorithm\Control.h)(0x6AFE5BC9)
 I (.\MOTOR\sensorless.h)(0x6AD04213)
 I (User\Flash_Opration.h)(0x6AD04213)
 F (.\User\interrupts_cw32l010.c)(0x6AF18809)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\interrupts_cw32l010.o --omf_browse .\output\exe\interrupts_cw32l010.crf --depend .\output\exe\interrupts_cw32l010.d)
@@ -198,7 +198,7 @@ I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
 F (.\User\init.c)(0x6AFD7CF5)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\init.o --omf_browse .\output\exe\init.crf --depend .\output\exe\init.d)
 I (User\init.h)(0x6AD04213)
-I (.\MOTOR\global.h)(0x6AFD668B)
+I (.\MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
@@ -244,11 +244,11 @@ I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-I (.\MOTOR\global.h)(0x6AFD668B)
+I (.\MOTOR\global.h)(0x6AFE874C)
 I (User\Flash_Opration.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_flash.h)(0x6AD04213)
 F (.\MOTOR\global.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\global.o --omf_browse .\output\exe\global.crf --depend .\output\exe\global.d)
-I (MOTOR\global.h)(0x6AFD668B)
+I (MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
@@ -271,9 +271,9 @@ I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\MOTOR\MOTOR.C)(0x6AFD7F5C)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\motor.o --omf_browse .\output\exe\motor.crf --depend .\output\exe\motor.d)
-I (MOTOR\motor.h)(0x6AFD661F)
-I (MOTOR\global.h)(0x6AFD668B)
+F (.\MOTOR\MOTOR.C)(0x6AFE9172)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\motor.o --omf_browse .\output\exe\motor.crf --depend .\output\exe\motor.d)
+I (MOTOR\motor.h)(0x6AFE6803)
+I (MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
@@ -305,6 +305,7 @@ I (MOTOR\GMC_ParkInv.h)(0x6AD5DD1B)
 I (MOTOR\GMC_ElimDcBusRip.h)(0x6AD6C8ED)
 I (MOTOR\GMC_SvmStd.h)(0x6AD6DCBC)
 I (.\BSW\CurSen.h)(0x6AFC0785)
+I (.\Contol_Algorithm\Control.h)(0x6AFE5BC9)
 F (.\MOTOR\sensorlessP.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\sensorlessp.o --omf_browse .\output\exe\sensorlessp.crf --depend .\output\exe\sensorlessp.d)
 I (MOTOR\sensorlessP.h)(0x6AD04213)
 F (.\MOTOR\sensorless.c)(0x6AFD678C)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\sensorless.o --omf_browse .\output\exe\sensorless.crf --depend .\output\exe\sensorless.d)
@@ -330,16 +331,16 @@ I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-I (MOTOR\global.h)(0x6AFD668B)
+I (MOTOR\global.h)(0x6AFE874C)
 I (MOTOR\sensorlessP.h)(0x6AD04213)
 I (MOTOR\sensorless.h)(0x6AD04213)
-I (MOTOR\motor.h)(0x6AFD661F)
+I (MOTOR\motor.h)(0x6AFE6803)
 I (.\User\init.h)(0x6AD04213)
 I (.\BSW\CurSen.h)(0x6AFC0785)
 I (.\MOTOR\GMC_SvmStd.h)(0x6AD6DCBC)
 F (.\MOTOR\GF_SinCos.c)(0x6AD5CC7A)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gf_sincos.o --omf_browse .\output\exe\gf_sincos.crf --depend .\output\exe\gf_sincos.d)
 I (MOTOR\GF_SinCos.h)(0x6AD5C813)
-I (MOTOR\global.h)(0x6AFD668B)
+I (MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
@@ -364,7 +365,7 @@ I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
 F (.\MOTOR\GMC_Clark.c)(0x6AD5E2CD)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_clark.o --omf_browse .\output\exe\gmc_clark.crf --depend .\output\exe\gmc_clark.d)
 I (MOTOR\GMC_Clark.h)(0x6AD5DD01)
-I (MOTOR\global.h)(0x6AFD668B)
+I (MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
@@ -389,7 +390,7 @@ I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
 F (.\MOTOR\GMC_Park.c)(0x6AD5E2B2)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_park.o --omf_browse .\output\exe\gmc_park.crf --depend .\output\exe\gmc_park.d)
 I (MOTOR\GMC_Park.h)(0x6AD5DD0E)
-I (MOTOR\global.h)(0x6AFD668B)
+I (MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
@@ -414,7 +415,7 @@ I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
 F (.\MOTOR\GMC_ParkInv.c)(0x6AD5E2A4)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_parkinv.o --omf_browse .\output\exe\gmc_parkinv.crf --depend .\output\exe\gmc_parkinv.d)
 I (MOTOR\GMC_ParkInv.h)(0x6AD5DD1B)
-I (MOTOR\global.h)(0x6AFD668B)
+I (MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
@@ -439,7 +440,7 @@ I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
 F (.\MOTOR\GMC_SvmStd.c)(0x6AFD661F)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_svmstd.o --omf_browse .\output\exe\gmc_svmstd.crf --depend .\output\exe\gmc_svmstd.d)
 I (MOTOR\GMC_SvmStd.h)(0x6AD6DCBC)
-I (MOTOR\global.h)(0x6AFD668B)
+I (MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
@@ -464,7 +465,7 @@ I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
 F (.\MOTOR\GMC_ElimDcBusRip.c)(0x6AD6C8FF)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\gmc_elimdcbusrip.o --omf_browse .\output\exe\gmc_elimdcbusrip.crf --depend .\output\exe\gmc_elimdcbusrip.d)
 I (MOTOR\GMC_ElimDcBusRip.h)(0x6AD6C8ED)
-I (MOTOR\global.h)(0x6AFD668B)
+I (MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
@@ -487,9 +488,9 @@ I (.\Driver\Libraries\inc\cw32l010_adc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_gtim.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_rtc.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010_uart.h)(0x6AD04213)
-F (.\Contol_Algorithm\Control.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\control.o --omf_browse .\output\exe\control.crf --depend .\output\exe\control.d)
-I (Contol_Algorithm\Control.h)(0x6AD04213)
-I (.\MOTOR\global.h)(0x6AFD668B)
+F (.\Contol_Algorithm\Control.c)(0x6AFE5BCA)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\control.o --omf_browse .\output\exe\control.crf --depend .\output\exe\control.d)
+I (Contol_Algorithm\Control.h)(0x6AFE5BC9)
+I (.\MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
@@ -516,7 +517,7 @@ F (.\Contol_Algorithm\Filter.c)(0x6AD04213)(--c99 -c --cpu Cortex-M0+ -D__MICROL
 I (Contol_Algorithm\Fliter.h)(0x6AD04213)
 F (.\BSW\CurSen.c)(0x6AFD7C2C)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork -I .\Driver\Libraries\inc -I .\User -I .\MOTOR -I .\Contol_Algorithm -I .\BSW-I.\RTE\_l010-motor-IE:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Users\user\AppData\Local\Arm\Packs\WHXY\CW32L010_DFP\1.0.2\Device\Include-D__UVISION_VERSION="533" -D_RTE_ -D_RTE_-o .\output\exe\cursen.o --omf_browse .\output\exe\cursen.crf --depend .\output\exe\cursen.d)
 I (BSW\CurSen.h)(0x6AFC0785)
-I (.\MOTOR\global.h)(0x6AFD668B)
+I (.\MOTOR\global.h)(0x6AFE874C)
 I (.\User\main.h)(0x6AD04213)
 I (.\Driver\Libraries\inc\cw32l010.h)(0x6AD04213)
 I (E:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)

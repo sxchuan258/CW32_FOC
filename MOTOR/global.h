@@ -192,6 +192,16 @@ typedef struct
 	unsigned char SampleTimeTooLow_Flag;
 }System_Type;
 
+typedef struct
+{
+	int16_t Kp;
+	int16_t Ki;
+	int16_t PIMin;
+	int16_t PIMax;
+	int32_t IntegPart;
+	int32_t Out;
+}PI_Type;
+
 #define Read_Mode 		 0
 #define Program_Mode 	 1
 #define PageErase_Mpde 2

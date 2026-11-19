@@ -1,6 +1,8 @@
 #ifndef __CONTROL_H
 #define __CONTROL_H
 
-unsigned int PID_Control(unsigned int FeedBack_Value);
+#include "global.h"
+
+int PID_Control(int16_t FeedBack_Value ,int16_t Ref ,PI_Type *PI);
 
 #endif

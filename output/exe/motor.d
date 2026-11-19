@@ -32,3 +32,4 @@
 .\output\exe\motor.o: MOTOR\GMC_ElimDcBusRip.h
 .\output\exe\motor.o: MOTOR\GMC_SvmStd.h
 .\output\exe\motor.o: .\BSW\CurSen.h
+.\output\exe\motor.o: .\Contol_Algorithm\Control.h
