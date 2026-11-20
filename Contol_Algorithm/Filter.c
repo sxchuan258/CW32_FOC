@@ -1,13 +1,10 @@
 #include "Fliter.h"
 
-unsigned int LowPass_Fliter(unsigned int FliterValue)
+int32_t LowPass_Fliter(int32_t FliterValue ,int32_t FliterOldValue)
 {
-	unsigned int 				OutPut_Value;
-	static unsigned int FliterValue_Old;
+	int32_t 				OutPut_Value;
 	
-	OutPut_Value = FliterValue_Old*0.95 + FliterValue*0.05;
-	
-	FliterValue_Old = FliterValue;
+	OutPut_Value = FliterOldValue*7/10 + FliterValue*3/10;
 	
 	return OutPut_Value;
 }

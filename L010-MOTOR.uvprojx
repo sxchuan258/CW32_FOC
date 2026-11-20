@@ -312,7 +312,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>4</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
@@ -522,6 +522,11 @@
               <FileType>1</FileType>
               <FilePath>.\MOTOR\GMC_ElimDcBusRip.c</FilePath>
             </File>
+            <File>
+              <FileName>Atan.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MOTOR\Atan.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -536,6 +541,11 @@
               <FileName>Filter.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Contol_Algorithm\Filter.c</FilePath>
+            </File>
+            <File>
+              <FileName>Observer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Contol_Algorithm\Observer.c</FilePath>
             </File>
           </Files>
         </Group>

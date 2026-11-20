@@ -5,12 +5,14 @@
 #include "Mat.h"
 #include "CurSen.h"
 #include "Control.h"
+#include "Observer.h"
 
 Motor_Type 				 Motor;
 sType_SvmOut 			 gFocSvm = {16384, 16384, 16384};
 sType_ActPwms 		 gActPwmsOut;
 PI_Type						 RealCurrPI;
 PI_Type						 ImagCurrPI;
+SMO_Type					 Smo;
 extern System_Type System;
 extern uint16_t 	 SampleData[5]; 
 
@@ -52,7 +54,6 @@ void Motor_SpeedLoopRun(void)
 		
 		case ORIENT_END_STATE:	//进入预定位结束状态
 			System.Orient_Time++;
-		
 			if(System.Orient_Time > 500)
 			{
 				/* 进行参数初始化 */
@@ -71,6 +72,8 @@ void Motor_SpeedLoopRun(void)
 				ImagCurrPI.Ki = RealCurrPI.Ki;
 				ImagCurrPI.PIMax = RealCurrPI.PIMax;
 				ImagCurrPI.PIMin = RealCurrPI.PIMin;
+				
+				Smo_ObserverInit(&Smo);
 			}
 		break;
 			
@@ -115,6 +118,8 @@ void Motor_CurrentLoopRun(void)
 		
 		case FORCE_RUN_STATE:		//进入VF强拖运行状态
 			Motor.Angle = Motor.Angle + Motor.AngleAccStep;
+			Smo_Observer(&Motor.StatCurr ,&Motor.StatVolt ,&Smo);
+
 		break;
 		
 		case SENSORLESS_STATE: //进入无感运行状态

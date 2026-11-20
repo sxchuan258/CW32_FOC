@@ -47,6 +47,8 @@ void ATIM_IRQHandler(void)
 {
 	if(CW_ATIM->ISR_f.UIF)
 	{
+		System.CurrentLoopRunTime1 = CW_GTIM1->CNT_f.CNT;
+		
 		ATIM_ClearITPendingBit(ATIM_IT_UIE);
 		GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC1);
 		GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC2);
@@ -56,8 +58,8 @@ void ATIM_IRQHandler(void)
 		Motor.PhaseCurr = CurSen_CurrentReconstruction(Motor.PhaseCurr);
 		Motor_CurrentLoopRun();
 		
-//		ADC_ClearITPendingAll();
-//		ADC_ITConfig(ADC_IT_EOS, ENABLE);
+		System.CurrentLoopRunTime2 = CW_GTIM1->CNT_f.CNT;
+		System.CurrentLoopRunTime3 = System.CurrentLoopRunTime2 - System.CurrentLoopRunTime1;
 	}
 }
 

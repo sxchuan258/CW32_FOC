@@ -54,7 +54,7 @@
 
 //ÔØ²¨ÆµÂÊ16k
 #define PWM_PERIOD 		4800
-#define PWM_FREQUENCY 48000000/PWM_PERIOD
+#define PWM_FREQUENCY (48000000/PWM_PERIOD)
 // (48000000 / 20000 )-1; 
 
 #define OnepercentPWM (PWM_PERIOD+1)/100
@@ -188,7 +188,9 @@ typedef struct
 	unsigned char OverTurn_Flag;
 	unsigned char SpeedClcDown_FristFlag;
 	unsigned int  Orient_Time;
-	unsigned char OpenLopp_RunTimes;
+	int16_t  CurrentLoopRunTime1;
+	int16_t  CurrentLoopRunTime2;
+	int16_t  CurrentLoopRunTime3;
 	unsigned char SampleTimeTooLow_Flag;
 }System_Type;
 
@@ -201,6 +203,27 @@ typedef struct
 	int32_t IntegPart;
 	int32_t Out;
 }PI_Type;
+
+typedef struct
+{
+	uint16_t Ik_Q16;
+	uint16_t Uk_Q16;
+	uint16_t Ls_PreProcess_Q10;
+	uint16_t Rs_PreProcess_Q16;
+	uint16_t Layer_PreProcess_Q16;
+	
+	int16_t I_Alpha;
+	int16_t I_Beta;
+	int16_t V_Alpha;
+	int16_t V_Beta;
+	
+	int32_t I_Alpha_z;
+	int32_t I_Beta_z;
+	
+	int32_t E_Alpha_z;
+	int32_t E_Beta_z;
+}SMO_Type;
+#define SMO_K_SLIDE 50
 
 #define Read_Mode 		 0
 #define Program_Mode 	 1
