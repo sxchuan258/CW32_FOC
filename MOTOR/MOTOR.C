@@ -47,7 +47,7 @@ void Motor_SpeedLoopRun(void)
 		
 	  case ORIENT_INIT_STATE:
 			/* 进入预定位初始化状态 */
-			Motor.RotCurrRef.Real 		= 250;
+			Motor.RotCurrRef.Real 		= 125;
 			Motor.RotCurrRef.Imag 		= 0;
 			Motor.CurrentLoopRunState = ORIENT_END_STATE;
 		break;
@@ -56,6 +56,9 @@ void Motor_SpeedLoopRun(void)
 			System.Orient_Time++;
 			if(System.Orient_Time > 500)
 			{
+				Motor.RotCurrRef.Real 		= 250;
+				Motor.RotCurrRef.Imag 		= 0;
+				
 				/* 进行参数初始化 */
 				Motor.SpeedRef						 = 0;
 				Motor.SpdToAngAcc 				 = 32768.0 * 32768.0 / 30.0 / (1.0*PWM_FREQUENCY) * MotorPolePair;
@@ -119,7 +122,6 @@ void Motor_CurrentLoopRun(void)
 		case FORCE_RUN_STATE:		//进入VF强拖运行状态
 			Motor.Angle = Motor.Angle + Motor.AngleAccStep;
 			Smo_Observer(&Motor.StatCurr ,&Motor.StatVolt ,&Smo);
-
 		break;
 		
 		case SENSORLESS_STATE: //进入无感运行状态
@@ -131,7 +133,7 @@ void Motor_CurrentLoopRun(void)
 		break;
 	}
 	
-	Motor.Vbus 			= SampleData[0] << 3; //Q15格式
+	Motor.Vbus 			= SampleData[0] * VbusSampleOpa; //Q12格式
 	Motor.AngSinCos = GFLIB_SinCos_F16(Motor.Angle);
 	Motor.StatCurr 	= GMCLIB_Clark_F16(Motor.PhaseCurr);
 	Motor.RotCurr 	= GMCLIB_Park_F16(Motor.StatCurr, Motor.AngSinCos);
@@ -147,11 +149,10 @@ void Motor_CurrentLoopRun(void)
 			/* 根据定子电流误差，执行PI控制器得出定子电压 */
 		break;
 	}
-	
+
 	Motor.StatVolt = GMCLIB_InvPark_F16(Motor.RotVolt, Motor.AngSinCos);
 	GMC_ElimDcBusRip(Motor.Vbus, Motor.InvParam.KdcFactorVp, &Motor.Svm.Vs, &Motor.StatVolt);
 	Motor.Svm.Sector = GMC_SvmStd(&gFocSvm, &Motor.Svm.Vs);
-	
 	CurSen_PwmPhaseWalk_Run(&gActPwmsOut ,&gFocSvm);
 	Motor_PWMOUT();
 

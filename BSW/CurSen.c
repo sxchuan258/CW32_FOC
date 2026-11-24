@@ -5,7 +5,7 @@ extern System_Type System;
 extern signed short Ibus_AdcSample1;
 extern signed short Ibus_AdcSample2;
 
-sType_PhaseCurr CurSen_CurrentReconstruction(sType_PhaseCurr abc)
+void CurSen_CurrentReconstruction(sType_PhaseCurr *abc)
 {
 	signed short Ibus_OffRun1;
 	signed short Ibus_OffRun2;
@@ -15,44 +15,42 @@ sType_PhaseCurr CurSen_CurrentReconstruction(sType_PhaseCurr abc)
 	switch(Motor.Svm.SectorOld)
 	{
 		case 1:
-			abc.A = Ibus_OffRun1;
-			abc.C = -Ibus_OffRun2;
-			abc.B = -abc.A-abc.C;
+			abc->A = Ibus_OffRun1;
+			abc->C = -Ibus_OffRun2;
+			abc->B = -abc->A-abc->C;
 		break;
 		
 		case 2:
-			abc.B = Ibus_OffRun1;
-			abc.C = -Ibus_OffRun2;
-			abc.A = -abc.B-abc.C;
+			abc->B = Ibus_OffRun1;
+			abc->C = -Ibus_OffRun2;
+			abc->A = -abc->B-abc->C;
 		break;
 		
 		case 3:
-			abc.B = Ibus_OffRun1;
-			abc.A = -Ibus_OffRun2;
-			abc.C = -abc.B-abc.A;
+			abc->B = Ibus_OffRun1;
+			abc->A = -Ibus_OffRun2;
+			abc->C = -abc->B-abc->A;
 		break;
 		
 		case 4:
-			abc.C = Ibus_OffRun1;
-			abc.A = -Ibus_OffRun2;
-			abc.B = -abc.C-abc.A;
+			abc->C = Ibus_OffRun1;
+			abc->A = -Ibus_OffRun2;
+			abc->B = -abc->C-abc->A;
 		break;
 		
 		case 5:
-			abc.C = Ibus_OffRun1;
-			abc.B = -Ibus_OffRun2;
-			abc.A = -abc.C-abc.B;
+			abc->C = Ibus_OffRun1;
+			abc->B = -Ibus_OffRun2;
+			abc->A = -abc->C-abc->B;
 		break;
 		
 		case 6:
-			abc.A = Ibus_OffRun1;
-			abc.B = -Ibus_OffRun2;
-			abc.C = -abc.A-abc.B;
+			abc->A = Ibus_OffRun1;
+			abc->B = -Ibus_OffRun2;
+			abc->C = -abc->A-abc->B;
 		break;
 	}
 	Motor.Svm.SectorOld = Motor.Svm.Sector;
-	
-	return abc;
 }
 
 void CurSen_PwmPhaseWalk_Init(sType_ActPwms *PwmOut)

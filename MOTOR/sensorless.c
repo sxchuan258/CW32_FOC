@@ -17,16 +17,16 @@ void ADC_IRQHandler(void)
 	/* USER CODE BEGIN */
   if (CW_ADC->ISR_f.EOS)
   {
-		if(System.OverTurn_Flag == 0)
-		{
-			System.OverTurn_Flag = 1;
-			LEDON;
-		}
-		else
-		{
-			System.OverTurn_Flag = 0;
-			LEDOFF;
-		}
+//		if(System.OverTurn_Flag == 0)
+//		{
+//			System.OverTurn_Flag = 1;
+//			LEDON;
+//		}
+//		else
+//		{
+//			System.OverTurn_Flag = 0;
+//			LEDOFF;
+//		}
 		
 		if(CW_GTIM1->CNT_f.CNT < gActPwmsOut.ADC_Trig2Cnt)
 		{
@@ -47,19 +47,16 @@ void ATIM_IRQHandler(void)
 {
 	if(CW_ATIM->ISR_f.UIF)
 	{
-		System.CurrentLoopRunTime1 = CW_GTIM1->CNT_f.CNT;
-		
 		ATIM_ClearITPendingBit(ATIM_IT_UIE);
-		GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC1);
-		GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC2);
+//		GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC1);
+//		GTIM_ClearITPendingBit(CW_GTIM1, GTIM_IT_CC2);
 		
 //		ADC_GetSqr0Result(&SampleData[0]); //母线电压
 //	  ADC_GetSqr1Result(&Ibus_AdcSample2); //母线电流
-		Motor.PhaseCurr = CurSen_CurrentReconstruction(Motor.PhaseCurr);
+		LEDON;
+		CurSen_CurrentReconstruction(&Motor.PhaseCurr);
 		Motor_CurrentLoopRun();
-		
-		System.CurrentLoopRunTime2 = CW_GTIM1->CNT_f.CNT;
-		System.CurrentLoopRunTime3 = System.CurrentLoopRunTime2 - System.CurrentLoopRunTime1;
+		LEDOFF;
 	}
 }
 

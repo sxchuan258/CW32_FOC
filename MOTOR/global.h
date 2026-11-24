@@ -52,6 +52,9 @@
 #define MotorRs         (0.011f)
 #define MotorPolePair   (4)
 
+#define VbusSampleOpa   11
+#define IbusSampleOpa   50
+
 //ÔØ²¨ÆµÂÊ16k
 #define PWM_PERIOD 		4800
 #define PWM_FREQUENCY (48000000/PWM_PERIOD)
