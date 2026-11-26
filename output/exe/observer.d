@@ -24,3 +24,4 @@
 .\output\exe\observer.o: .\Driver\Libraries\inc\cw32l010_rtc.h
 .\output\exe\observer.o: .\Driver\Libraries\inc\cw32l010_uart.h
 .\output\exe\observer.o: Contol_Algorithm\Fliter.h
+.\output\exe\observer.o: .\MOTOR\Atan.h

@@ -120,8 +120,8 @@ void Motor_CurrentLoopRun(void)
 		break;
 		
 		case FORCE_RUN_STATE:		//进入VF强拖运行状态
-			Motor.Angle = Motor.Angle + Motor.AngleAccStep;
-			Smo_Observer(&Motor.StatCurr ,&Motor.StatVolt ,&Smo);
+			Motor.Angle 		= Motor.Angle + Motor.AngleAccStep;
+			Motor.Angle_Est = Smo_Observer(&Motor.StatCurr ,&Motor.StatVolt ,&Smo);
 		break;
 		
 		case SENSORLESS_STATE: //进入无感运行状态

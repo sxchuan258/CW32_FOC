@@ -55,7 +55,7 @@
 #define VbusSampleOpa   11
 #define IbusSampleOpa   50
 
-//ÔØ²¨ÆµÂÊ16k
+//ÔØ²¨ÆµÂÊ10k
 #define PWM_PERIOD 		4800
 #define PWM_FREQUENCY (48000000/PWM_PERIOD)
 // (48000000 / 20000 )-1; 
@@ -170,6 +170,7 @@ typedef struct
 	unsigned int  	SpeedRef;
 	unsigned short  SpdToAngAcc;
 	unsigned short	Angle;
+	unsigned short	Angle_Est;
 	unsigned short  AngleAccStep;
 	
 	sType_Complex RotCurrRef;
@@ -209,22 +210,29 @@ typedef struct
 
 typedef struct
 {
-	uint16_t Ik_Q16;
-	uint16_t Uk_Q16;
-	uint16_t Ls_PreProcess_Q10;
-	uint16_t Rs_PreProcess_Q16;
-	uint16_t Layer_PreProcess_Q16;
+	uint16_t Ik_Q13;
+	uint16_t Uk_Q13;
+	uint16_t Ls_PreProcess_Q8;
+	uint16_t Rs_PreProcess_Q13;
+	uint16_t Layer_PreProcess_Q13;
 	
 	int16_t I_Alpha;
 	int16_t I_Beta;
 	int16_t V_Alpha;
 	int16_t V_Beta;
 	
+	int16_t I_Alpha_Err;
+	int16_t I_Beta_Err;
+	
 	int32_t I_Alpha_z;
 	int32_t I_Beta_z;
+	int32_t I_Alpha_z_Old;
+	int32_t I_Beta_z_Old;
 	
 	int32_t E_Alpha_z;
 	int32_t E_Beta_z;
+	
+	uint16_t Angle_Est;
 }SMO_Type;
 #define SMO_K_SLIDE 50
 
